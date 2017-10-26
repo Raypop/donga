@@ -1,0 +1,182 @@
+/*Page19*/
+
+#P019 #body .content_text .cont_img.con1{}
+#P019 #body .content_text .cont_img.con2{padding:0px 0px 0px 36px; margin-top:0px; }
+
+#P019 #body .content_text .cont_img .img1{
+    background-image:url(../images/019/cont1.png);
+    background-size:100%;
+    background-repeat:no-repeat;
+    width:327px;
+    height:248px; 
+}
+
+#P019 #body .content_text .cont_img .img1 p{
+    width:150px;
+    font-size:14px;
+    line-height:17px;
+    font-weight:500;
+    position:absolute;
+    top:29px;
+    right:46px;
+    text-align:center;
+    text-indent:0;
+}
+#P019 #body .content_text .cont_img .img2{width:486px; height:248px; }
+
+
+#P019 #body .content_text .cont_img .big_view   {background:url(../images/019/view.png) no-repeat 0 0;background-size:100% 100%; width:76px; height:26px; font-size:11px; font-weight:bold; color:#00adff;  cursor:pointer; position:absolute; bottom:8px; right:27px; text-align:right; line-height:34px; padding-right:5px; letter-spacing:-0.6px;}
+
+#P019 #body .content_text .cont_img .txt {padding-left:23px; margin-top:24px; font-size:12px; letter-spacing:-0.1px; color:#242424; text-align:justify;}
+#P019 #body .content_text .cont_img .txt .ico{display:inline-block; background:url(../images/common/subtexticon.png) no-repeat 0 0;background-size: 100%; width:13px; height:13px; margin-left:4px;vertical-align: middle; }
+
+
+#P019 #body .content_text .cont_img.con2 .txt {margin-left:16px; }
+#P019 #body .content_text .cont_img.con2 .txt .r_txt{
+    float:left;
+    display:inline-block;
+    width:472px;
+    text-indent:0;
+    line-height:15px;
+    font-weight:bold;
+}
+
+#P019 #body .content_text .cont_img.con2 .txt .r_txt span{
+    font-weight: 500;
+    margin-left: 20px;
+    width: 294px;
+    display: inline-block;
+    vertical-align: top;
+}
+#P019 #body .content_text .cont_img.con2 .txt .ico{
+    float:left;
+}
+#P019 #body .content_text .cont_img.con2 .txt{
+    position:relative;top:-45px;
+    letter-spacing:-0.3px;
+}
+
+
+
+#P019 #body .content_text .ti0 span.t_in{text-indent:18px; display:inline-block; margin-top:2px; letter-spacing:-0.3px; }
+
+.checkPop{
+    left: -2px;
+    bottom: 30px;
+    width: 539px;
+}
+
+.toastPop.toast01 .outbox{
+    min-width:445px;
+    max-width:445px;
+}
+
+#P019 #body .content_text .cont_img .img2{
+    width:550px;
+    height:248px;
+    padding-left:24px;
+}
+
+#P019 #body .content_text .cont_img .img2 > div{
+    float:left;
+    height:100%;
+}
+
+#P019 #body .content_text .cont_img .img2 .img2_1{
+    background:url(../images/019/cont2_1.png) no-repeat 0 0;
+    background-size:100%;
+    width:206px;
+}
+
+#P019 #body .content_text .cont_img .img2 .img2_2{
+    background:url(../images/019/cont2_2.png) no-repeat 0 58px;
+    background-size:100%;
+    width:111px;
+}
+
+#P019 #body .content_text .cont_img .img2 .img2_3{
+    background:url(../images/019/cont2_3.png) no-repeat 0 0;
+    background-size:100%;
+    width:206px;
+}
+
+.toastPop .innerbox.ct{text-align:center;}
+.toastPop p.img_txt{font-size:11px!important;color:#242424;}
+.toastPop.toast02 p.img_txt{
+    background:url(../images/common/subtexticon.png) no-repeat 100px 0px ;
+    background-size: 15px 15px;
+    padding-left:102px;
+    line-height: 16px;
+    margin: 5px 0px 0px;
+}
+
+.toastPop.toast03 p.img_txt{
+    background:url(../images/common/subtexticon.png) no-repeat 70px 0px ;
+    background-size: 15px 15px;
+    padding-left:72px;
+    line-height: 16px;
+    margin: 5px 0px 0px;
+}
+.letter-s{
+    letter-spacing: -11px;
+}
+
+.cursor{
+    width:41px;
+    height:50px;
+    display:inline-block;
+    background:#fff;
+    position:absolute;
+    top:148px;
+    background:url(../images/019/touch_icon.png) no-repeat 0 0;
+    background-size:100%;
+}
+
+.leftText{
+    width:345px;
+    margin-bottom:25px;
+}
+
+.rightImg{
+    position:absolute;
+    width:350px;
+    top:5px;
+    left:330px;
+    padding-left:25px;
+}
+
+.rightImg .img_txt{
+    text-indent:-9999px;
+}
+
+.plusBtn{
+    position:absolute;
+    top:2px;
+    left:2px;
+    width:15px;
+    height:18px;
+}
+
+.pop1{
+    background:url(../images/019/pop1.png);
+    width:65px;
+    height:55px;
+    background-size:100% 100%;
+    display:inline-block;
+    overflow:visible;
+    position:absolute;
+    top:20px;
+    left:5px;
+}
+
+.pop2{
+    background:url(../images/019/pop2.png);
+    width:65px;
+    height:55px;
+    background-size:100% 100%;
+    display:inline-block;
+    overflow:visible;
+    position:absolute;
+    top:20px;
+    right:-60px;
+}

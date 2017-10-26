@@ -1,0 +1,41 @@
+
+.Cover2						{background:url('../images/137/bg.png') 0 0 no-repeat; background-size:100% 100%; position:relative; }
+.Cover2 #body				{margin:0px 73px 0 39px; }
+
+.Cover2 #body .imageBox			{width:622px; height:576px; position:relative; }
+.Cover2 #body .imageBox .image	{width:100%; height:100%; background:url('../images/137/p011_image1.jpg') 0 0 no-repeat; background-size:100%; position:absolute; }
+.Cover2 #body .imageBox:before	{position:absolute; content:''; display:block; width:622px; height:378px;
+								background:url('../images/137/p011_image1_shadow.png') 0 0 no-repeat; background-size:100%; top:200px; }
+
+.Cover2 #body .imageBox .mal	{
+	width:105px; 
+	height:100px;
+	background:url('../images/137/mal.png') 0 0 no-repeat; 
+	background-size:100%; 
+	padding:12px 0px 0px 5px;
+	position:absolute; 
+	text-align:center; 
+	top:280px; left:340px; 
+}
+
+.Cover2 #body .imageBox .mal span	{
+	font-size:14px;
+	line-height: 17.5px;
+}
+
+.Cover2 #body .imageBox .textbox		{
+	background:rgba(49,49,49,0.7); 
+	position:absolute; 
+	bottom:18px; 
+	left:0px; 
+	padding:8px 8px 8px 18px; 
+	width: 100%;
+}
+.Cover2 #body .imageBox .textbox span	{color:#fff; font-size:12px; }
+.Cover2 #body .imageBox .textbox span span	{color:#fff; font-size:12px;font-weight:bold; }
+.Cover2 #body h4						{color:#ea5f01; margin:27px 0 14px; }
+.Cover2 #body h4 span					{display:inline-block; vertical-align:top; }
+.Cover2 #body h4 span.icon				{width:26px; height:24px; background:url('../images/common/icon03.png') 0 0 no-repeat; background-size:100%; }
+.Cover2 #body h4 span.text				{font-size:16.5px; margin-left:6px; letter-spacing:-1px; }
+
+

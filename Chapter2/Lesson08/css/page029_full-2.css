@@ -1,0 +1,443 @@
+
+.conceptPop .tabArea {
+    position: absolute;
+    top: 34px;
+    right: 37px;
+}
+
+.conceptPop .tabArea:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .tabArea .tab {
+    float: left;
+    display: block;
+    width: 140px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 39px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: url('../images/common/conceptbtn_off.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    margin-left: 4px;
+}
+
+.conceptPop .tabArea .tab.on {
+    background: url('../images/common/conceptbtn_on.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+.conceptPop .conBox {
+    width: 733px;
+    height: 963px;
+    background: url('../images/common/concept_conbox.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    padding: 51px 24px 0 24px;
+}
+
+.conceptPop .conBox .conceptHeader {
+    position: relative;
+    height: 46px;
+    background-color: #ebebeb;
+    border-radius: 16px;
+    padding: 9px 19px;
+    margin-bottom: 15px;
+}
+
+.conceptPop .conBox .conceptHeader .num{
+    display: inline-block;
+    width: 27px;
+    height: 28px;
+    background: url(../images/common/numbullet.png) no-repeat 0 0 ;
+    background-size:100% 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-top: 6px;
+    margin-top: -4px;
+    margin-right: 7px;
+    margin-left: 5px;
+}
+
+.conceptPop .conBox .buttonArea {
+    margin-right: 5px;
+}
+
+.conceptPop .conBox .buttonArea button {
+    float: right;
+}
+
+.conceptPop .conBox .buttonArea:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .conBox .buttonArea button {
+    width: 48px;
+    height: 43px;
+    background-size: 100% 100%;
+}
+
+.conceptPop .conBox .buttonArea button.anscheckBtn {
+    background-image: url('../images/029/anschkbtn.png');
+    margin-left: -5px;
+}
+
+.conceptPop .conBox .buttonArea button.resetBtn {
+    background-image: url('../images/029/resetbtn.png');
+}
+
+/* 개념 확인 */
+
+.conceptPop .conBox .conceptHeader .title {
+    font-size: 30px;
+    color: #005297;
+    letter-spacing: -0.2px;
+}
+
+.conceptPop .conBox .conceptHeader .close {
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    width: 26px;
+    height: 26px;
+    background: url('../images/common/conceptpop_close.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+
+/* 실력 향상 */
+
+.conceptHeader span.unit_title{
+    width:150px;
+    height:26px;
+    border-radius:16px;
+    background:#fff;
+    color:#525252;
+    line-height:27px;
+    display:inline-block;
+    position:relative;
+    top:-4px;
+    left:14px;
+    font-weight:bold;
+    font-size:15px;
+    padding-left:7px;
+    letter-spacing:0.8px;
+    font-family:"BmHanna" !important;
+}
+
+.conceptHeader span.unit_title span{
+    width:19px;
+    height:19px;
+    background:#00a0ea;
+    border-radius:50%;
+    border:2px solid #fff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-align:center;
+    color:#fff;
+    display:inline-block;
+    font-size:10px;
+    position:relative;top:-2px;
+    line-height:17px;
+    margin-right:4px;
+}
+
+
+.quiz_wrap{
+    padding:14px 0px 0px 3px
+
+}
+
+.quiz_wrap > div{
+    float:left;
+    width:339px;
+}
+
+
+.quiz_wrap .q_left{
+    padding-bottom:68px;
+    border-right:1px dotted #000;
+}
+
+.quiz_wrap .q_right{
+    padding:0 0 30px 19px;
+}
+
+.quiz_wrap .quiz{
+
+}
+
+.quiz_wrap .quiz p{
+    font-weight:bold;
+    font-size:15px;
+    color:#002d41;
+    letter-spacing:-0.9px;
+}
+
+.quiz_wrap .quiz p span.num{
+    color:#00a0ea;
+    font-weight:bold;
+    font-size:21px;
+    display:inline-block;
+    width:16px;
+}
+
+.quiz_wrap .quiz p span.num2{
+    position:relative;
+    top:-20px;
+}
+
+.quiz_wrap .quiz p span.txt{
+    font-weight:bold;
+    font-size:15px;
+    color:#002d41;
+    letter-spacing:-0.9px;
+    width:310px;
+    display:inline-block;
+    line-height:1.5;
+}
+
+.quiz_wrap .quiz ul{
+    margin:16px 0 0 13px;
+}
+
+.quiz_wrap .quiz ul li{
+    font-size:14px;
+    letter-spacing:-0.3px;
+    margin-bottom:8.5px;
+    line-height:1;
+    cursor:pointer;
+    position:relative;
+}
+
+.quiz_wrap .quiz ul li.chk{
+    background-size:20px 17px;
+    color:#f75b32;
+    letter-spacing:-0.4px;
+}
+
+.quiz_wrap .quiz ul li.chk:before{
+    content:'';
+    display:inline-block;
+    clear: both;
+    width:20px;
+    height:17px;
+    position:absolute;
+    left:0px;
+    background:url(../images/029/check.png) no-repeat -1px 0px;
+    background-size:100% 100%;
+    margin-top:-6px;
+}
+
+.quiz_wrap .quiz.q3 li{
+    position:relative;
+    top:-2px;
+    line-height:18px;
+    margin-bottom:4.5px;
+}
+
+.quiz_wrap .quiz ul li span.l_num{
+    vertical-align:top;
+    margin-right:4px;
+}
+
+.quiz_wrap .quiz ul li span.l_txt{
+    width:250px;
+    display:inline-block;
+    margin-left:2px;
+}
+
+
+.quiz_wrap .quiz.q2{
+    margin-top:69px;
+}
+
+.quiz_wrap .quiz.q3{
+    margin-top:111px;
+}
+
+
+.quiz_wrap .quiz.q3 ul{
+    margin-top:16px;
+}
+
+.quiz_wrap .quiz .list_wrap{
+    width:295px;
+    height:122px;
+    box-sizing:border-box;
+    border:#acacac solid 1px;
+    background:#f8f8f8;
+    margin:7px 0 0 16px;
+}
+
+.quiz_wrap .quiz.q5{
+    margin-top:64px;
+}
+
+.quiz_wrap .quiz.q5 .list_wrap p.ans_list{
+    width:41px;
+    height:16px;
+    border:2px solid #fff;
+    border-radius:10px;
+    box-shadow:1px 1px 1px rgba(0,0,0,0.7);
+    line-height:13px;
+    color:#fff;
+    font-size:9px;
+    background:#707070;
+    text-align:center;
+    margin:2px 0px 0px 7px;
+}
+
+.quiz_wrap .quiz .list_wrap p.ans{
+    font-size:11px;
+    color:#2e2e2e;
+    margin:7px 0 7px 10px;
+    letter-spacing:-0.3px;
+}
+
+.quiz_wrap .quiz .list_wrap p.ans span.num{
+    font-size:11px;
+    color:#2e2e2e;
+    vertical-align:top;
+}
+
+
+.quiz_wrap .quiz .list_wrap p.ans span.txt{
+    font-size:11px;
+    color:#2e2e2e;
+    width:265px;
+    letter-spacing:-0.3px;
+    font-weight:bold;
+    margin-left:-1.5px;
+    line-height:1.5;
+}
+
+.quiz_wrap .quiz.q5 ul{
+    padding-top:10px;
+    margin-top:11px;
+    margin-left:16px;
+    overflow:hidden;
+}
+
+.quiz_wrap .quiz.q5 ul li{
+    float:left;
+    margin-right:65px;
+    letter-spacing:0.3px;
+}
+.quiz_wrap .quiz.q5 ul li:nth-child(3){
+    margin-right:0px;
+}
+
+.quiz_wrap .quiz.q6{
+    margin-top:27px;
+}
+
+.quiz_wrap .quiz.q6 .ev{
+    width: 321px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    background: #898989;
+    color: #fff;
+    font-size: 10px;
+    margin-bottom: 16px;
+    margin-left: -2px;
+}
+
+.quiz_wrap .quiz.q6 p span.num{
+    width:14px;
+}
+
+.quiz_wrap .quiz.q6 p span.txt{
+    width:300px;
+}
+
+.quiz_wrap .quiz.q6 .pic{
+    overflow:hidden;
+    width:278px;
+    height:115px;
+    padding-top:37px;
+    padding-left:35px;
+    position:relative;
+}
+
+.quiz_wrap .quiz.q6 .pic > div > div{
+}
+
+.quiz_wrap .quiz.q6 .pic > div > div.pic_1{
+    background:url(../images/029/con1.png) no-repeat 0 0;
+    width:142px;
+    height:75px;
+    background-size:100% 100%;
+    float:left;
+}
+
+.quiz_wrap .quiz.q6 .pic > div > div.pic_2{
+    background:url(../images/029/con2.png) no-repeat 0 0;
+    width:76px;
+    height:82px;
+    background-size:76px 82px;
+    float:right;
+    margin-right:-11px;
+    margin-top:-4px;
+}
+
+.quiz_wrap .quiz.q6 .pic > div > p{
+    width:17px;
+    height:17px;
+    background:#707070;
+    text-align:center;
+    border:1px solid #fff;
+    color:#fff;
+    line-height:16px;
+    box-shadow:1px 1px 1px rgba(0,0,0,0.7);
+    border-radius:50%;
+    font-size:9px;
+}
+
+.quiz_wrap .quiz.q6 .pic > div:nth-child(1) p {
+    position:absolute;
+    top:10px;
+    left:13px;
+}
+
+.quiz_wrap .quiz.q6 .pic > div:nth-child(2) p{
+    position:absolute;
+    top:10px;
+    left:190px;
+}
+
+textarea.txtarea_q6{
+    width:295px;
+    height:73px;
+    background-color:#fff;
+    border-radius:0px;
+    border:1px solid #e1e1e1;
+    margin-top:15px;
+    margin-left:16px;
+}
+
+.quiz_wrap .quiz.q6 .q6_txt{
+    font-size:13px;
+    color:#f75b32;
+    margin-top:6px;
+    margin-left:13px;
+    letter-spacing:-0.3px;
+}
+
+
+.pop_close{
+    background:url(../images/common/conceptpop_close.png) no-repeat 0 0;
+    background-size:100%;
+    width:26px;
+    height:26px;
+    float:right;
+    cursor:pointer;
+    
+}

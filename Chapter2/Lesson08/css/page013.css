@@ -1,0 +1,166 @@
+/*Page13*/
+.view{
+    width:100%;height:100%;
+    background:url(../images/013/13-Recovered.jpg) no-repeat 0 0/100% 100%;
+    position:absolute;
+    top:0px;left:0px;
+    z-index:999;opacity:0.5;
+}
+
+*{font-family: "NanumBarunGothic"}
+#P013 #top{height:35px; }
+
+#P013 #body{margin-top:30px;}
+
+
+#P013.Page{background:url('../images/013/bg.png') 0 0 no-repeat; background-size:100% 100%; position:relative; }
+
+/*네비*/
+
+.map{
+	width:100%; 
+	height:400px; 
+	background:url('../images/013/map.png') 0 0 no-repeat; 
+    background-size:100%;
+	margin-bottom:20px; 
+	margin-top: -15px;
+}
+
+.sub_quiz{
+    font-size:15px;
+    margin-top:20px;
+}
+
+.sub_quiz span.num{
+    vertical-align: top;
+    display:inline-block;
+}
+
+.sub_quiz span.txt{
+    width:670px;
+    display:inline-block;
+    line-height:25px;
+    margin-top:-4px;
+}
+
+
+.quizBox .quizTextBox{
+	width: 550px;
+    margin-bottom:20px;
+}
+
+/* 정답 보기 위치 수정 */
+#mapPop{position:absolute; top:0; z-index:2; cursor:pointer;display: none;z-index:99;}
+#mapPop .top{border-top-left-radius:10px; border-top-right-radius:10px; background:#3d3d3d; width:668px; padding:5px 15px; position:relative; }
+#mapPop .top span{color:#fff; font-size:15px; vertical-align:middle; display:inline-block; }
+#mapPop .top .icon{width:17px; height:25px; background:url('../images/013/map_title_icon.png') 0 0 no-repeat; background-size:100%; margin-top:-2px; }
+#mapPop .top .text{vertical-align:top; margin-top:5px; margin-left:5px; }
+#mapPop .top .close{position:absolute; width:20px; height:21px; background:url('../images/013/map_pop_close.png') 0 0 no-repeat; background-size:100%; top:8px; right:15px; }
+#mapPop .body{border:3px solid #3d3d3d; }
+#mapPop .body .imageBox{width:100%; height:368px; background:url('../images/013/map.png') 0 0 no-repeat; background-size:100%; }
+
+/**/
+.blankQuiz span{
+	font-family:"NanumMyeongjo"; 
+}
+.quizBox .quizTextBox li{
+	font-family:"NanumMyeongjo"; 
+	
+}
+
+/*정답팝업*/
+
+.toastPop .outbox				{
+    max-width:500px; 
+    min-width:350px;
+}
+
+.toastPop .innerbox				{
+    font-family:"NanumSquare" !important;
+    font-weight:normal; 
+    line-height: 30px;
+    text-indent: 0px !important;
+}
+
+.toastPop .angle				{
+	position:absolute; 
+	top:-10px; 
+	left:25px; 
+}
+.toastPop .angle:before			{
+	content:''; display:block; position:absolute; 
+	top:-109px; 
+	border:15px solid transparent; 
+	border-bottom:15px solid #199788; 
+}
+.toastPop .angle:after			{
+	content:''; display:block; position:absolute; 
+	top:-103px; 
+	border:15px solid transparent;
+	border-bottom:15px solid #fff; 
+}
+
+.toastPop .angle02				{
+	position:absolute; 
+	top:85px; 
+	left:25px; 
+}
+.toastPop .angle02:before			{
+	content:''; display:block; position:absolute; 
+	top:-110px; 
+	border:15px solid transparent; 
+	border-bottom:15px solid #199788; 
+}
+.toastPop .angle02:after			{
+	content:''; display:block; position:absolute; 
+	top:-104px; 
+	border:15px solid transparent;
+	border-bottom:15px solid #fff; 
+}
+
+
+.toastPop .closeBtn				{
+	width:15px; height:15px; 
+	position:absolute; 
+	right:5px; bottom:5px; 
+	background:url('../images/common/toast_pop_close.png') 0 0 no-repeat; 
+	background-size:cover; 
+}
+
+.an1{
+    vertical-align:top;
+}
+
+.innerbox .ans{
+    width:80%;
+    display:inline-block;
+}
+
+.input_wrap .ansText{
+	font-family: 'NanumBarunGothic' !important;
+}
+
+
+
+.popHeader{
+    position:relative;
+    width:728px;
+    height:54px;
+    background:url('../images/common/video/videopop_header.png');
+    background-size:100% 100%;
+    margin:0 0 16px -9px;
+    padding:12px 0 0 30px;
+}
+
+.popHeader .title{
+    display:inline-block;
+    font-size:28px;
+    color:#ffea00;
+    margin-right:41px;
+}
+
+.quizBox{margin-top:20px;}
+
+.quizBox .quizText .text{font-weight:500;}
+
+.btn_wrap{right:20px;}

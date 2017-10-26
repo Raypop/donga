@@ -1,0 +1,266 @@
+video {position:absolute; width:100%; height:100%; }
+
+/* 위젯 비디오 */
+
+.widget video {background-color:#fff; }
+
+.widget.video .videoPopBtn{display:inline-block; width:85px; height:30px; font-size:12px; color:#00adff; text-decoration:none; background-image:url('../images/common/widget_videobtn.png'); background-size:100% 100%; cursor:pointer; padding:13px 0 0 33px; margin:4px 0 0 25px; }
+
+#w_videoContainer {position:relative; border:1px solid transparent; transition:all 0.5s; }
+
+#w_videoContainer:hover {border-color:#9e9e9e; }
+
+#w_videoContainer .w_close {position:absolute; right:3px; top:3px; width:20px; height:20px; opacity:0; background-image:url('../images/common/pop_closebtn.png'); background-size: 100% 100%; z-index:1;}
+
+#w_videoContainer .w_close:active {background-image:url('../images/common/pop_closebtn_o.png'); background-size: 100% 100%;}
+
+#w_videoContainer .playCover {position:absolute; top:0; left:0; right:0; bottom:0; background:url('../images/common/playbtn.png') 117px 142px no-repeat;background-size:60px 61px; cursor:pointer; z-index:1;}
+#w_videoContainer:hover .playCover,
+#w_videoContainer:active .playCover,
+#w_videoContainer:focus .playCover,
+#w_videoContainer.on .playCover {display: none;}
+
+/*
+#w_videoContainer .videoController {position:absolute; bottom:0; width:100%; height:22px; background-color:rgba(154, 154, 154, .9); border-radius:2px 2px 0 0; opacity:0; transition:all 0.5s; }
+
+#w_videoContainer:hover .videoController {opacity:1; }
+
+#w_videoContainer .videoController:after {content:''; display:block; clear:both; }
+
+#w_videoContainer .videoController > div {float:left; }
+
+#w_videoContainer .videoController .btn {width:10%; height:100%; }
+
+#w_videoContainer .videoController .btn button {width:100%; height:100%; background-position:50% 50%; background-repeat:no-repeat; background-size:8px; }
+
+#w_videoContainer .videoController .progressGroup {width:50%; height:100%; cursor:pointer; padding:0 6px; }
+
+#w_videoContainer .videoController .progressGroup .progress {display:inline-block; position:relative; width:100%; height:1px; background-color:#fff; margin-top:11px; }
+
+#w_videoContainer .videoController .progressGroup .progress .progress-bar {position:absolute; top:0; left:0; width:0; height:1px; background-color:#ffa11b; }
+
+#w_videoContainer .videoController .progressGroup .progress .progress-bar .jog {position:absolute; top:-1px; right:-5px; width:9px; height:3px; border-radius:2px; background-color:#fff; }
+
+#w_videoContainer .videoController .bwdBtn .bwd {background-image:url('../images/common/video/bwd_s.png'); }
+
+#w_videoContainer .videoController .playPauseBtn .play {background-image:url('../images/common/video/play_s.png'); }
+
+#w_videoContainer .videoController .playPauseBtn .pause {display:none; background-image:url('../images/common/video/play_s_on.png'); }
+
+#w_videoContainer .videoController .stopBtn .stop {background-image:url('../images/common/video/stop_s.png'); }
+
+#w_videoContainer .videoController .fwdBtn .fwd {background-image:url('../images/common/video/fwd_s.png'); }
+
+#w_videoContainer .videoController .fullBtn .full {background-image:url('../images/common/video/full_s.png'); }
+
+#w_videoContainer .videoController .bwdBtn .bwd:hover {background-image:url('../images/common/video/bwd_s_on.png'); }
+
+#w_videoContainer .videoController .playPauseBtn .play:hover,
+#w_videoContainer .videoController .playPauseBtn .play.on {background-image:url('../images/common/video/play_s_on.png'); }
+
+#w_videoContainer .videoController .playPauseBtn .pause:hover {background-image:url('../images/common/video/play_s_on.png'); }
+
+#w_videoContainer .videoController .stopBtn .stop:hover {background-image:url('../images/common/video/stop_s_on.png'); }
+
+#w_videoContainer .videoController .fwdBtn .fwd:hover {background-image:url('../images/common/video/fwd_s_on.png'); }
+
+#w_videoContainer .videoController .fullBtn .full:hover {background-image:url('../images/common/video/full_s_on.png'); }
+
+#w_videoContainer .playCover {position:absolute; top:0; left:0; right:0; bottom:0; background:url('../images/common/video/play_cover.png') 50% 50% / 52px no-repeat; cursor:pointer; }
+*/
+
+/* 풀 팝업 비디오 */
+
+.full {position:relative; top:0; left:0; width:768px; height:1024px; padding:43px 23px 0 24px; margin:0 auto;display:none;z-index: 999;}
+
+.full.videoPop {background:url('../images/common/full_bg.png') 0 0 no-repeat; }
+
+.full video {background-color:#000; }
+
+.full.videoPop .videoHeader {position:relative; width:728px; height:54px; background-image:url('../images/common/video/videopop_header.png'); background-size:100% 100%; margin:0 0 16px -9px; padding:12px 0 0 30px; }
+
+.full.videoPop .videoHeader .title {display:inline-block; font-size:28px; color:#ffea00; margin-right:41px; }
+
+.full.videoPop .videoHeader .titleText {font-size:28px; color:#22410a; letter-spacing:-2px; }
+
+.full.videoPop .videoHeader .close {position:absolute; top:calc(50% - 11px); right:21px; width:22px; height:22px; background-image:url('../images/common/video/videopop_close.png'); background-size:100% 100%; }
+
+#videoContainer {position:relative; width:720px; height:459px; }
+
+#videoContainer:before {content:''; position:absolute; left:0; bottom:-31px; width:722px; height:61px; background-image:url('../images/common/video/video_shadow.png'); background-size:100% 100%; }
+
+#videoContainer .videoWrap {position:relative; left:1px; width:calc(100% - 2px); height:405px; border:2px solid #199788; }
+
+#videoContainer .videoController {position:absolute; bottom:0; width:100%; height:54px; padding:0 0 0 35px; background-color:#199788; border-radius:0 0 12px 12px; }
+
+#videoContainer .videoController:after {content:''; display:block; clear:both; }
+
+#videoContainer .videoController > div {float:left; height:100%; }
+
+#videoContainer .videoController .btn {width:48px; }
+
+#videoContainer .videoController .btn.noteBtn {margin-left:10px; }
+
+#videoContainer .videoController .btn > button {width:100%; height:100%; background-size:22px; background-position:50% 50%; background-repeat:no-repeat; }
+
+#videoContainer .videoController .progressGroup {width:289px; margin-left:59px; margin-right:20px; cursor:pointer; }
+
+#videoContainer .videoController .progressGroup .progress {display:inline-block; position:relative; width:100%; height:3px; background-color:rgba(255, 255, 255, .52); margin-top:24px; }
+
+#videoContainer .videoController .progressGroup .progress .progress-bar {position:absolute; top:0; left:0; width:0; height:3px; background-color:#ffa11b; }
+
+#videoContainer .videoController .progressGroup .progress .progress-bar .jog {position:absolute; top:-4px; right:-15px; width:29px; height:10px; border-radius:10px; background-color:#fff; }
+
+#videoContainer .videoController .bwdBtn .bwd {background-image:url('../images/common/video/bwd.png'); }
+
+#videoContainer .videoController .playPauseBtn .play {background-image:url('../images/common/video/play.png'); }
+
+#videoContainer .videoController .playPauseBtn .pause {display:none; background-image:url('../images/common/video/play_on.png'); }
+
+#videoContainer .videoController .stopBtn .stop {background-image:url('../images/common/video/stop.png'); }
+
+#videoContainer .videoController .fwdBtn .fwd {background-image:url('../images/common/video/fwd.png'); }
+
+#videoContainer .videoController .fullBtn .full {background-image:url('../images/common/video/full.png'); background-size:20px; }
+
+#videoContainer .videoController .noteBtn .note {background-image:url('../images/common/video/note.png'); }
+
+#videoContainer .videoController .bwdBtn .bwd:hover {background-image:url('../images/common/video/bwd_on.png'); }
+
+#videoContainer .videoController .playPauseBtn .play:hover,
+#videoContainer .videoController .playPauseBtn .play.on {background-image:url('../images/common/video/play_on.png'); }
+
+#videoContainer .videoController .playPauseBtn .pause:hover {background-image:url('../images/common/video/play_on.png'); }
+
+#videoContainer .videoController .stopBtn .stop:hover {background-image:url('../images/common/video/stop_on.png'); }
+
+#videoContainer .videoController .fwdBtn .fwd:hover {background-image:url('../images/common/video/fwd_on.png'); }
+
+#videoContainer .videoController .fullBtn .full:hover,
+#videoContainer .videoController .fullBtn .full.on {background-image:url('../images/common/video/full_on.png'); }
+
+#videoContainer .videoController .noteBtn .note:hover,
+#videoContainer .videoController .noteBtn .note.on {background-image:url('../images/common/video/note_on.png'); }
+
+
+
+
+/* 레이어팝업 */
+
+body > div {
+    position:absolute!important;
+    top:0px;left:0px;
+}
+
+.playbtn{cursor:pointer;}
+
+.widget.video{
+    left: 15px;
+    width: 173px;
+}
+
+.widget.video .icon{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    width: 13px;
+    height: 13px;
+    background: url('../images/common/subtexticon.png') 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.widget.video .content{
+    position: relative;
+    width: 155px;
+    text-align: justify;
+    padding: 9px 0 0 45px;
+}
+
+.widget.video .content span.fwb{
+    display: inline-block;
+    margin-right: 20px;
+    letter-spacing: 0;
+}
+
+.widget.video .videoPopBtn{
+    display: inline-block;
+    width: 85px;
+    height: 30px;
+    font-size: 12px;
+    color: #00adff;
+    text-decoration: none;
+    background-image: url('../images/common/widget_videobtn.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+    padding: 13px 0 0 33px;
+    margin: 7px 0 0 43px!important;
+}
+
+/* full popup*/
+
+.expBox {
+    width: 721px;
+    height: 400px;
+    background-image: url('../images/common/exp_box.png');
+    background-size: 100% 100%;
+    padding: 37px 38px;
+    margin-top: 28px;
+}
+
+.expBox .exp_content {
+    position: relative;
+    padding-left: 75px;
+}
+
+.expBox .exp_content .talker {
+    position: absolute;
+    left: 0;
+    font-size: 18px;
+    color: #5da327;
+}
+
+.expBox .exp_content .title {
+    font-size: 19px;
+    color: #199788;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.expBox .exp_content p {
+    font-size: 18px;
+    text-indent: 19px;
+    letter-spacing: -1.5px;
+    line-height: 1.6;
+}
+
+/*팝업*/
+
+.checkPop.chk04{
+    bottom:375px;
+    min-height: auto;
+    height: auto;
+}
+
+.checkPop.chk04 .quizbox{
+    margin-bottom: 70px;
+}
+
+
+.toastPop.toast09 .outbox{
+    min-width:470px;
+    max-width:510px
+}
+
+.videoHeader .close_btn{
+    background:url(../images/common/video_close.png) no-repeat 0 0/100% 100%;
+    width:22px;
+    height:22px;
+    margin-right:20px;
+    float:right;
+    margin-top:5px;
+    cursor:pointer;
+}
+
+.letter-s{
+    letter-spacing: -11px;
+}

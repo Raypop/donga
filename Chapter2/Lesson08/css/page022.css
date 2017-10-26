@@ -1,0 +1,488 @@
+
+
+button{
+    border:none;
+}
+
+#P022 #top{
+    position: relative;
+    z-index: 2;
+}
+.Page #top .titleBox{
+    margin-top:15px;
+    padding: 13px 0 11px 29px;
+    position: relative;
+    border: 2px solid #c7cacb;
+    border-radius: 20px;
+    float: right;
+    width: 630px;
+    height: 66px;
+}
+
+.Page #top .titleBox .num{
+    width: 94px;
+    height: 115px;
+    background: url('../images/022/titleNumbg.png') 0 0 no-repeat;
+    background-size:100% 100%;
+    text-align: center;
+    color : #d9620c;
+    font-size: 45px;
+    position: absolute;
+    top: -22px;
+    left: -64px;
+    padding-top: 21px;
+    padding-left: 7px;
+    letter-spacing: 5px;
+}
+
+.Page #top .titleBox .text{
+    font-size: 30px;
+    font-weight: bold;
+    color:#242424;
+    letter-spacing: -1.1px;
+    margin-left: 20px;
+}
+
+.Page #top .buttons{
+    margin-top: 20px;
+    text-align:right;
+    z-index:2;
+    margin:25px 5px 26px 0;
+    position:relative;
+}
+
+.Page #top .buttons button{
+    display: inline-block;
+    width: 111px;
+    height: 43px;
+    background: url('../images/common/button01.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    margin-left: 5px;
+    font-size: 0px;
+    letter-spacing: -1.1px;
+    color: #412705;
+}
+
+.Page #top .buttons button.layerPopBtn1{
+    background: url('../images/common/button01.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.Page #top .buttons button.layerPopBtn2{
+    background: url('../images/common/button02.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+}
+
+.Page #top .buttons button:first-child{
+    margin-left: 5px;
+}
+
+#P022 #body{
+    margin-top:372px;
+}
+
+
+.Page #bottom .pageNum{
+    height: 40px;
+}
+
+
+.Page.leftPage{
+    background:url(../images/022/bot_bg.png) no-repeat 0 730px;
+    background-size:100% 307px;
+}
+
+#P022 #layerPop1{
+    top: 150px;
+    right: 60px;
+}
+
+#P022 #layerPop1:before{
+    left: 460px;
+}
+
+#P022 #layerPop2{
+    top: 150px;
+    right: 5px;
+    width:92%;
+}
+
+#P022 #layerPop2:before{
+    left: 580px;
+}
+
+#P022 #layerPop1 ul li{
+    padding-left: 20px;
+    position: relative;
+    margin-top:15px;
+}
+
+#P022 #layerPop1 ul li:first-child{
+    margin-top: 0;
+}
+
+#P022 #layerPop1 ul li:before{
+    content: '';
+    display: block;
+    width: 26px;
+    height: 27px;
+    background:url('../images/common/icon05.png') 0 0 no-repeat;
+    background-size:100%;
+    position: absolute;
+    top: -6px;
+    left: -15px;
+}
+
+#P022 #layerPop2 ul{
+    position: relative;
+    margin-left: 20px;
+}
+
+#P022 #layerPop2 ul li{
+    padding-left: 25px;
+    position: relative;
+    float: left;
+}
+#P022 #layerPop2 ul li button{
+    font-size: 15.5px;
+}
+
+#P022 #layerPop2 ul:before{
+    content: '';
+    display: block;
+    width: 22px;
+    height: 26px;
+    background:url('../images/common/icon07.png') 0 0 no-repeat;
+    background-size:100%;
+    position: absolute;
+    top: -6px;
+    left: -15px;
+}
+
+#P022 #layerPop2 ul li:before{
+    content: '|';
+    display: block;
+    width: 22px;
+    height: 26px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0px;
+    left: 12px;
+}
+
+#P022 #layerPop2 ul li:first-child:before{
+    content: '';
+}
+
+/* P022 추가 */
+
+#P022 .mal {
+    position: absolute;
+    letter-spacing: -1px;
+    text-align: center;
+    background-size: 100% 100%;
+}
+
+#P022 .thinkOpenBox {
+    background-image: url('../images/022/top_bg.png');
+    background-size: 100% 100%;
+    padding:10px 41px 10px 41px;
+    margin-left:30px;
+    position:absolute;
+    left:-65px;
+    width:768px;
+    top:120px;
+}
+
+#P022 .thinkOpenBox .thinkOpenTitle {
+    margin-bottom: 15px;
+}
+
+#P022 .thinkOpenBox .thinkOpenTitle .icon {
+    display: inline-block;
+    width: 23px;
+    height: 28px;
+    background-image: url('../images/common/thinkicon.png');
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+#P022 .thinkOpenBox .thinkOpenTitle .thinkText {
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #f75b31;
+    vertical-align: middle;
+    position:relative;
+    top:4px;
+    left:-7px;
+}
+
+#P022 .thinkOpenBox .thinkContent {
+    position: relative;
+}
+
+#P022 .thinkOpenBox .thinkContent .bgCon {
+    position: relative;
+    width: 559px;
+    height: 154px;
+    background-image: url('../images/022/item01.png');
+    background-size: 100% 100%;
+    margin: 15px 0 9px 80px;
+}
+
+
+#P022 .thinkOpenBox .thinkContent .bgCon .mal1 {
+    top: -35px;
+    left: 41px;
+    width: 100px;
+    height: 68px;
+    background-image: url('../images/022/bg_mal1.png');
+    padding: 5px 0px;
+    font-size:13px;
+}
+
+#P022 .thinkOpenBox .thinkContent .bgCon .mal2 {
+    top: 120px;
+    left: 48px;
+    width: 80px;
+    height: 45px;
+    background-image: url('../images/022/bg_mal2.png');
+    padding: 4px 11px 0 0px;
+    font-size:13px;
+}
+
+#P022 .thinkOpenBox .thinkContent .bgCon .mal3 {
+    top: -25px;
+    left: 202px;
+    width: 100px;
+    height: 72px;
+    background-image: url('../images/022/bg_mal3.png');
+    padding: 4px;
+    font-size:13px;
+}
+
+#P022 .thinkOpenBox .thinkContent .bgCon .mal4 {
+    top: -12px;
+    left: 303px;
+    width: 90px;
+    height: 57px;
+    background-image: url('../images/022/bg_mal4.png');
+    padding: 9px;
+    font-size:13px;
+}
+
+#P022 .thinkOpenBox .thinkContent .bgCon .mal5 {
+    top: 32px;
+    left: 384px;
+    width: 80px;
+    height: 35px;
+    background-image: url('../images/022/bg_mal5.png');
+    padding: 5px;
+    font-size:13px;
+}
+
+#P022 .thinkOpenBox .thinkContent .bgCon .mal6 {
+    top: 123px;
+    left: 415px;
+    width: 112px;
+    height: 44px;
+    background-image: url('../images/022/bg_mal6.png');
+    padding: 4px;
+    font-size:13px;
+}
+
+#P022 .content_bottom .bgCon .mal7 {
+    top: -50px;
+    left: 0px;
+    width: 92px;
+    height: 54px;
+    background-image: url('../images/022/bg_mal7.png');
+    padding: 3px;
+}
+
+#P022 .content_bottom .bgCon .mal8 {
+    top: 28px;
+    left: 80px;
+    width: 100px;
+    height: 70px;
+    background-image: url('../images/022/bg_mal8.png');
+    padding-top: 17px;
+}
+
+#P022 .content_bottom .bgCon .mal9 {
+    top: 30px;
+    left: -115px;
+    width: 110px;
+    height: 75px;
+    background-image: url('../images/022/bg_mal9.png');
+    padding-top: 8px;
+}
+
+#P022 .content_bottom .bgCon .bwdt{
+    position: absolute;
+    border-top:1px dotted #eee;
+    border-right:1px dotted #eee;
+    width: 40px;
+    height: 11px;
+    top: 25px;
+    left: 146px;
+}
+#P022 .content_bottom .bgCon .bwdl{
+    position: absolute;
+    border-left: 1px dotted #eee;
+    border-bottom:1px dotted #eee;
+    width: 62px;
+    height: 44px;
+    top: 96px;
+
+}#P022 .content_bottom .bgCon .bwdr{
+    position: absolute;
+    border-right: 1px dotted #eee;
+    border-bottom:1px dotted #eee;
+    width: 60px;
+    height: 42px;
+    top: 98px;
+    left: 357px;
+}
+
+
+#P022 .thinkOpenBox .thinkContent .blankQuiz {
+    position:relative;
+    margin-left: 30px;
+}
+
+#P022 .thinkOpenBox .thinkContent .blankQuiz.q2 {
+    margin-bottom: 0;
+}
+
+#P022 .thinkOpenBox .thinkContent .blankQuiz .num {
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    background-image: url('../images/022/think_num.png');
+    background-size: 100% 100%;
+    margin-right: 2px;
+}
+
+#P022 .thinkOpenBox .thinkContent .blankQuiz .text {
+    color: #3c4552;
+    vertical-align: middle;
+    letter-spacing: -0.3px;
+    font-size: 14px;
+}
+
+#P022 .thinkOpenBox .thinkContent .blankQuiz .quizInputBox {
+    display: block;
+    width: 613px;
+    height: 22px;
+    padding-left: 27px;
+    margin-top: 8px;
+}
+
+#P022 .thinkOpenBox .thinkContent .blankQuiz .quizInputBox input {
+    width: 614px;
+    height: 100%;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.21);
+}
+
+#P022 .thinkOpenBox .anscheckBtn {
+    top:22px;
+    right:10px;
+}
+
+
+#P022 .thinkOpenBox .anscheckBtn.q1 {
+    bottom: 54px;
+}
+
+#P022 .thinkOpenBox .anscheckBtn.q2 {
+    bottom: -3px;
+}
+
+#P022 .content_bottom .mal {
+    letter-spacing: -0.5px;
+    font-size: 14px;
+}
+
+#P022 .content_bottom .bgCon {
+    position: relative;
+    width: 518px;
+    height: 182px;
+    margin: 22px 0 0 8px;
+}
+
+#P022 .content_bottom .bgCon .char{
+    background:url(../images/022/char1.png) no-repeat 0 0 ;
+    background-size:100% 100%;
+    width:83px;
+    height:163px;
+    margin:0 auto;
+    position:relative;
+    top:75px;
+    left:-40px;
+}
+
+#P022 .content_bottom .bgCon div.bt_txt{
+    color:#fff;
+    font-size:10px;
+}
+
+#P022 .content_bottom .bgCon div.bt_txt.box1{
+    position:absolute;
+    top:19px;
+    left:-10px;
+    letter-spacing:-0.4px;
+}
+#P022 .content_bottom .bgCon div.bt_txt.box2{
+    position:absolute;
+    top:67px;
+    left:-45px;
+    letter-spacing:-0.4px;
+    line-height: 13px;
+}
+#P022 .content_bottom .bgCon div.bt_txt.box3{
+    position:absolute;
+    top:69px;
+    left:352px;
+    letter-spacing:-0.4px;
+    line-height: 13px;
+}
+
+
+#P022 .widget.study2 {
+    width: 128px;
+    left: 44px;
+}
+
+.sq_box{
+    width:9px;
+    height:9px;
+    border:1px solid #2f3132;
+    display:inline-block;
+    margin-left:2px;
+}
+
+/*toastPop*/
+
+.innerbox span.inner_color{
+    color: #ff6600;
+}
+
+.quizBox{
+    margin-left:-30px;
+    margin-top:32px;
+}
+
+.quizBox:last-child{
+    margin-top:-13px;
+}
+
+.widget.study2 .icon{
+    background: url(../images/common/subtexticon4.png) 0 0 no-repeat;
+    background-size: 100%;
+}

@@ -1,0 +1,1373 @@
+@charset "utf-8";
+
+.ns{font-family:"NanumSquare" !important; }
+.nm{font-family:"NanumMyeongjo" !important; }
+.nbg{font-family:"NanumBarunGothic" !important; }
+.np{font-family:"NanumPen" !important; }
+.bmh{font-family:"BmHanna" !important; }
+.gy{font-family:"Goyang" !important; }
+.fwb{font-weight:700; }
+.fweb{font-weight:900; }
+
+
+.ir{display:block;}
+.cb{clear:both; }
+.ti0{text-indent:0 !important; }
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; } input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; } input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; } input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
+/* ------------------------------------------------------------------------------------------------------------- */
+body	{margin:0; padding:0;}
+
+.Page{width:768px; height:1024px; margin:0; overflow:hidden; background:#fff; position:relative; padding:58px 35px 0px 35px;} /* 기본 여백 지정 */
+
+/* 학습 영역 지정 본학습 크기 530px */
+.Page.leftPage .content_box			{padding-left:168px;}
+.Page.rightPage .content_box		{padding-right:168px;}
+/* .Page.leftPage			{padding:58px 35px 0px 203px;}
+/* .Page.rightPage			{padding:58px 203px 0px 35px;} 본학습 크기 530px */
+
+.body-bottom				{position:absolute; display:inline-block; margin-left:-35px; width:768px; margin-top:90px; padding:0 41px; background:#fafafa; bottom:0px;} /* body-bottom 영역 지정 */
+
+/* 중 주제 폰트 - 초록 텍스트 */
+.Page .pageTitle		{margin-bottom:10px;}
+.Page .pageTitle .icon	{
+    display:inline-block;
+    width:25px;
+    height:18px;
+    background:url('../images/common/icon06-.png') 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-right:5px;
+    vertical-align:top;
+    line-height:20px;
+}
+.Page .content_text .sub_txt        {
+    text-indent:0 !important;
+}
+.Page .pageTitle .text	{
+    font-family:"NanumBarunGothic";
+    font-weight:bold;
+    color:#428313; font-size:16.5px; letter-spacing:-0.5px;}
+
+
+/* 기본 폰트 키그 16px; 장평, 자간 0, */
+
+.Page .content_text					{position:relative; display:inline-block; letter-spacing:-0.5px;}
+
+.Page .content_text p				{
+    font-size:16px;
+    font-weight:700;
+    line-height:27px;
+    color:#444444;
+    text-align:justify;
+    text-indent: 15px;
+}
+ /* 초록색 텍스트 */
+.Page .content_text .sub_txt .text	{
+    font-family:"NanumBarunGothic"; color:#ee8032;
+    font-size:15.5px;
+    font-weight:700;
+    line-height:25px;
+    margin-right:31px;
+}
+.Page .content_text .point_txt		{font-family:"NanumBarunGothic"; font-size:17px; font-weight:900; color:#333333;} /* 교과서에는 나눔고딕이지만 행간이 무너지기 때문에 우선 나눔명조로 하며 - 추후 고객사 요청시 고통css으로 수정함 */
+/* 본문 시작 위치 정렬 */
+
+
+/* 주요 용어 */
+.hword					{
+    font-weight:900;
+    font-family:"NanumBarunGothic";
+    font-size:15.5px;
+    color:#428313;
+    display:inline-block;
+    position:relative;
+    text-indent:0;
+     }
+.hword:before			{
+    content:'*'; color:#428313; position:absolute; top:-12px; left:2px; text-indent:0; }
+
+.pointPop				{font-family:"NanumSquare"; font-size:14px; color:#2b271c;} /* 핵심 질문 팝업 폰트 */
+/* 핵심 질문 팝업 폰트 */
+
+
+/* 퀴즈 박스 */
+.quizBox{position:relative;}
+.quizBox .quizText span{display:inline-block; vertical-align:top; }
+.quizBox .quizText .num{font-family:"NanumBarunGothic"; font-weight:700; color:#f59000; font-size:25px;}
+.quizBox .quizText .text{
+    font-family:"NanumBarunGothic";
+    color:#333333; font-size:15px;
+    font-weight:700; width:90%;
+    line-height:1.7;
+    margin-left:5px;
+    margin-top:1px;
+}
+
+
+/* 보기 */
+.blankQuiz{
+    margin-top:20px;
+    margin-left: 20px;
+}
+.blankQuiz span{
+    /*font-family:'NanumBarunGothic'; */
+    color :#333333;
+    font-size:15px;
+    vertical-align:middle; }
+.blankQuiz input{
+    font-family:'NanumBarunGothic'; 
+    border:1px solid #eaeaea; 
+    height:25px; 
+    margin-left:2px; 
+    margin-top:-2px; 
+    font-size:13px; 
+    vertical-align:top; 
+    padding:0 5px; 
+}
+.blankQuiz input.check{color:#f75b32; }
+
+.blankQuiz .quizInputBox{position: relative;display: inline-block;}
+.blankQuiz .quizInputBox .quizInputAnswer{display: none;}
+.blankQuiz .quizInputBox.check .quizInputAnswer{
+    position: absolute;display: block;
+    top: 24px;
+    left: 7px;
+    font-family: 'NanumBarunGothic';
+    color: #ff6600;
+}
+
+.quizBox .quizTextBox{
+    display:inline-block;
+    width:640px; background:#fff;
+    padding:20px; border-radius:15px;
+    box-shadow:1px 1px 1px #999; margin-top:15px;
+}
+.quizBox .quizTextBox ul{margin-left:20px;}
+.quizBox .quizTextBox li{
+    /*font-family:"NanumBarunGothic"; */
+    color:#444444;
+    margin-top:10px;
+    list-style-type:disc;
+    font-size: 15px;
+}
+.quizBox .quizTextBox li:first-child{margin-top:0; }
+
+
+
+/* 본학습 - 이미지 양쪽 배치 - 530px */
+.imageColums2							{position:relative; display:inline-block; margin-bottom:25px}
+.imageColums2 .imagebox					{float:left; width:250px; margin-left:30px;}
+.imageColums2 .imagebox:first-child		{margin-left:0; }
+.imageColums2 .imagebox .imageline		{}
+.imageColums2 .imagebox img				{width:100%; }
+.imageColums2 .imagebox .textbox		{font-family:"NanumBarunGothic"; font-weight:700; color:#555555; margin-top:5px;}
+.imageColums2 .imagebox .textbox > span	{font-size:12px; display:inline-block; vertical-align:top; line-height:1.5; }
+.imageColums2 .imagebox .textbox span.bt{font-family:"NanumBarunGothic"; font-weight:900; color:#444444; margin-right:16px; }
+.imageColums2 .imagebox .textbox .icon	{width:13px; height:13px; background:url(../images/common/subtexticon.png) 0 0 no-repeat; background-size:100%; margin-right:3px; margin-top:1px; }
+.imageColums2 .imagebox .textbox .text	{width:225px; text-align: justify;}
+.imageColums2:after						{content:''; display:block; clear:both; }
+
+
+/* 위젯 */
+.Page.leftPage .widget			{left:-168px;}
+.Page.rightPage .widget			{top:0px; left:560px;}
+.widget							{position:absolute; width:138px; font-size:13px; color:#444444;}
+.widget .title					{font-family:"NanumBarunGothic"; font-weight:900; color:#f75b31;}
+.widget.study .title .icon		{display:inline-block; width:18px; height:22px; background:url('../images/common/icon08.png') 0 0 no-repeat; background-size:100%;
+								vertical-align:top; margin-top:-1px; margin-right:1px; }
+.widget .content				{
+    font-family:"NanumBarunGothic";
+    padding-left:23px;
+    /*padding-top:4px; */
+    font-size:12px;
+    line-height: 1.6;
+}
+.widget.findmap .title .icon	{display:inline-block; width:24px; height:22px; background:url('../images/common/icon09.png') 0 0 no-repeat; background-size:100%;
+								vertical-align:top; margin-top:-3px; margin-right:0; margin-left:-4px; }
+.widget.check div				{width:126px; height:25px; font-size:13px; color:#fff; background:url(../images/common/widget_check.png) 0 0 no-repeat; background-size:100%;
+								padding-left:6px; letter-spacing:6.7px; padding-top:3px; cursor:pointer; }
+
+.widget.study2 .icon			{
+    position:absolute; top:2px; left:-4px; 
+    width:13px; height:13px; 
+    background:url(../images/common/subtexticon2-.png) 0 0 no-repeat; 
+    background-size:100%; 
+}
+.widget.study2 .content			{width:162px; font-size:11px; line-height:1.6; padding-left:15px; padding-top:0;}
+
+
+
+/* 단어 팝업 */
+.toast							{
+    display:inline-block; position:relative; }
+.toastPop						{
+    display:none;
+    position:absolute; top:0; left:0; margin-top:20px;
+    -webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    border-radius:10px;}
+.toastPop .outbox				{
+    position:relative;
+    background-color:#199788;
+    border-radius:10px;
+    padding:5px 5px 25px;
+    max-width:400px;
+    min-width:350px;
+}
+
+.toastPop .innerbox				{
+    background-color: #fff;
+    width:100%;
+    height:100%;
+    padding:10px 15px 10px 15px;
+    border-radius:8px;
+    color:#333;
+    font-family:"NanumBarunGothic"!important;
+    font-weight:normal;
+    font-size:15px;
+    letter-spacing:0;
+    text-indent: 15px;
+    line-height:27px;
+    text-align:left;
+}
+.toastPop .innerbox.in0{
+    text-indent:0!important;
+}
+
+.toastPop .innerbox.tip{
+    background:#fff url(../images/common/poptip.png) 13px 8px no-repeat;
+    background-size:25px 30px;
+}
+
+.innerbox span.inner_color{color:#ff6600;font-family:'NanumBarunGothic';}
+.toastPop .angle				{position:absolute; top:-11px; left:25px; }
+.toastPop .angle:before			{
+    content:''; display:block;
+    position:absolute;
+    top:-15px;
+    border:15px solid transparent; border-bottom:16px solid #199788; }
+.toastPop .angle:after			{
+    content:'';
+    display:block;
+    position:absolute;
+    top:-10px;
+    border:15px solid transparent; border-bottom:15px solid #fff; }
+.toastPop .closeBtn				{width:15px; height:15px; position:absolute; right:5px; bottom:5px; background:url('../images/common/toast_pop_close.png') 0 0 no-repeat; background-size:cover; }
+
+
+
+/* 체크 팝업 */
+.checkPop			{
+    width:530px;
+    min-height:350px;
+    border:3px solid #199788;
+    background:#ffffff;
+    border-radius:12px;
+    padding:0px 5px;
+    position:absolute;
+    bottom:75px;
+    left:203px;
+    -moz-box-shadow:2px 2px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+    -webkit-border-top-left-radius:0px 0px;
+     -moz-border-top-left-radius:0px 0px;
+     display: none;
+
+ }
+.checkPop .title	{
+    background: url(../images/common/widget_check-.png) 0 0 no-repeat;
+    background-size: 100%;
+    width:125px;
+    height:40px;
+    font-family:"NanumBarunGothic";
+    font-size:20px;
+    font-weight:700;
+    color:#fff;
+    padding:2px 0px 0px 8px;
+    line-height:32px;
+    letter-spacing: 12px;
+    margin-left: 10px;
+    margin-top: 25px;
+    white-space: nowrap;
+}
+
+.checkPop .quizbox	{
+    margin:35px 40px;
+    font-family:"NanumBarunGothic";
+    font-size:16px;
+    font-weight:700;
+    line-height:25px;
+    color:#444444;
+    margin-bottom:60px;
+}
+.checkPop .quizbox .quiztext span		{display:inline-block; width:100%; vertical-align:top; font-weight: 500;}
+.checkPop .quizbox .quiztext span > span		{display:inline-block; width:auto; vertical-align:top; font-weight: 500;position: relative;}
+.checkPop .quizbox .quiztext span.ans{
+    position: absolute;width: 100%;text-align: center;color:red;font-family: 'NanumBarunGothic';display: block;font-size:14px
+    ;}
+.checkPop .quizbox .quiztext span.num	{position:absolute; display:inline-block; margin-left:-20px; width: 20px;font-weight:700;}
+.checkPop .quizbox .checkbox			{
+    margin-top:15px;
+    margin-bottom:60px;
+}
+.checkPop .quizbox .checkbox > div				{float:left; margin-left:40px; }
+.checkPop .quizbox .checkbox > div:first-child	{margin-left:130px; }
+
+.checkPop .quizbox .checkbox > div input		{display:none; }
+.checkPop .quizbox .checkbox div label			{cursor:pointer; }
+.checkPop .quizbox .checkbox div span			{display:inline-block; vertical-align:middle; }
+.checkPop .quizbox .checkbox div .box			{display:inline-block; width:25px; height:25px; border-radius:5px; border:2px solid #888; margin-left:10px; }
+.checkPop .quizbox .checkbox .checko .icon		{width:27px; height:27px; display:inline-block; background:url('../images/common/quiz_o_icon.png') 0 0 no-repeat; background-size:100%; }
+.checkPop .quizbox .checkbox .checkx .icon		{width:25px; height:25px; display:inline-block; background:url('../images/common/quiz_x_icon.png') 0 0 no-repeat; background-size:100%; }
+.checkPop .quizbox .checkbox:after				{content:""; display:block; clear:both; }
+.checkPop .quizbox .checkbox .box				{position:relative; }
+.checkPop .quizbox .checkbox input[type="radio"]:checked+label .box:after
+	{content:''; display:block; position:absolute; width:40px; height:35px; background:url('../images/common/quiz_ox_check.png') 0 0 no-repeat; background-size:100%; top:-18px; }
+
+.checkPop .quizbox.quizinput input{display:inline-block; border:1px solid #888; text-align:center; width:140px; height:24px; font-size:16px; vertical-align:middle;font-family:"NanumBarunGothic"; margin-top:-2px;}
+
+.checkPop .closeBtn			{
+    position:absolute;
+    width:30px;
+    height:32px;
+    display:block;
+    background:url('../images/common/pop_close.png') 0 0 no-repeat;
+    background-size:100%;
+    top:25px;
+    right:10px;
+}
+.checkPop .checkBtn			{
+    width: 32px;
+    height: 37px;
+    background: url(../images/common/ans_check-.png) 0 0 no-repeat;
+    background-size: 100%;
+    top: 24px;
+    position:absolute;
+    right:45px;
+}
+.checkPop .checkBtn:hover {
+    background: url(../images/common/ans_check_on.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.checkPop .quizbox.check input[type="radio"][data-answer="true"]+label .box:after{
+    content:'';
+    display:block;
+    position:absolute;
+    width:40px;
+    height:35px;
+    background:url('../images/common/quiz_ox_check_ans.png') 0 0 no-repeat;
+    background-size:100%;
+    top:-18px;
+}
+
+
+
+/* 정답확인 버튼 */
+.anscheckBtn{
+    content:'';
+    width:25px;
+    height:30px;
+    background: url(../images/common/ans_check-.png) 0 0 no-repeat;
+    background-size:100%;
+    overflow:visible;
+    margin-left: 4px;
+}
+.anbt{
+    content:'';
+    width:25px;
+    height:30px;
+    background: url(../images/common/ans_check-.png) 0 0 no-repeat;
+    background-size:100%;
+    position:absolute;
+    top:0;
+    right:20px;
+}
+.anscheckBtn:hover {
+    background: url(../images/common/ans_check_on.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+/* 레이어 팝업 */
+.layerPop{
+    padding:30px 10px 30px 30px;
+    border-radius:15px;
+    position:absolute;
+    width:84%;
+    background:#fff;
+    z-index:2;
+    display:none;
+    font-family:"NanumBarunGothic";
+    font-size:15.5px;
+    line-height:22px;
+    color:#444444
+}
+.layerPop .close		{position:absolute; top:5px; right:5px; width:20px; height:20px; }
+.layerPop.style1		{border:3px solid #199788; min-height:60px; }
+.layerPop.style1 .close	{background:url('../images/common/pop_close.png') 0 0 no-repeat; background-size:100% 100%; }
+.layerPop:before		{border-top:3px solid #199788; border-left:3px solid #199788; content:'';
+						display:block; width:15px; height:15px; position:absolute; top:-11px; left:500px; background:#fff;
+						-webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg); }
+
+/* ------------------------------------------------------------------------------------------------------------- */
+
+/* 쪽번호 */
+.Page #bottom						{position:absolute; bottom:0; }
+.Page #bottom .pageNum				{height:40px; }
+.Page #bottom .pageNum span			{vertical-align:top; display:inline-block; }
+.Page #bottom .pageNum .bullet		{background:url('../images/common/pageBullet.png') 0 0 no-repeat; background-size:5px 100%; width:5px; height:100%; margin-left:2px; }
+.Page #bottom .pageNum span.num,
+.Page #bottom .pageNum span.title	{
+    margin-top:8px;
+    /*font-weight:bold; */
+    font-size:13px; color:#242424;
+}
+.Page #bottom .pageNum span.title	{font-size:11px; }
+.Page.leftPage #bottom				{left:36px; }
+.Page.rightPage #bottom				{right:36px;}
+
+/*슬라이드 버튼*/
+.pagenav{
+    float:right;
+    margin-right: 5px;
+    position:relative;
+    z-index:10;
+}
+.pagenav .pageicon{
+    display:inline-block;
+    font-size:10px;
+    width:138px;
+    background:url('../images/013/pagenav_icon.png') 101px 5px no-repeat;
+    background-size:35px 20px;
+    padding-top:14px;
+    margin-right: 0px;
+    float:left;
+    padding-left: 61px;
+    color: #412705;
+    font-weight:bold;
+}
+.pagenav ul{
+    float:left;
+    margin-top:4px;
+}
+.pagenav ul:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+.pagenav ul li{
+    float:left;
+    width:25px;
+    height:24px;
+    background:url('../images/013/pagenav_numbg.png') 0 0 no-repeat;
+    background-size:100%;
+    margin-left:5px;
+    position:relative;
+    color:#737373;
+    font-size:12px;
+    text-align:center;
+    line-height:25px;
+    padding:1px 0px;
+    cursor:pointer;
+    margin-top:-1px;
+    transition:all 1s;
+    -webkit-transition:all 0.2s ease-in;
+}
+.pagenav ul li.on{
+    width:30px;
+    height:30px;
+    background:url(../images/013/pagenav_numbg_on.png) 0 0 no-repeat;
+    font-size:13px;
+    color:#fff;
+    padding: 7px 0 0 0;
+    background-size:100%;
+    margin-top:-4px;
+    line-height: 18px;
+}
+
+/* 슬라이드 버튼 그림자 */
+.pagenav ul li:after{
+    content:'';
+    position:absolute;
+    left:3px;
+    bottom:-6px;
+    background:url('../images/018/pagenav_numbg_ef.png') 0 0 no-repeat;
+    background-size:100% 100%;
+    width:20px; height:5px;
+}
+.pagenav ul li.on:after{
+    display:none;
+}
+
+/* 보충심화 팝업 */
+
+.widget.study {cursor: pointer;}
+.studyPop {
+    display: none;
+    position: absolute;
+    width: 531px;
+    border: 3px solid #199788;
+    border-radius: 14px;
+    background-color: #fff;
+    left:0px;
+}
+.studyPop .popHeader {position: relative;margin-bottom: 20px;}
+.studyPop .popHeader .title {
+    font-size: 22px;
+    text-align: center;
+    color: #199788;
+    padding-top: 37px;
+}
+.studyPop .popHeader .icon {
+    position: absolute;
+    top: 0;
+    left: 16px;
+    width: 60px;
+    height: 78px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background: url('../images/common/pop_icon1.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    padding-top: 6px;
+}
+.studyPop .popHeader .close {position: absolute;top: 25px;right: 16px;width: 32px;height: 32px;background: url('../images/common/pop_closebtn.png') 0 0 no-repeat;background-size: 100% 100%;}
+.studyPop .popHeader .close:hover {background: url('../images/common/pop_closebtn_o.png') 0 0 no-repeat;background-size: 100% 100%;}
+.studyPop .popContents img {width: 216px;}
+.studyPop .popContents {position: relative;}
+.studyPop .popContents .slide-container {position: relative;overflow: hidden;}
+.studyPop .popContents .slide-container .slide-list {width: 300%;height: 100%;}
+.studyPop .popContents .slide-container .slide-list:after {content: '';display: block;clear: both;}
+.studyPop .popContents .slide-container .slide-con {float: left;width: 33.3333%;text-align: center;}
+.studyPop .popContents .slide-container .slide-con .img-text {
+    font-size: 16px;
+    letter-spacing: -0.5px;
+    margin: 8px 0 3px;
+    text-align:center;
+    text-indent:0;
+}
+.studyPop .popContents .slide-container .slide-con .textBox {
+    text-align: left;
+    font-size: 16px;
+    text-indent: 19px;
+    letter-spacing: -0.5px;
+    padding: 0px 30px 0;
+    font-weight:500;
+}
+.studyPop .popContents .studyPrev,
+.studyPop .popContents .studyNext {position: absolute;top:70px;width: 40px;height: 79px;}
+.studyPop .popContents .studyPrev {left: -3px;background: url('../images/common/pop_prevbtn.png') 0 0 no-repeat;background-size: 100% 100%;text-indent:-9999px;}
+.studyPop .popContents .studyPrev:hover {background: url('../images/common/pop_prevbtn_o.png') 0 0 no-repeat;background-size: 100% 100%;}
+.studyPop .popContents .studyNext {right: -3px;background: url('../images/common/pop_nextbtn.png') 0 0 no-repeat;background-size: 100% 100%;text-indent:-9999px;}
+.studyPop .popContents .studyNext:hover {background: url('../images/common/pop_nextbtn_o.png') 0 0 no-repeat;background-size: 100% 100%;}
+
+.popBottom{height:35px;text-align:center;position:relative;}
+
+.slider-nav{
+    position:absolute;
+    bottom:15px;
+    left:50%;
+    margin-left:-18px;
+}
+
+.slider-nav li{
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background:#dbdbdb;
+    margin-right:8px;
+    float:left;
+    cursor:pointer;
+}
+
+.slider-nav li.on{
+    background:#9c9c9c;
+}
+
+/*핵심질문*/
+
+/* 핵심 질문 */
+.Cover2 #bottom					{position:absolute; bottom:0; }
+.Cover2 #bottom .pointPop		{width:652px; background:url('../images/common/point_bg.png') 0 0 no-repeat; background-size:100%;
+								position:absolute; bottom:60px; left:24px; overflow:hidden; padding:52px 0 0 68px;
+								transition:all 0.5s ease-in; -webkit-transition:all 0.5s ease-in-out; }
+
+.Cover2 #bottom .pointPop.up	{height:196px; }
+.Cover2 #bottom .pointPop.down	{height:70px; }
+
+.pointPop .title				{position:absolute; left:245px; top:0px;width:175px;
+    height:34px;padding-top:6px;padding-left:40px;cursor:pointer; }
+.pointPop .title span			{display:inline-block; }
+.pointPop .title .icon			{width:14px; height:10px; background:url(../images/common/icon04.png) 0 0 no-repeat; background-size:100% 100%;
+								margin-top:6px; vertical-align:top; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; }
+.pointPop.up .title .icon		{transform:rotate(0); }
+.pointPop.down .title .icon		{transform:rotate(180deg); }
+.pointPop .title .text			{font-weight:bold; color:#50790e;  margin-left:6px;}
+
+.pointPop.down ul				{display:none;}
+.pointPop ul li					{position:relative; margin-bottom:26px;font-size:15.5px;letter-spacing: -0.7px;}
+.pointPop ul li:first-child		{margin-top:10px; }
+.pointPop ul li span.num{display:inline-block;font-size:16px;color:#ea5f01;position:relative;left:-16px;}
+
+
+
+/*******사고력키우기**********/
+
+.thinkPop.down{
+    height:73px;
+}
+
+.thinkPop.up{
+    height:168px;
+    overflow:visible;
+}
+
+
+
+.thinkPop{
+    width:687px;
+    background:url(../images/common/think_bg.png) 0 0 no-repeat;
+    background-size:100%;
+    position:absolute;
+    bottom:51px;
+    left:40px;
+    overflow:hidden;
+    padding:50px 0 0 25px;
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+.thinkPop .title{
+    position:absolute;
+    left:243px;
+    top:-1px;
+    cursor:pointer;
+    padding:6px 0 0 35px;
+}
+
+.thinkPop.down .title .icon{
+    transform:rotate(180deg);
+}
+
+.thinkPop .title .icon{
+    display:inline-block;
+    width:14px;
+    height:10px;
+    background:url(../images/common/icon04.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-top:6px;
+    vertical-align:top;
+    -webkit-transition:all 0.5s ease-in-out;
+}
+
+.thinkPop .title .text{
+    display:inline-block;
+    background-size:100% 100%;
+    width:109px;
+    height:22px;
+    margin-left:7px;
+}
+
+.thinkPop.down .content{
+    display:none;
+}
+
+.thinkPop.up .content{
+    display:block;
+}
+
+.thinkPop .content .icon{
+    background:url(../images/common/think_icon.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:23px;
+    height:17px;
+    display:inline-block;
+}
+
+.thinkPop .content .text{
+    font-size:14px;
+}
+
+.thinkPop .content input{
+    height:41px;
+    width:575px;
+    border:1px solid #ededed;
+    margin-top:13px;
+    margin-left:25px;
+}
+
+.think_bt{
+    background:url(../images/027/think_bt.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:737px;
+    height:49px;
+    margin-top:85px;
+    margin-left:-15px;
+}
+
+
+/*스스로 확인하기*/
+
+.selfCheck{
+    z-index:999;
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.selfCheck .bgef{
+    width: 737px;
+    height: 49px;
+    background: url('../images/015/bg_ef.png') 0 0 no-repeat;
+    background-size:100%;
+    position: absolute;
+    bottom: -78px;
+    left: 20px;
+}
+
+.selfCheck .selfcheckbox{
+    width: 688px;
+    position: absolute;
+    bottom: -41px;
+    left: 41px;
+    background: url('../images/015/slef_check_title_arrow.png') 0 0 no-repeat;
+    background-size:100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    padding:75px 36px 0;
+}
+
+.selfCheck .selfcheckbox.down{
+    height: 90px;
+}
+
+.selfCheck .selfcheckbox.up{
+    background-size:100% 100%;
+    height: 879px;
+}
+
+.selfCheck .selfcheckbox .titlebox{
+    width: 200px;
+    height: 53px;
+    position: absolute;
+    left: 245px;
+    top: 0px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.selfCheck .selfcheckbox .titlebox span{
+    vertical-align: top;
+    display: inline-block;
+    color:#fff;
+    font-size: 17px;
+}
+
+.selfCheck .selfcheckbox .titlebox .arrow{
+    width: 15px;
+    height: 10px;
+    background: url('../images/015/selfcheck_title_arrow.png') 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-top: 30px;
+    margin-left: 19px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+.selfCheck .selfcheckbox.down .titlebox .arrow{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.selfCheck .selfcheckbox .titlebox .title span:nth-child(1){
+    margin-top: 25px;
+}
+
+.selfCheck .selfcheckbox .titlebox .title span:nth-child(2){
+    margin-left: 14px;
+    margin-top: 18px;
+    color: #faa600;
+}
+
+.selfCheck .selfcheckbox .titlebox .title span:nth-child(3){
+    margin-top: 10px;
+}
+
+.selfCheck .selfcheckbox .titlebox .title span:nth-child(4){
+    margin-top: 25px;
+    margin-left: 9px;
+}
+
+
+.selfcheckbox .content{
+    padding:19px 0px 0px 0px;
+}
+
+
+
+.selfcheckbox.down .content{
+    display:none;
+}
+
+.selfcheckbox.up .content{
+    display:block;
+}
+
+.selfcheckbox .content div.chk_wrap{
+    position:relative;
+    margin-bottom:60px;
+}
+
+.selfcheckbox .content div.chk_wrap span{
+    display:inline-block;
+}
+
+.selfcheckbox .content div.chk_wrap span.nok_ico{
+    background:url(../images/common/selfchk_ico.png) 0 0 no-repeat;
+    background-size:100%;
+    width:30px;
+    height:20px;
+    float: left;
+    left:-43px;
+}
+
+.selfcheckbox .content div.chk_wrap .text{
+    color:#ac0002;
+    font-size:18px;
+    font-weight: bold;
+    margin:0px 0px 8px 8px;
+}
+
+.selfcheckbox .content div.chk_wrap p {
+    font-size:16px;
+    color:#242424;
+    margin-bottom:16px;
+    letter-spacing:-0.2px;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap{
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div{
+    width:600px;
+    height:68px;
+    border-radius:50px;
+    background:#ebebeb;
+    position:relative;
+    padding:14px 10px 0 32px;
+    margin-bottom:12px;
+    letter-spacing:-0.5px;
+    margin-left: 15px;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div span.num{
+    background:#ff9d12;
+    width:33px;
+    height:33px;
+    border-radius:50%;
+    border:2px solid #fff;
+    box-shadow:2px 2px 2px #999;
+    position:absolute;
+    top:50%;
+    margin-top:-17px;
+    left:-15px;
+    font-size:16px;
+    color:#fff;
+    text-align:center;
+    line-height:29px;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div span.text{
+    color:#2f2f2f;
+    font-size:15px;
+    font-weight:500;
+    width:405px;
+    line-height:22px;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div span.text.t1{
+    margin-top:11px;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div .star_wrap{
+    width:132px;
+    height:38px;
+    background:#fff;
+    border-radius:21px;
+    float:right;
+    padding:10px;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div .star_wrap .star{
+    float:left;
+    width:19px;
+    height:19px;
+    margin-left:3px;
+}
+
+.selfcheckbox .content .chk-ans_wrap input{display:none;}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div .star_wrap .star label{
+    cursor:pointer;
+    background:url(../images/common/star_off.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:100%;
+    height:100%;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    position:relative;
+    z-index: 0;
+    display:inline-block;
+}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div .star_wrap .star input[type="checkbox"]:checked+label{
+background:url(../images/common/star_on.png) 0 0 no-repeat;
+background-size:100% 100%;
+transform: scale(1.2);
+-webkit-transform: scale(1.2);
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input{
+    width:100%;
+    height:245px;
+    background:#ebebeb;
+    border-radius:25px;
+    padding:27px 15px 0 34px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input input{
+    height:22px;
+    position:relative;
+    top:-2px;
+    left: 5px;
+    font-size: 13px;
+}
+/*toast pop*/
+
+.toast{cursor:pointer;}
+
+.toastPop.top .angle:before{
+    top:-19px;
+    border-top:15px solid #199788;
+    border-bottom:15px solid transparent;
+}
+.toastPop.top .angle:after{
+    top:-25px;
+    border-top:15px solid #fff;
+    border-bottom:15px solid transparent;
+}
+
+.toastPop.top .outbox{
+    padding:25px 5px 5px;
+}
+
+.toastPop.top .closeBtn{
+    bottom:unset;
+    top:5px;
+}
+
+.toastPop .innerbox span.ans{
+    color:#ff6600;font-family: "NanumSquare" !important
+}
+
+.body-bottom .pagenav{
+    margin-bottom:10px;
+}
+
+/*point*/
+.ir{
+    font-size:17px;
+    font-weight:900;
+    text-shadow:-1px 0 #fff, 0 1px #fff ,1px 0 #fff,0 -1px #fff;
+    margin-top:2px;
+}
+
+/*학습목표,주요개념 버튼*/
+.Page #top .buttons .layerPopBtn1{
+    display:inline-block;
+    font-size:16px;
+    width:117px;
+    height:32px;
+    background:url(../images/common/button01.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-left:5px;
+    color:#412705;
+    letter-spacing:-0.5px;
+    padding-left:40px;
+    text-align:left;
+    font-weight:bold;
+}
+
+.Page #top .buttons .layerPopBtn2{
+    display:inline-block;
+    font-size:16px;
+    width:117px;
+    height:32px;
+    background:url(../images/common/button02.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    margin-left:8px;
+    color:#412705;
+    letter-spacing:-0.5px;
+    text-align:left;
+    padding-left:40px;
+    font-weight:bold;
+}
+
+/* */
+
+span.text_bold {
+    font-weight: bold;
+    font-family: "NanumBarunGothic";
+    font-size: 15.5px;
+}
+
+/*탐구활동*/
+.actBox .actTitleBox{
+    background: url('../images/common/act_titleBg.png') 0 0 no-repeat;
+    width: 100%;
+    height: 35px;
+    background-size: 100% 100%;
+}
+.actBox .actTitleBox div{float:left; }
+.actBox .actTitleBox:after{content:''; display:block; clear:both; }
+
+.actBox .actTitleBox .title{
+    color: #fff;
+    font-size: 16px;
+    width: 146px;
+    padding:7px 0;
+    letter-spacing:1.8px;
+}
+.actBox .actTitleBox .title .sq_act{
+    width: 23px;
+    height: 24px;
+    border-radius: 4px;
+    background: #fff;
+    color: #529e1c;
+    font-size: 8px;
+    display: inline-block;
+    text-align: center;
+    line-height: 9px;
+    margin-left: 13px;
+    margin-right: 8px;
+    font-weight: bold;
+    letter-spacing: -0.5px;
+    padding-top:4px;
+    vertical-align: middle;
+    margin-top: -2px;
+}
+.actBox .actTitleBox .text{
+    font-size: 17px;
+    font-weight:bold;
+    padding: 9px 0 0;
+    margin-left: 10px;
+    color: #412705;
+    letter-spacing:-0.1px;
+}
+.actBox .actTitleBox .icons{
+    float:right;
+    margin-top: 4px;
+    margin-right: 35px;
+}
+.actBox .actTitleBox .icons div{
+    font-size: 8px;
+    width: 40px;
+    height: 100%;
+    margin-left: 3px;
+    padding-top: 20px;
+    color: #000;
+    text-align: center;
+}
+.actBox .actTitleBox .icons div.icon1{background:url('../images/012/icon01-.png') 0 0 no-repeat; background-size:22px; background-position:center top; }
+.actBox .actTitleBox .icons div.icon2{background:url('../images/012/icon02-.png') 0 0 no-repeat; background-size:23px; background-position:center top; white-space:nowrap; }
+.actBox .actTitleBox .icons div.icon3{background:url('../images/012/icon03-.png') 0 0 no-repeat; background-size:21px; background-position:center top; }
+
+.markBtn{
+    width:25px;
+    height:30px;
+    background:url('../images/common/mark_btn.png') 0 0 no-repeat;
+    background-size: 100%;
+    overflow:visible;
+    margin-left:4px;
+}
+
+.markBtn:hover{
+    background:url(../images/common/mark_btnon.png);
+    background-size: 100%;
+}
+
+.tipBtn{
+    width:25px;
+    height:30px;
+    background:url('../images/common/tipbtn-.png') 0 0 no-repeat;
+    background-size: 100%;
+    overflow:visible;
+    margin-left:4px;
+}
+
+.tipBtn:hover{
+    background:url(../images/common/tipbtn-on.png);
+    background-size: 100%;
+}
+
+.anscheckBtn.check{
+    background:url(../images/common/rebtn.png);
+    background-size:100%;
+}
+
+.anscheckBtn.check:hover{
+    background:url(../images/common/rebtn-on.png);
+    background-size:100%;
+}
+
+button{overflow:visible;}
+
+.test_pop-close{
+    background:url(../images/common/conceptpop_close.png) 0 0 no-repeat;
+    background-size:100%;
+    width:26px;
+    height:26px;
+    position:absolute;top:105px;right:55px;
+    z-index:33;
+}
+
+.pop-close{
+    background:url(../images/common/pop_close.png) 0 0 no-repeat;
+    background-size:100%;
+    width:22px;
+    height:22px;
+    position:absolute;top:60px;right:45px;
+    z-index:33;
+}
+
+.pop-close:hover{background:url(../images/common/pop_closebtn_o.png) 0 0 no-repeat;background-size:100%;}
+
+.input_wrap{
+    display:inline-block;
+    position:relative;
+}
+
+.input_wrap input{width:100%;}
+
+.input_wrap .ansText{
+    position:absolute;
+    width:100%;
+    color:#ff6600;
+    left: 5px;
+    top: 23px;
+    word-break:keep-all;
+    font-family:"NanumBarunGothic" !important;
+}
+
+.quizInputAnswer{
+    color:#ff6600;
+    margin-left:36px;
+    line-height:27px;
+    visibility:hidden;
+    width:85%;
+    text-align: justify;
+    font-family:'NanumBarunGothic'!important;
+}
+.quizInputAnswer.show{
+    visibility:visible;
+}
+
+.actText{
+    color:#ff6600;
+    position:absolute;
+    top:0px;
+    left:0px;
+    text-align:center;
+    line-height:20px;
+    z-index: 3;
+    width:100%;
+    height:100%;
+    font-family:'NanumBarunGothic'!important;
+    display:none;
+}
+
+
+.plusBtn{
+    position: absolute;
+    width: 26px;
+    height: 30px;
+    background-image: url('../images/common/plus.png');
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+
+.playbtn{
+    background:url(../images/common/playbtn.png);
+    width:60px;
+    height:61px;
+    background-size:100% 100%;
+    display:block;
+    position:absolute;
+    left:50%;
+    top:50%;
+    margin-left:-30px;
+    margin-top:-30px;
+}
+
+.toastPop.left .angle:before{
+    border-right:15px solid #199788;
+    border-bottom:15px solid transparent;
+    left:0px;
+}
+.toastPop.left .angle:after{
+    border-right:15px solid #fff;border-bottom:15px solid transparent;
+    left:5px;top:-15px;}
+
+.ans-ps.left span.ans{text-align:left!important;}
+
+
+.test_pop-close{cursor:pointer;}
+
+.quizText input{
+    background:transparent;
+    border:1px solid #ccc;
+    width:80%;
+}
+
+.videopop{
+    font-size:11px;
+    color:#fff;
+    text-align:right;
+    padding:3px 9px 0 0;
+    background:url(../images/common/videopop.png) 0 0 no-repeat;
+    width:61px;
+    background-size:100%;
+    height:30px;
+    position:absolute;
+    top:-23px;
+    left:13px;
+    display:block;
+}
+
+.stBtn{
+    background:url(../images/common/studybtn.png) 0 0 no-repeat;
+    background-size:100%;
+    width:145px;
+    height:30px;
+    position:absolute;
+    top:-35px;
+    right:50px;
+    font-size:15px;
+    color:#fff;
+    text-decoration:none;
+    text-align:right;
+    cursor:pointer;
+    padding:5px 15px 0 0;
+}
+
+.stBtn:hover{
+    background:url(../images/common/studybtn-on.png) 0 0 no-repeat;
+    background-size:100%;
+}
+
+span.lsp{
+    letter-spacing:-3.8px;
+}
+
+
+/*탐구활동 문제 앞에o들어가는부분*/
+.box-title.act{
+    font-size:15.5px;
+    margin-left:20px;
+    display:inline-block;
+    position:relative;
+}
+
+.box-title.act:before{
+    content:'';
+    position:absolute;
+    top:4px;
+    left:-16px;
+    width:7px;
+    height:7px;
+    border:2px solid #199788;
+    border-radius:50%;
+    box-sizing:border-box;
+
+}
+
+/*data-box*/
+
+.databox .box .box-contents .num{
+    background:url(../images/common/databox-num.png) 0 0 no-repeat;
+    background-size:100%;
+    color:#fff;
+    width: 28px;
+    height: 27px;
+    font-size:12px;
+    padding:6px 2px 0;
+    font-weight:500;
+}
+
+.quizBox .essay textarea{
+    border:none;
+    background:#fff;
+    resize:none;
+    font-size:13px;
+}
+
+
+/*이미지 설명..위,오른쪽,왼쪽,아래 순*/
+
+.contents .ico1{
+    display:inline-block;
+    background:url(../images/common/subtexticon.png) 0 0 no-repeat;
+    background-size:100%;
+    width:13px;height:13px;
+    vertical-align:top;
+}
+.contents .ico2{
+    display:inline-block;
+    background:url(../images/common/subtexticon2.png) 0 0 no-repeat;
+    background-size:100%;
+    width:13px;height:13px;
+    vertical-align:top;
+}
+.contents .ico3{
+    display:inline-block;
+    background:url(../images/common/subtexticon3.png) 0 0 no-repeat;
+    background-size:100%;
+    width:13px;height:13px;
+    vertical-align:top;
+}
+.contents .ico4{
+    display:inline-block;
+    background:url(../images/common/subtexticon4.png) 0 0 no-repeat;
+    background-size:100%;
+    width:13px;height:13px;
+    vertical-align:top;
+}
+.contents .txt{
+    display:inline-block;
+    font-size:12px;
+    position:relative;
+    top:-9px;
+}
+
+
+.btn_wrap{
+    position:absolute;
+    right:10px;top:0;
+}
+
+.thinkOpenBox .btn_wrap{
+    right:5px;top:5px;
+}
+.selfCheck .btn_wrap{
+    top:25px;
+}
+
+.btn_wrap.last_1{
+    right:710px;
+    top:-25px;
+}
+
+.btn_wrap.last_2{
+    right:680px;
+    top:2px;
+}

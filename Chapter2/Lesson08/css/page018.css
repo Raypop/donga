@@ -1,0 +1,164 @@
+
+
+#P018{
+    background:#fff url('../images/013/bg.png') 0 560px no-repeat;
+}
+
+.body-bottom{
+	position: relative;
+	margin-top: 23px;
+    padding:70px 0px 0px;
+}
+
+/*.swiper-container > div > div{
+    padding: 0px 41px;
+}
+*/
+/* 하단 - 탐구활동 */
+.btext{color:#199788; }
+
+.actBox{
+	position:absolute; width:100%; left:0; top:0px;
+}
+/* 하단 - 탐구활동 */
+
+.databox{
+	position:absolute; 
+	padding-top:15px; 
+}
+.databox .box{
+	width:380px; 
+	height:183px; 
+	position:absolute; 
+	letter-spacing:-0.4px; 
+	padding:0px 0 0 30px; 
+}
+
+/*박스 위 소제목*/
+
+.box-title{
+    font-size: 15px;
+    margin-left: 40px;
+    display: inline-block;
+    width: 370px;
+    position: relative;
+}
+
+.box-title:before{
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #199788;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.databox .box .box-contents{
+	margin-top:2px; 
+}
+.databox .box .box-contents .map{
+	width:340px; height:182px; 
+	background:url('../images/018/map.png') no-repeat; 
+	background-size:100%; 
+	float: left;
+}
+.Page #body .mapBox {
+    background:url(../images/018/earth.png) 0 0 no-repeat;
+    background-size:100%;
+	position:relative; 
+	width:457px; 
+	height:149px; 
+	margin:25px 0 0 5px; 
+}
+.Page #body .mapBox a.videoPopBtn {position:absolute; bottom:4px; right:-87px; width:77px; height:28px; font-size:11px; color:rgb(0, 173, 255); background-image:url('../images/common/widget_videobtn.png');
+									background-size:100% 100%; cursor:pointer; text-decoration:none; padding:12px 0px 0px 30px; }
+
+
+
+/* 위젯 */
+#P018 .widget.study2 img {width:100%; margin-bottom:6px; }
+#P018 .widget.study2 .content {
+	position:relative; 
+	width:100%; 
+	text-align:justify; 
+	padding-left:18px;
+}
+#P018 .widget.study2 .content .icon {
+	left:0; 
+}
+#P018 .widget.study2 .content .icon.icon2 {
+	background: url(../images/common/subtexticon.png) 0 0 no-repeat;
+	background-size: 100%;
+}
+
+.pagenav{
+    padding-right:35px;
+    margin-top:-10px;
+    height: 30px;
+}
+
+.letter-s{
+	letter-spacing: -10px;
+}
+
+.letter-s-2{
+	letter-spacing: -4px;
+}
+
+
+.toastPop.left .angle:before{
+	top: -20px;
+	left: -1px;
+	border-left: 15px solid #199788;
+	border-bottom: 15px solid transparent;
+	border-top: 15px solid transparent;
+}
+
+.toastPop.left .angle:after{
+	top: -20px;
+    left:-5px;
+	border-left: 15px solid #fff;
+	border-bottom: 15px solid transparent;
+	border-top: 15px solid transparent;
+}
+
+.toastPop.top .angle:before{
+	top: -17px;
+	border-top: 15px solid #199788;
+	border-bottom: 15px solid transparent;
+}
+
+.toastPop.top .angle:after{
+	top: -22px;
+	border-top: 15px solid #fff;
+	border-bottom: 15px solid transparent;
+}
+
+.input_wrap .ansText{
+	font-family: 'NanumBarunGothic' !important;
+}
+.quizInputAnswer{
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+#quizBox2 .blankQuiz{margin-top:0px;}
+.blankQuiz{
+	margin-top: 10px;
+	margin-left:50px;
+}
+textarea{
+	margin-top: 5px;
+	font-size: 13px;
+}
+
+.quizText{
+    margin-left:30px;
+    margin-top:17px;
+}
+
+.quizBox .quizText .text{width:90%;font-weight:500;}
+
+#P018 .quizInputAnswer{margin-top:0px;}

@@ -1,0 +1,289 @@
+/*Page136*/
+
+#P136{
+    background: url('../images/136/cover_bg.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 0;
+}
+
+.Cover #top{
+    margin: 0;
+    height: 0px;
+}
+
+.Cover #body{
+    margin-top: 156px;
+}
+
+.Cover #body .titleBox{
+    position: relative;
+    width: 328px;
+    height: 478px;
+    background: url('../images/136/title_bg.png') 0 0 no-repeat;
+    background-size: 100%;
+    margin-left: 202px;
+}
+
+.Cover #body .titleBox h1{
+    text-align: center;
+    font-size: 45px;
+}
+
+.Cover #body .titleBox .titleNum{
+    color: #ee8200;
+    padding: 10px 0;
+    padding-top: 40px;
+    letter-spacing: 6px;
+}
+
+.Cover #body .titleBox .title{
+    color: #5c2704;
+    font-weight: bold;
+    margin-top: 57px;
+    line-height: 1.2;
+    font-size: 45px;
+    letter-spacing: -1px;
+    margin-left: 1px;
+    word-spacing:-5px;
+}
+
+.Cover #body .subtitle{
+    margin-top: 25px;
+    margin-left: 259px;
+}
+
+.Cover #body .subtitle li{
+    margin-top: 7px;
+}
+
+.Cover #body .subtitle li span{
+    display: inline-block;
+    line-height: 1;
+}
+
+.Cover #body .subtitle li .num{
+    color: #ee8200;
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.Cover #body .subtitle li .text{
+    color: #4a4a4a;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.Cover #body .subtitle li .icon{
+    width: 18px;
+    height: 18px;
+    background: url('../images/common/icon02.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    vertical-align: top;
+    margin-top: 4px;
+}
+
+.Cover #bottom{
+    position: absolute;
+    height: 221px;
+    width: 100%;
+    background: #ff9d12;
+    bottom: 0;
+    padding: 40px 60px 0 58px;
+}
+
+.Cover #bottom .question{
+    position: relative;
+    color: #fff;
+    font-size: 16.5px;
+    line-height: 1;
+    letter-spacing: -0.7px;
+    margin-top: -3px;
+    margin-left: 2px;
+}
+
+.Cover #bottom .question:before{
+    display: block;
+    content: '';
+    background: url('../images/common/icon01.png') 0 0 no-repeat;
+    background-size: 100% 100%;
+    width: 15px;
+    height: 21px;
+    position: absolute;
+    top: -4px;
+    left: -24px;
+}
+
+
+.Cover #bottom .contentsBox{
+    background:rgba(255,255,255,0.5);
+    border-radius: 14px;
+    width: 100%;
+    margin-top: 17px;
+    padding: 9px 11px 20px 26px;
+}
+
+.Cover #bottom .contentsBox ul{
+
+}
+
+.Cover #bottom .contentsBox ul li{
+    float: left;
+    margin-left: 21px;
+    margin-top: 11px;
+    position: relative;
+}
+
+.Cover #bottom .contentsBox ul li:first-child,.Cover #bottom .contentsBox ul li:nth-child(10){
+    margin-left: 0;
+}
+
+.Cover #bottom .contentsBox ul li:before{
+    position: absolute;
+    content: '|';
+    top: 2px;
+    left: -14px;
+    color: #373737;
+}
+
+
+.Cover #bottom .contentsBox ul li:first-child:before,.Cover #bottom .contentsBox ul li:nth-child(10):before{
+    content: '';
+}
+
+.Cover #bottom .contentsBox ul li button{
+    font-size:16px;
+    font-family: "NanumBarunGothic";
+    color: #373737;
+    position: relative;
+    overflow: visible;
+    z-index: 2;
+}
+
+.Cover #bottom .contentsBox ul:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.Cover #bottom .contentsBox ul li .effect{
+    display: none;
+}
+
+.Cover #bottom .contentsBox ul li.on .effect{
+    display: block;
+    position: absolute;
+    width: 74px;
+    height: 60px;
+    top: -20px;
+    left: 50%;
+    margin-left: -37px;
+}
+
+.Cover #bottom .contentsBox ul li.on .effect .left-round{
+    background:url(../images/common/pen_line.png) 0 0 no-repeat;
+    background-size:74px;
+    width: 37px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    animation:round 0.2s ease-in-out 0s normal both;
+}
+
+.Cover #bottom .contentsBox ul li.on .effect .right-round{
+    background:url(../images/common/pen_line.png) right bottom no-repeat;
+    background-size:74px;
+    width: 37px;
+    height: 0px;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    animation:round 0.2s ease-in-out 0.2s normal both;
+    -webkit-animation:round 0.2s ease-in-out 0.2s normal both;
+}
+
+.Cover #bottom .contentsBox ul li.on .effect .pen{
+    background:url(../images/common/pen.png) 0 0 no-repeat;
+    background-size:60px;
+    width:60px;
+    height:59px;
+    position: absolute;
+    top: -54px;
+    left: 35px;
+    opacity: 1;
+    animation:roundPen 0.4s ease-in-out 0s normal both;
+    -webkit-animation:roundPen 0.4s ease-in-out 0s normal both;
+}
+
+@keyframes round {
+    0% {
+        height:0px;
+    }
+    100% {
+        height:60px;
+    }
+}
+
+@-webkit-keyframes round {
+    0% {
+        height:0px;
+    }
+    100% {
+        height:60px;
+    }
+}
+
+
+@keyframes roundPen{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        top: -29px;
+        left: 6px;
+    }
+    50% {
+        top: -6px;
+        left: 36px;
+    }
+    75% {
+        top: -31px;
+        left: 70px;
+    }
+    90%{
+        top: -55px;
+        left: 27px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes roundPen{
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 1;
+        top: -29px;
+        left: 6px;
+    }
+    50% {
+        top: -6px;
+        left: 36px;
+    }
+    75% {
+        top: -31px;
+        left: 70px;
+    }
+    90%{
+        top: -55px;
+        left: 27px;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

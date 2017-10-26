@@ -1,0 +1,377 @@
+correctResponse{display:none;}
+
+button{
+    border:0px;
+}
+.quizBox .quizTextBox li{
+    list-style-type:none;
+}
+
+.full {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 768px;
+    height: 1024px;
+    padding: 43px 19px 0 19px;
+    z-index:999;
+    display:none;
+}
+
+.full.conceptPop {
+    background: #fff url('../images/common/conceptfull_bg.png') no-repeat 0 0;
+    background-size:100% 100%;
+}
+
+.conceptPop .tabArea {
+    position: absolute;
+    top: 34px;
+    right: 37px;
+}
+
+.conceptPop .tabArea:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .tabArea .tab {
+    float: left;
+    display: block;
+    width: 140px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 39px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: url('../images/common/conceptbtn_off.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    margin-left: 4px;
+}
+
+.conceptPop .tabArea .tab.on {
+    background: url('../images/common/conceptbtn_on.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+.conceptPop .conBox {
+    width: 733px;
+    height: 963px;
+    background: url('../images/common/concept_conbox.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    padding: 51px 24px 0 24px;
+}
+
+.conceptPop .conBox .conceptHeader {
+    position: relative;
+    height: 46px;
+    background-color: #ebebeb;
+    border-radius: 16px;
+    padding: 9px 19px;
+    margin-bottom: 15px;
+}
+
+.conceptPop .conBox .conceptHeader .num{
+    display: inline-block;
+    width: 27px;
+    height: 28px;
+    background: url(../images/common/numbullet.png) no-repeat 0 0 ;
+    background-size:100% 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-top:6px;
+    margin-top: -4px;
+    margin-right: 7px;
+    margin-left: 5px;
+}
+
+.conceptPop .conBox .buttonArea {
+    margin: 0 5px 5px 0;
+}
+
+.conceptPop .conBox .buttonArea button {
+    float: right;
+}
+
+.conceptPop .conBox .buttonArea:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .conBox .buttonArea button {
+    width: 48px;
+    height: 43px;
+    background-size: 100% 100%;
+}
+
+.conceptPop .conBox .buttonArea button.anscheckBtn {
+    background-image: url('../images/029/anschkbtn.png');
+    margin-left: -5px;
+}
+
+.conceptPop .conBox .buttonArea button.resetBtn {
+    background-image: url('../images/029/resetbtn.png');
+}
+
+/* ---------- 개념 확인 ---------- */
+
+.conceptPop .conBox .conceptHeader .title {
+    font-size: 30px;
+    color: #005297;
+    letter-spacing: -0.2px;
+}
+
+.conceptPop .conBox .conceptHeader .close {
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    width: 26px;
+    height: 26px;
+    background: url('../images/common/conceptpop_close.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+/* ----- 퀴즈 ----- */
+
+.conceptPop .conBox .quizBox {
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+.conceptPop .conBox #quiz02.quizBox {
+    margin-bottom: 30px;
+}
+
+.conceptPop .conBox .quizText {
+    margin-bottom: 7px;
+}
+
+.conceptPop .conBox .quizText .num {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #00a0ea;
+    text-indent: -2px;
+    margin-right: 2px;
+}
+
+.conceptPop .conBox .quizText .text {
+    font-size: 16px;
+    color: #002d41;
+    letter-spacing: -0.7px;
+}
+
+.conceptPop .conBox .quizText .text.line2 {
+    display: block;
+    padding: 4px 0 0 23px;
+}
+
+.conceptPop .conBox .quizTextBox {
+    padding-left: 22px;
+}
+
+.conceptPop .conBox .quizTextBox input[type="text"] {
+    height: 25px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .15);
+    display:inline-block;
+}
+
+.conceptPop .conBox .quizTextBox textarea {
+    background-color: #fff;
+    border-top: 0px;
+    border-left: 0px;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, .15);
+    resize: none;
+    overflow: hidden;
+}
+
+/* --- 2번 OX 퀴즈 --- */
+
+.conceptPop .conBox .oxQuiz .quizTextBox li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li:first-child {
+    margin-top: 17px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li:nth-child(2) {
+    margin: 15px 0;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .text {
+    display: inline-block;
+    float: left;
+    color: #2e2e2e;
+    font-size: 15px;
+    letter-spacing: -0.8px;
+    text-indent:-17px;
+    width:440px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .text span{position:relative;left:-3px;font-size:13px;}
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton {
+    float: right;
+    margin-right: 10px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton input[type="radio"] {
+    display: none;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label {
+    cursor: pointer;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label span {
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label .otxt {
+    width: 22px;
+    height: 21px;
+    background: url('../images/common/quiz_o_icon.png') no-repeat 0 0 ;
+    background-size:100% 100%;}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label .xtxt {
+    width: 20px;
+    height: 18px;
+    background: url('../images/common/quiz_x_icon.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    margin-left: 33px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label .chkbox {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 4px;
+    border: 1px solid #b4b4b4;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton input[type="radio"]:checked + label .chkbox:after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    left: -2px;
+    width: 35px;
+    height: 30px;
+    background: url('../images/common/ox_chk.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+/* 3번 퀴즈 */
+
+.conceptPop .conBox #quiz03.quizBox .quizText {
+    margin-bottom: 23px;
+}
+
+.conceptPop .conBox #quiz03.quizBox {
+    margin-bottom: 35px;
+}
+
+.conceptPop .conBox #quiz03.quizBox .quizTextBox span.sym {
+    display: inline-block;
+    font-size: 17px;
+    letter-spacing: 2px;
+    margin-right: 2px;
+    border-radius:50%;
+    border:1px solid #000;
+    width:20px;
+    height:20px;
+    text-align:center;line-height:20px;
+}
+
+
+/* 4번 퀴즈 */
+
+.conceptPop .conBox #quiz04.lineQuiz .quizText {
+    margin-bottom: 15px;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul {
+    float: left;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox .lineItem {
+    width: 190px;
+    height: 66px;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul.rightItem {
+    float: right;
+    width: 250px;
+    padding-right: 12px;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul > li > span > span {
+    font-size: 12px;
+    letter-spacing: -0.7px;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul > li .dot {
+    position: absolute;
+    top: 6px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    border: 1px solid #000;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul.leftItem > li .dot {
+    left: 108px;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul.rightItem > li {
+    text-align: right;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox > ul.rightItem > li .dot {
+    left: -20px;
+}
+
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox .leftItem li,
+.conceptPop .conBox .quizBox.lineQuiz .quizTextBox .rightItem li {
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.quizBox .quizTextBox{
+    margin-top:0px;
+    padding:12px 20px;
+}
+
+.pop_close{
+    background:url(../images/common/conceptpop_close.png) no-repeat 0 0;
+    background-size:100%;
+    width:26px;
+    height:26px;
+    float:right;
+    cursor:pointer;
+    
+}
+
+.quizTextBox ul li{
+    font-size:15px;
+}
+
+.ans_respon{
+    color:#f75b32;
+    font-size:14px;
+    margin:20px 30px 0px;;
+}
