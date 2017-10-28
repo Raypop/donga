@@ -62,7 +62,7 @@ body	{margin:0; padding:0;}
     text-indent: 15px;
 }
  /* 초록색 텍스트 */
-.Page .content_text .sub_txt .text	{
+.Page .content_text .sub_txt .text,.txt_emp{
     font-family:"NanumBarunGothic"; color:#ee8032;
     font-size:15.5px;
     font-weight:700;
@@ -205,7 +205,8 @@ body	{margin:0; padding:0;}
     position:absolute; top:0; left:0; margin-top:20px;
     -webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
     box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
-    border-radius:10px;}
+    border-radius:10px;
+    }
 .toastPop .outbox				{
     position:relative;
     background-color:#199788;
@@ -232,6 +233,7 @@ body	{margin:0; padding:0;}
 }
 .toastPop .innerbox.in0{
     text-indent:0!important;
+    overflow:hidden;
 }
 
 .toastPop .innerbox.tip{
@@ -1071,7 +1073,7 @@ span.text_bold {
 }
 .actBox .actTitleBox .icons div{
     font-size: 8px;
-    width: 40px;
+    width: 45px;
     height: 100%;
     margin-left: 3px;
     padding-top: 20px;
@@ -1080,7 +1082,13 @@ span.text_bold {
 }
 .actBox .actTitleBox .icons div.icon1{background:url('../images/012/icon01-.png') 0 0 no-repeat; background-size:22px; background-position:center top; }
 .actBox .actTitleBox .icons div.icon2{background:url('../images/012/icon02-.png') 0 0 no-repeat; background-size:23px; background-position:center top; white-space:nowrap; }
-.actBox .actTitleBox .icons div.icon3{background:url('../images/012/icon03-.png') 0 0 no-repeat; background-size:21px; background-position:center top; }
+.actBox .actTitleBox .icons div.icon3{background:url('../images/012/icon03-.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정보활용*/
+
+.actBox .actTitleBox .icons div.icon4{background:url('../images/common/act_icon04.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정의*/
+
+
+.actBox .actTitleBox .icons div.icon5{background:url('../images/common/act_icon02.png') 0 0 no-repeat; background-size:23px; background-position:center top; } /*소통능력*/
+
 
 .markBtn{
     width:25px;
@@ -1218,6 +1226,18 @@ button{overflow:visible;}
     border-right:15px solid #fff;border-bottom:15px solid transparent;
     left:5px;top:-15px;}
 
+.toastPop.right .angle:before{
+    border-left: 15px solid #199788;
+    border-bottom: 15px solid transparent;
+    left: 0px;
+}
+.toastPop.right .angle:after{
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    left: -5px;
+    top: -15px;
+}
+
 .ans-ps.left span.ans{text-align:left!important;}
 
 
@@ -1314,28 +1334,28 @@ span.lsp{
 
 /*이미지 설명..위,오른쪽,왼쪽,아래 순*/
 
-.contents .ico1{
+.ico1{
     display:inline-block;
     background:url(../images/common/subtexticon.png) 0 0 no-repeat;
     background-size:100%;
     width:13px;height:13px;
     vertical-align:top;
 }
-.contents .ico2{
+.ico2{
     display:inline-block;
     background:url(../images/common/subtexticon2.png) 0 0 no-repeat;
     background-size:100%;
     width:13px;height:13px;
     vertical-align:top;
 }
-.contents .ico3{
+.ico3{
     display:inline-block;
     background:url(../images/common/subtexticon3.png) 0 0 no-repeat;
     background-size:100%;
     width:13px;height:13px;
     vertical-align:top;
 }
-.contents .ico4{
+.ico4{
     display:inline-block;
     background:url(../images/common/subtexticon4.png) 0 0 no-repeat;
     background-size:100%;
@@ -1371,3 +1391,75 @@ span.lsp{
     right:680px;
     top:2px;
 }
+
+.pop_hd{
+    width:728px;
+    height:54px;
+    background:#fff;
+    border:1px solid #199788;
+    position:absolute;
+    margin-bottom:16px;
+    margin-left:-9px;
+}
+
+.pop_hd .title{
+    background:#199788;
+    width:30%;
+    display:inline-block;
+    height:100%;
+    position:relative;
+    top:0px;
+    font-size:28px;
+    margin-right:41px;
+    padding-left:30px;
+    padding-top:12px;
+    color:#ffea00;
+}
+.pop_hd .title:after{
+    content:'';
+    width:0px;height:0px;
+    border-top:53px solid #199788;
+    border-right:53px solid transparent;
+    position:absolute;
+    right:-53px;
+    top:0px;
+}
+
+.pop_hd .titleText{
+    font-size:28px;
+    color:#22410a;
+    letter-spacing:-2px;
+    word-break: break-all;
+}
+
+
+.box-contents{padding: 15px;
+    border: 2px solid #aeaeae;
+    border-radius: 10px; margin: 0 20px 20px;
+}
+
+.box .box-contents {
+   
+}
+
+.box-title {
+    font-size: 15px;
+    margin-left: 40px;
+    display: inline-block;
+    width: 425px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.box-title:before {
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #199788;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.tit_inbox{text-align:center;font-weight:bold;margin-bottom:5px;}

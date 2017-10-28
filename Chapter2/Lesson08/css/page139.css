@@ -1,0 +1,141 @@
+/*Page17*/
+
+#P045{
+    background:#fff url('../images/common/bg.png') 0 592px no-repeat;
+}
+
+.body-bottom{
+    position: relative;
+    margin-top: 62px;
+    padding:0px;
+    padding-top: 65px;
+}
+
+/*탐구활동*/
+.actBox{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+/*박스 위 소제목*/
+
+
+
+.checkPop{
+    left: auto;
+    bottom: auto;
+    top: 180px;
+}
+
+.quizBox{
+    margin-top: 20px;
+}
+
+.quizBox textarea{
+    resize: none;
+    background: #fff;
+    padding: 5px;
+    margin-left: 26px;
+    margin-top: 6px;
+    width: 95%;
+    height: 50px;
+    font-size: 13px;
+}
+
+.anscheckBtn{
+    top:-5px;
+}
+
+.quizBox .quizText {margin-top:10px;}
+
+.quizBox .quizText .text{
+    font-weight: 500;
+    width:88%;
+}
+
+.video span.ti{display:inline-block;text-indent:-9999px;}
+/**/
+.pagenav{
+    margin-top:-5px;
+    margin-right:40px;
+    height: 40px;
+}
+.swiper-slide{padding:0px 41px;}
+.swiper-container{overflow:visible;}
+
+/**/
+.con .contents{margin-top:7px;}
+.con .contents span.txt{width:180px;top:-4px;}
+.con .contents span.txt span{margin-right:10px;}
+
+.con{
+    padding:20px;
+    background:#fff;
+    box-shadow:3px 3px 3px #ccc;
+    border-radius:15px;
+    font-size:15px;
+    line-height:20px;
+    overflow: hidden;
+}
+
+.con p{
+    width:430px;
+    float:left;
+}
+.con p > span{
+    display:inline-block;
+    width:100%;
+    text-indent:15px;
+    font-size:15px;
+    line-height:20px;
+}
+
+.con .image{
+    display:inline-block;
+    width:192px;
+    height:auto;
+    float:right;
+}
+
+.con .image img{width:192px;margin:0 auto;}
+
+.box-contents{
+    line-height:27px;
+    font-size:15px;
+}
+.box-contents:after{display:block;content:'';clear:both;}
+
+.hword {
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-indent: 0;
+}
+
+.box_lt_list{float:none}
+.box_lt{float:left;width:550px;}
+.imglt{float:left;margin:0 20px 0 0;width:220px;height:150px;background:url('../images/139/kiruna2.png') no-repeat;background-size:100% auto;}
+.box_rt{position:relative;float:right;width:100px;height:220px;}
+.imgrt{display:block;width:100px;height:200px;background:url('../images/139/kiruna.png') no-repeat;background-size:100% auto;}
+
+.quizBox{padding:0 20px;}
+
+.quizText input{
+    padding: 2px;
+    width: 355px;
+    border: 1px solid #cacaca;
+    background:#fff;
+}
+.quizBox .pic{width: 160px;height:90px;float:left;}
+.pic span{
+    display: inline-block;
+    width: 160px;
+    margin: 0 auto;
+    height: 80px;
+    background: #e5e6e7;
+    font-size: 15px;
+    text-align: center;
+    line-height: 80px;
+}
+itemBody{float:left;width:550px;}
