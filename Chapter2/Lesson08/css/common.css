@@ -1080,14 +1080,14 @@ span.text_bold {
     color: #000;
     text-align: center;
 }
-.actBox .actTitleBox .icons div.icon1{background:url('../images/012/icon01-.png') 0 0 no-repeat; background-size:22px; background-position:center top; }
+.actBox .actTitleBox .icons div.icon1{background:url('../images/012/icon01-.png') 0 0 no-repeat; background-size:22px; background-position:center 2px; } /*의사결정*/
 .actBox .actTitleBox .icons div.icon2{background:url('../images/012/icon02-.png') 0 0 no-repeat; background-size:23px; background-position:center top; white-space:nowrap; }
 .actBox .actTitleBox .icons div.icon3{background:url('../images/012/icon03-.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정보활용*/
 
 .actBox .actTitleBox .icons div.icon4{background:url('../images/common/act_icon04.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정의*/
 
 
-.actBox .actTitleBox .icons div.icon5{background:url('../images/common/act_icon02.png') 0 0 no-repeat; background-size:23px; background-position:center top; } /*소통능력*/
+.actBox .actTitleBox .icons div.icon5{background:url('../images/common/act_icon02.png') 0 0 no-repeat; background-size:23px; background-position:center top; } /*소통협업*/
 
 
 .markBtn{
@@ -1463,3 +1463,5 @@ span.lsp{
     box-sizing: border-box;
 }
 .tit_inbox{text-align:center;font-weight:bold;margin-bottom:5px;}
+
+.anibtn{display:inline-block;width:83px;height:20px;background:#fff url(../images/common/aniBtn.png) 0 0 no-repeat;background-size:84px auto;color:#fff;line-height:20px;padding-left:18px;font-size:11px;box-sizing:border-box;}

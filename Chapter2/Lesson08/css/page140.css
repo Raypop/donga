@@ -1,0 +1,512 @@
+
+
+.Page #top{
+    position: relative;
+    z-index: 2;
+}
+
+/* 단원 시작 */
+.Page #top .titleBox		{margin-top:15px; padding:15px 0 11px 29px; position:relative; border:2px solid #c7cacb; 
+border-radius:20px; float:right; width:630px; height:66px; }
+
+
+.Page #top .titleBox .num	{
+    width:94px; height:115px;
+    background:url('../images/140/titleNumbg.png') 0 0 no-repeat; 
+    background-size:100% 100%; text-align:center; color :#d9620c; 
+    font-size:45px;
+    position:absolute; 
+    top:-22px; 
+    left:-63px; 
+    padding-top:21px;
+    letter-spacing:5px; 
+}
+.Page #top .titleBox .text	{font-size:30px; color:#242424; letter-spacing:-1.1px; margin-left:20px; font-weight:bold; }
+
+.Page #top .buttons{text-align:right;position: relative;z-index: 2;margin:25px 5px 26px 0;}
+
+.Page #body{
+}
+
+
+.hword{
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-indent: 0;
+	font-size:12px;
+}
+
+.Page #bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+/* p140 추가 */
+
+#P140 .mal {
+    position: absolute;
+    text-align: center;
+    background-size: 100% 100%;
+}
+
+#P140 .thinkOpenBox {
+    background-image: url('../images/140/top_bg.png');
+    padding: 10px 41px 9px;
+    margin-left: 30px;
+    position: absolute;
+    left: -65px;
+    top: 120px;
+    width: 768px;
+}
+
+#P140 .thinkOpenBox .thinkOpenTitle {
+    margin-bottom: 20px;
+}
+
+#P140 .thinkOpenBox .thinkOpenTitle .icon {
+    display: inline-block;
+    width: 23px;
+    height: 28px;
+    background-image: url('../images/common/thinkicon.png');
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+#P140 .thinkOpenBox .thinkOpenTitle .thinkText {
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #f75b31;
+    vertical-align: middle;
+    position:relative;
+    top:4px;
+    left:-7px;
+}
+
+#P140 .thinkOpenBox .thinkContent {
+    position: relative;
+}
+
+#P140 .thinkOpenBox .thinkContent .bgCon {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+.thCon{
+    position: absolute;
+    width: 220px;
+    box-sizing: border-box;
+}
+/*
+.thCon{
+    position: absolute;
+    border: 5px solid #fff;
+    width: 220px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+*/
+.thCon_box1{
+    background: url(../images/140/p140_thCon_box1.png) no-repeat;
+    background-size: 100% 100%;
+    height: 160px;
+}
+
+.thCon_box2{
+    background: url(../images/140/p140_thCon_box2.png) no-repeat;
+    background-size: 100% 100%;
+    left: 225px;
+    height: 160px;
+}
+.thCon_box3{
+    background: url(../images/140/p140_thCon_box3.png) no-repeat;
+    background-size: 100% 100%;
+    left: 450px;
+    height: 160px;
+}
+
+#P140 .thinkOpenBox .thinkContent .blankQuiz.q2 {
+    margin-bottom: 0;
+}
+
+#P140 .thinkOpenBox .thinkContent .blankQuiz .num {
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    background-image: url('../images/140/think_num.png');
+    background-size: 100% 100%;
+    margin-right: 2px;
+}
+
+#P140 .thinkOpenBox .thinkContent .blankQuiz .text {
+    color: #3c4552;
+    vertical-align: middle;
+    letter-spacing: -0.4px;
+    font-size: 14px;
+}
+
+#P140 .thinkOpenBox .thinkContent .blankQuiz .quizInputBox {
+    display: block;
+    width: 613px;
+    height: 22px;
+    padding-left: 27px;
+    margin-top: 8px;
+}
+
+#P140 .thinkOpenBox .thinkContent .blankQuiz .quizInputBox input {
+    width: 614px;
+    height: 100%;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.21);
+    padding: 0 5px;
+}
+
+#P140 .thinkOpenBox .thinkContent {
+    position: relative;
+}
+
+
+#P140 #layerPop1{top:150px; right:60px; }
+#P140 #layerPop1:before{left:460px; }
+
+#P140 #layerPop2{
+    top:150px; right:5px; 
+    width:92%;
+}
+#P140 #layerPop2:before{left:580px; }
+
+#P140 #layerPop1 ul li{margin-top:15px; padding-left:20px; position:relative;}
+#P140 #layerPop1 ul li:first-child{margin-top:0; }
+#P140 #layerPop1 ul li:before{content:''; display:block; width:26px; height:27px; background:url('../images/common/icon05.png') 0 0 no-repeat; background-size:100%; position:absolute; top:-6px; left:-15px; }
+#P140 #layerPop2 ul{position:relative; margin-left:20px; }
+
+#P140 #layerPop2 ul li{padding-left:30px; position:relative; float:left;}
+#P140 #layerPop2 ul:before{content:''; display:block; width:22px; height:26px; background:url('../images/common/icon07.png') 0 0 no-repeat; background-size:100%; position:absolute; top:-6px; left:-15px; }
+#P140 #layerPop2 ul li:before{content:'|'; display:block; width:22px; height:26px; background-size:100%; position:absolute; top:0px; left:12px; }
+#P140 #layerPop2 ul li:first-child:before{content:''; }
+#P140 #layerPop2 ul li button{font-size: 15.5px}
+
+
+#P140 .widget.study2 {
+    width: 128px;
+    left: 44px;
+}
+
+#P140 .widget.study2 .content {
+    width: 100%;
+    text-align: justify;
+}
+
+#P140 .widget.study2 .content .hword {
+    display: inline-block;
+    font-size:12px;
+    color: #428313;
+}
+
+#P140 .blankQuiz{
+    position: relative;
+    margin-left: 30px;
+}
+
+.blankQuiz .quizInputBox.check .quizInputAnswer{
+    padding-left: 27px;
+    top: 20px;
+}
+
+/**/
+span.text_bold {
+    font-weight: bold;
+    font-family: "NanumBarunGothic";
+    font-size: 16px;
+}
+
+
+.anscheckBtn{
+    top:20px; 
+    right:10px; 
+}
+.anscheckBtn:hover{
+    background: url(../images/common/ans_check_on.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+/*toastPop*/
+
+.innerbox span.inner_color{
+    color: #ff6600;
+}
+
+
+/* 08-29 수정 */
+.quizBox{margin-left:-30px;margin-top:-2px;}
+
+.quizBox:last-child{margin-top:-13px;}
+
+
+/* 09.25 */
+#P140 .content_box2 .bgCon2 {
+    position: relative;
+    width: 100%;
+    height: 160px;
+}
+
+.bgCon2{
+	margin-top:15px;
+	margin-left:60px;
+}
+
+.Con2 {
+    position: absolute;
+    border: 5px solid #fff;
+    width: 210px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.Con2.Con_box1{
+    background: url(../images/140/p128_Con_box1.png) no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(-2deg);
+    height: 160px;
+}
+
+.Con2.Con_box2{
+    background: url(../images/140/p128_Con_box2.png) no-repeat;
+    background-size: 100% 100%;
+    left: 220px;
+    transform: rotate(2deg);
+    height: 160px;
+}
+
+.Con2.Con_box3{
+    background: url(../images/140/p128_Con_box3.png) no-repeat;
+    background-size: 100% 100%;
+    left: 438px;
+    transform: rotate(-2deg);
+    height: 160px;
+}
+
+#P140 .widget.study3 {
+    width: 645px;
+    left: 10px;
+}
+
+.widget.study3 .icon {
+    position: absolute;
+    top: 2px;
+    left: -4px;
+    width: 13px;
+    height: 13px;
+    background: url(../images/common/subtexticon.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+.thCon.thCon_box1 .malbox01{
+	position: absolute;	
+	top:-7px;
+	background: url('../images/140/p140_thCon_box1_mal.png') 0 0 no-repeat;
+    background-size: 100%;
+	width: 120px;
+	height:160px;
+}
+
+.mal01{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+	font-size:12px;
+	text-align:center;
+}
+
+.thCon.thCon_box2 .malbox02{
+	position: absolute;	
+	top: -24px;
+    left: 10px;
+	background: url('../images/140/p140_thCon_box2_mal.png') 0 0 no-repeat;
+    background-size: 100%;
+	width: 165px;
+	height:160px;
+}
+
+.mal02{
+    position: absolute;
+    top: 13px;
+    left: 5px;
+	font-size:12px;
+	text-align:center;
+}
+
+.thCon.thCon_box3 .malbox03{
+	position: absolute;	
+	top:-30px;
+	background: url('../images/140/p140_thCon_box3_mal.png') 0 0 no-repeat;
+    background-size: 100%;
+	width: 245px;
+	height:160px;
+}
+
+.mal03{
+    position: absolute;
+    top: 24px;
+    left: 26px;
+	font-size:12px;
+	text-align:center;
+}
+
+/*이미지 슬라이더*/
+.imageColums2{
+    width:445px;
+    height:205px;
+    border:1px solid #e5e5e5;
+    margin-left:45px;
+    position:relative;
+    overflow:hidden;
+    margin-top: 10px;
+}
+
+.imageColums2 > ul.imgslider{
+    width:300%;
+    height:100%;
+    margin-left:-443px;
+}
+
+
+
+.imageColums2 > ul.imgslider li{
+    width:33.333333%;
+    height:100%;
+    float:left;
+    margin-left:0px;
+    position:relative;
+}
+
+.imageColums2 > ul.imgslider li.img1 .mal{
+    background:url(../images/140/sl1_mal.png) 0 0 no-repeat;
+    background-size:100%;
+    width:156px;
+    height:66px;
+    position:absolute;
+    right:30px;
+    top:20px;
+    font-size:14px;
+    padding-top:9px;
+}
+
+.imageColums2 > ul.imgslider li.img2 .mal{
+    background:url(../images/140/sl2_mal.png) 0 0 no-repeat;
+    background-size:100%;
+    width:156px;
+    height:142px;
+    position:absolute;
+    left:60px;
+    top:40px;
+    font-size:14px;
+    padding-top:13px;
+}
+
+.imageColums2 > ul.imgslider li.img3 .mal{
+    background:url(../images/140/sl3_mal.png) 0 0 no-repeat;
+    background-size:100%;
+    width:136px;
+    height:142px;
+    position:absolute;
+    left:160px;
+    top:40px;
+    font-size:14px;
+    padding-top:18px;
+}
+
+.imageColums2 > ul.imgslider li .box{
+    width:302px;
+    margin:20px auto 0;
+    text-align:center;
+}
+
+.imageColums2 > ul.imgslider li img{
+    width:180px;
+    height:100px;
+}
+
+.prev{
+    background:url(../images/common/prev.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:24px;
+    height:32px;
+    position:absolute;
+    top:50%;
+    left:0px;
+}
+
+.next{
+    background:url(../images/common/next.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:24px;
+    height:32px;
+    position:absolute;
+    top:50%;
+    right:0px;
+}
+.navbtn{
+    position:absolute;
+    bottom:8px;
+    left:50%;
+    margin-left:-35px;
+}
+
+.navbtn li{
+    width:10px;height:10px;
+    border-radius:50%;
+    background:#dbdbdb;
+    margin-right:10px;
+    float:left;
+    cursor:pointer;
+}
+
+.navbtn li.on{
+    background:#9c9c9c;
+}
+
+.imageColums2 .imagebox .textbox{
+	/*margin-left:91px;*/
+	margin-top:9px;
+}
+.imageColums2 .imagebox .textbox .text{
+	width:280px;
+	text-indent:0;
+	text-align:left;
+}
+.quizInputAnswer{margin-top:0px;}
+
+.imageColums2{
+	margin-bottom:0px;
+}
+
+.playbtn{
+	top:70px;
+}
+
+.btn_rt{text-align:right;padding: 0 0 10px;}
+.cards{padding:0 4px;}
+.cards:after{clear:both;display:block;content:'';}
+.card{float:left;position:relative;width:220px;height:265px;border-radius:12px;padding:12px;background:#e9eddb;box-shadow:0 1px 10px rgba(0,0,0,0.5);}
+.card-left,.card-center{margin-right:15px}
+.card-purple{background:#e6e5ed;}
+.card-orange{background:#f4e9e3;}
+.card-blue{background:#deeaf0;}
+.card-yellow{background:#f5ebd8;}
+.card-deepgreen{background:#cee3e0;}
+.card-tit{padding:13px 0 5px;font-size:12px;font-weight:bold;color:#42a62a;}
+.card-purple .card-tit{color:#75448a;}
+.card-orange .card-tit{color:#db6572;}
+.card-blue .card-tit{color:#0995d8;}
+.card-yellow .card-tit{color:#dd762d;}
+.card-deepgreen .card-tit{color:#3c847b;}
+.imgmap{text-align:center;}
+.imgbox img{border-radius:3px;width:100%;}
+.cardtext{font-size:12px;line-height:20px;text-indent:20px;padding:0 0 0 15px;}
+
