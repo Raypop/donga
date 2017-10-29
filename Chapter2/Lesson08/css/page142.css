@@ -5,7 +5,7 @@
     z-index: 2;
 }
 
-#P142{background:url('../images/142/p142_img4.png') no-repeat 0 bottom;background-size:768px auto;}
+#P142{background:url('../images/142/bottom.png') no-repeat 0 bottom;background-size:768px auto;}
 
 /* 단원 시작 */
 .Page #top .titleBox		{margin-top:15px; padding:15px 0 11px 29px; position:relative; border:2px solid #c7cacb; border-radius:20px; float:right; width:630px; height:66px; }
@@ -55,7 +55,7 @@
 text-align: center;
 background-size: 100%;
 font-size: 12px;
-margin: 4px 0px 0px 7px;
+margin: 6px 0px 0px 2px;
 }
 
 #P142 .thinkOpenBox {
@@ -103,8 +103,8 @@ margin: 4px 0px 0px 7px;
 
 .thCon{
     float: left;
-    width: 274px;
-     height: 163px;
+    width: 192px;
+     height: 150px;
      border-radius: 2px;
 }
 .thCon_box0{
@@ -120,67 +120,45 @@ z-index: 1;
 .thCon_box1{
     position: absolute;
     background: url(../images/142/p142_img3.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: 80px auto;
     top: 12px;
-    left: 44px;
+    left: 52px;
     width: 95px;
     height: 164px;
 }
 .thCon_box2{
-    background: url(../images/142/p142_img1.png) no-repeat;
+    background: url(../images/142/1.png) no-repeat;
     background-size: 100%;
     margin-left: 108px;
      
 }
 .thCon_box3{
-    background: url(../images/142/p142_img2.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    left: 225px;
-    width: 284px;
-    margin-left: 20px;
+    background: url(../images/142/2.png) no-repeat;
+    background-size:100%;
 }
-.thCon_box6{
-    background: url(../images/142/p142_img2.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-    left: 300px;
-    width: 284px;
-    margin-left: 20px;
+.thCon_box4{
+    background: url(../images/142/3.png) no-repeat;
+    background-size:100%;
 }
 
-.thCon_box4{
+.thCon_boxtag{
     color: #fff;
     position: absolute;
-    border:5px solid #B2CCFF;
+    left:35px;
+    border:5px solid #7cc466;
     border-radius: 5px;
-    background-color: #B2CCFF;
+    background-color: #7cc466;
     font-weight: bold;
-    width: 80px;
+    width: 40px;
     height: 21px;
     font-size: 12px;
     text-align: center;
     margin-left: 91px;
-        transform:rotate(-4deg);
             top: -7px;
                 box-shadow: 1px 1px 3px grey;
 }
-.thCon_box5{
-    color: #fff;
-    position: absolute;
-    border:5px solid #D1B2FF;
-    border-radius: 5px;
-    background-color: #D1B2FF;
-    font-weight: bold;
-    left: 387px;
-    width: 100px;
-    height: 21px;
-    font-size: 12px;
-    text-align: center;
-    transform:rotate(-4deg);
-        top: -7px;
-            box-shadow: 1px 1px 3px grey;
-}
+.tag2{left:230px;}
+.tag3{left:420px;}
 
 .content_bottom .circle{
     width: 300px;
