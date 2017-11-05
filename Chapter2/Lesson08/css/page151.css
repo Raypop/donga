@@ -1,0 +1,532 @@
+/*Page131*/
+
+*{
+    font-family:'NanumBarunGothic';
+}
+
+#P151{
+    padding-top: 140px;
+}
+
+/*#P151 #top{
+    height:30px; 
+    margin-bottom: 15px;
+}*/
+
+#P151 #body{margin-top:6px;margin-left: 41px;}
+
+#P151.Page{background:url('../images/151/bg.png') 0 0 no-repeat; background-size:100% 100%; position:relative;padding:140px 0 0 0;}
+
+.swiper-container{overflow:visible;z-index:20;}
+.swiper-slide{padding-right:35px;}
+/*탐구활동*/
+.actBox{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 58px;
+}
+
+.databox{
+    position: relative;
+    
+
+}
+.databox:after{display:block;clear:both;content:'';}
+.pagenav{
+    margin-top: -20px;
+}
+
+
+.quizBox .quizText .text{
+    letter-spacing: 0.1px;
+    font-weight: 500;
+    width: 95%;
+}
+.quizBox + .quizBox{margin-top:40px;}
+
+.quizBox .quizText .text .gtext{
+    color:#199788;
+}
+
+.quizBox .essay textarea{
+    border: 1px solid #ededed;
+    background: #fff;
+    resize: none;
+    margin-left: 26px;
+    width: 655px;
+    height: 121px;
+    margin-top: 5px;
+    padding:10px;
+    font-size:13px;
+}
+
+
+#slefCheck{
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    z-index: 3;
+}
+
+#slefCheck .bgef{
+    width: 737px;
+    height: 49px;
+    background: url('../images/145/bg_ef.png') 0 0 no-repeat;
+    background-size:100%;
+    position: absolute;
+    bottom: -78px;
+    left: 20px;
+}
+
+#slefCheck .selfcheckbox{
+    width: 688px;
+    position: absolute;
+    bottom: -41px;
+    left: 41px;
+    background: url('../images/145/slef_check_title_arrow.png') 0 0 no-repeat;
+    background-size:100%;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#slefCheck .selfcheckbox.down{
+    height: 90px;
+}
+
+#slefCheck .selfcheckbox.up{
+    height: 850px;
+}
+
+#slefCheck .selfcheckbox .titlebox{
+    width: 200px;
+    height: 53px;
+    position: absolute;
+    left: 245px;
+    top: 0px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#slefCheck .selfcheckbox .titlebox span{
+    vertical-align: top;
+    display: inline-block;
+    color:#fff;
+    font-size: 17px;
+}
+
+#slefCheck .selfcheckbox .titlebox .arrow{
+    width: 15px;
+    height: 10px;
+    background: url('../images/145/selfcheck_title_arrow.png') 0 0 no-repeat;
+    background-size: 100%;
+    margin-top: 30px;
+    margin-left: 19px;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+
+#slefCheck .selfcheckbox.down .titlebox .arrow{
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li{
+    background:none;
+    padding-left:0;
+}
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li:before{
+    display:none;
+}
+/*.selfcheckbox .content div.chk_wrap div.ans-input > ul li ul:before{
+    content:'';
+    width:1px;
+    height:50px;
+    border-left:1px dotted #ccc;
+    position:absolute;
+    top:12px;
+}*/
+/*
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li > ul:before{
+    content:'';
+    width:1px;
+    height:145px;
+    border-left:1px dotted #ccc;
+    position:absolute;
+    top:12px;
+}*/
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li:nth-child(1) > ul {
+    /* position: absolute; */
+    /* left: 34px; */
+    top: 26px;
+    width: 515px;
+}
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li:nth-child(1) > ul ul{
+    position: absolute;
+    left: 138px;
+    top: -1px;
+    width: 515px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li{
+    background-size:12px 1px;
+}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input li{
+    background-size:7px 2px;
+    padding-left:17px;
+    font-size:15px;
+    color:#2f2f2f;
+    position:relative;
+    margin-bottom:30px;
+    letter-spacing:-0.6px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li.ns:before{
+    content:'';
+    width:6px;
+    height:6px;
+    background-color:#7d7d7d;
+    border-radius:50%;
+    position:absolute;
+    top:7px;
+    left:7px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li .box{
+    margin:10px 0px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li .box .txt1{
+    margin-left:15px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li .box .ar_line{
+    display:inline-block;
+    width:360px;
+    height:1px;
+    border-top:1px dotted #7d7d7d;
+    position:relative;
+    top:-5px;
+    margin:0 15px;
+}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input li .box .ar_line:before{
+    content:'《';
+    position:absolute;
+    top:-9px;
+    left:-10px;
+}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input li .box .ar_line:after{
+    content:'》';
+    position:absolute;
+    top:-9px;
+    right:-10px;
+}
+
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input li .wrap{
+    margin-left:15px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li > ul > li{
+    margin-bottom: 50px;
+    line-height:1.7em;
+}
+.selfcheckbox .content div.chk_wrap div.ans-input li > ul > li li{margin-bottom:31px;}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input{
+    position:relative;
+    height:360px;
+}
+
+/*정답팝업*/
+
+.toastPop .angle:before         {
+    content:''; display:block; position:absolute; 
+    top:-109px; 
+    border:15px solid transparent; 
+    border-bottom:15px solid #199788; 
+}
+.toastPop .angle:after          {
+    content:''; display:block; position:absolute; 
+    top:-103px; 
+    border:15px solid transparent;
+    border-bottom:15px solid #fff; 
+}
+
+.toastPop .closeBtn             {
+    width:15px; height:15px; 
+    position:absolute; 
+    right:5px; bottom:5px; 
+    background:url('../images/common/toast_pop_close.png') 0 0 no-repeat; 
+    background-size:cover; 
+}
+
+.toast_color{
+    color: #ff6600;
+    font-family:"NanumSquare" !important;
+
+}
+
+.toastPop div.ans-input span{display:inline-block;}
+
+.toastPop div.ans-input span.ans{
+    vertical-align:top;
+    width:80%;
+}
+
+.toastPop div.ans-input li{margin-bottom:35px!important;}
+
+.toastPop div.ans-input li:nth-child(2) > ul{top:-20px!important;}
+
+.toastPop div.ans-input li:nth-child(2) > ul ul{top:-20px!important;}
+
+.toastPop div.ans-input li > ul > li li{margin-bottom:5px!important;}
+
+.toastPop div.ans-input li > ul > li{margin-bottom:22px!important;}
+
+.toastPop div.ans-input li:nth-child(3) > ul{top:-4px!important;}
+
+.toastPop div.ans-input li:nth-child(3) > ul > li{margin-bottom:-4px!important;}
+
+.toastPop div.ans-input > ul:before{height:159px!important;}
+
+.toastPop div.ans-input > ul li ul:before{height:33px!important;}
+
+.toastPop div.ans-input > ul li:nth-child(2) > ul:before{height:49px!important;}
+
+.toastPop div.ans-input > ul li:nth-child(3) > ul:before{height:52px!important;}
+
+.toastPop div.ans-input{height:340px!important;}
+
+/**/
+.actBox .actTitleBox .icons div.icon3{
+    margin-left: 9px;
+}
+
+.quizInputAnswer{
+    line-height: 27px;
+    position:absolute;
+    top:0;
+}
+
+
+.databox_title{
+    position: relative;
+    margin-bottom: 24px;
+}
+.ex{
+    position: relative;
+    background: #fdd490;
+    width: 50px;
+    height: 25px;
+    font-size: 14px;
+    left: 198px;
+    top: 15px;
+    padding: 0px 0px 0px 12px;
+    margin-top: -15px;
+}
+
+.toast_txt_box{
+    position: relative;
+}
+.toast_txt {
+    position: absolute;
+    width: 90px;
+    text-align: center;
+    line-height: 1.2;
+}
+.t_txt1{
+    top:-380px;
+    left:175px;
+}
+.t_txt2{
+    top:-230px;
+    left: 70px;
+}
+.t_txt3{
+    top:-270px;
+    left: 175px;
+}
+.t_txt4{
+    top:-240px;
+    left: 290px;
+    width: 39px;
+
+}
+.t_txt5{
+    top:-136px;
+    left: 150px;
+    width: 150px;
+}
+
+.line:before{
+    content:'';
+    width:1px;
+    height:50px;
+    border-left:1px dotted #ccc;
+    position:absolute;
+    top:12px;
+}
+
+.actText{line-height:27px;}
+
+/**/
+
+.input_table{
+    border-collapse:collapse;
+    table-layout:fixed;
+    margin-top:10px;
+    width:100%;
+}
+
+.input_table tr th{
+    background:#8c8c8c;
+    padding:3px 0;
+    font-size:12px;
+    color:#fff;
+    text-align: center;
+}
+
+.input_table tr td{
+    text-align:center;
+    font-size:12px;
+    background:#fff;
+    border-right:1px solid #909090;
+    border-bottom:1px solid #909090;
+    position:relative;
+    padding:8px 0px;
+}
+
+.input_table tr td:last-child{
+    border-right:0px;
+}
+
+.input_table tr td input{width:90%;}
+.quizBox textarea{width:647px;height:50px;padding: 0 5px;background:#fff;border:solid 1px #cacaca;margin:5px 0 0 20px;}
+.blankQuiz span.num{vertical-align:top;}
+.blankQuiz span.text{display:inline-block;width:90%;position:relative;top:-2px;line-height:20px;}
+button{z-index:1;}
+
+
+.databox .box .img_box{
+    background:url(../images/151/map.png) 0 0 no-repeat;
+    background-size:100%;
+    width:450px;
+    height: 255px;
+}
+
+.databox .box{
+    margin-top: 3px;
+}
+.databox .box:after{clear:both;display:block;content:'';}
+
+
+.box{width:450px;float:left;margin-right:30px;}
+.talk_man1{float:left;margin-top:40px;width:210px;height:190px;background: url('../images/151/man.png') 0 0 no-repeat;background-size: 100%; text-align:center;font-size:12px;}
+.talk_man1 .mal{margin:15px 0 0 25px;}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > div{/* height:90px; */}
+
+.selfcheckbox .content div.chk_wrap .chk-ans_wrap > .ans2 .star_wrap{margin-top:10px;}
+
+.talkarea {/* height:200px; */}
+.talkarea:after{content:'';display:block;clear:both;}
+.talkarea .chbox{position:relative;width:300px;height: 150px;float:left;}
+
+
+.talkarea img{width: 100px;position:absolute;bottom:0;}
+.talkarea .mal{box-sizing:border-box;position:absolute;top:0;left:0;width: 155px;height:200px;padding: 12px 0 0 0;text-align:center;background-size:100% auto !important;font-family: "Goyang" !important;font-size:12px;}
+.chr1 .mal{left: 60px;background: url(../images/151/balloon1.png) no-repeat 0 10px;}
+.chr2 .mal{left: 77px;background:url(../images/151/balloon2.png) no-repeat;padding-top: 5px;}
+.chr1 img{right:0;}
+
+
+
+#P151 .input-table{
+    border-collapse:collapse;
+    table-layout:fixed;
+    margin-top:5px;
+}
+
+#P151 .input-table thead tr th{
+    background:#888;
+    color:#fff;
+    font-size:13px;
+    border-top:2px solid #aeaeae;
+    border-bottom:2px solid #aeaeae;
+    border-right:2px solid #aeaeae;
+    padding:4px 0px 0px 0px;
+}
+
+#P151 .input-table tbody th{
+    text-align:center;
+    padding:1px 0px;
+    border-bottom:2px solid #aeaeae;
+    border-right:2px solid #aeaeae;
+    background:#fff;
+}
+
+
+#P151 .input-table tbody th:last-child,#P151 .input-table thead th:last-child{
+    border-right:0px;
+    border-right:0px;
+}
+
+#P151 .input-table tbody th.que{
+    text-align:left;
+    font-size:12px;
+    color:#383838;
+    padding:4px 0px 0px 13px;
+    font-family:"NanumBarunGothic";
+    font-weight: normal;
+}
+
+#P151 .input-table tbody th label span{
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background:url(../images/common/chk_off.png) no-repeat 1px 1px;
+    background-size:100% 100%;
+    cursor:pointer;
+    position:relative;
+    top:4px;
+}
+
+table input{
+    display:none;
+}
+
+#P151 table input:checked + label span{
+    width:19px!important;
+    height:19px!important;
+    background:url('../images/common/chk_on.png') no-repeat 0 0!important;
+    background-size:100% 100%!important;
+}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input input{width:98%;}
+
+.selfcheckbox .ipwrap{position:absolute;left: 100px;}
+.selfcheckbox .ipwrap2{left: 320px;}
+
+.selfcheckbox .ans-input ul ul{margin-top:10px;}
+.ansText {
+    position: absolute;
+    width: 100%;
+    color: #ff6600;
+    left: 5px;
+    top: 23px;
+    word-break: keep-all;
+    font-family: "NanumBarunGothic" !important;
+    font-size:13px;
+}
+
+.txtbox{border:1px solid #999;padding:2px 4px;position:absolute;top:-6px;left:190px;}
+.txtbox2{left:390px;}

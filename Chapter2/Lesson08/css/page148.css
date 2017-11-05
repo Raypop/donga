@@ -1,0 +1,378 @@
+
+
+.Page #top{
+    position: relative;
+    z-index: 2;
+}
+
+/* 단원 시작 */
+.Page #top .titleBox        {margin-top:15px; padding:15px 0 11px 29px; position:relative; border:2px solid #c7cacb; border-radius:20px; float:right; width:630px; height:66px; }
+.Page #top .titleBox .num   {
+    width:94px; height:115px;
+    background:url('../images/common/titleNumbg.png') 0 0 no-repeat; 
+    background-size:100% 100%; text-align:center; color :#d9620c; 
+    font-size:45px;
+    position:absolute; 
+    top:-22px; 
+    left:-63px; 
+    padding-top:21px;
+    padding-left: 7px;  
+    letter-spacing:5px; 
+}
+.Page #top .titleBox .text  {font-size:30px; color:#242424; letter-spacing:-1.1px; margin-left:20px; font-weight:bold; }
+
+.Page #top .buttons{text-align:right;position: relative;z-index: 2;margin:25px 5px 26px 0;}
+
+.Page #body{
+    margin-top: 383px;
+}
+
+
+.hword{
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-indent: 0;
+}
+
+.Page #bottom{
+    position: absolute;
+    bottom: 0;
+}
+
+/* P092 추가 */
+
+#P148 .mal {
+    position: absolute;
+    text-align: center;
+    background-size: 155px;
+}
+
+#P148 .thinkOpenBox {
+    background-image: url('../images/common/top_bg.png');
+    background-size: 100% 100%;
+    padding: 10px 41px 9px;
+    margin-left: 30px;
+    position: absolute;
+    left: -65px;
+    top: 120px;
+    width: 768px;
+}
+
+
+#P148 .thinkOpenBox .thinkOpenTitle .icon {
+    display: inline-block;
+    width: 23px;
+    height: 28px;
+    background-image: url('../images/common/thinkicon.png');
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-right: 4px;
+}
+
+#P148 .thinkOpenBox .thinkOpenTitle .thinkText {
+    font-size: 15.5px;
+    font-weight: bold;
+    color: #f75b31;
+    vertical-align: middle;
+    position:relative;
+    top:4px;
+    left:-7px;
+}
+
+#P148 .thinkOpenBox .thinkContent .bgCon {
+    position: relative;
+    width: 100%;
+    height: 205px;
+}
+
+
+
+
+
+.thCon{
+    float: left;
+    width: 50%;
+    height: 210px;
+    position:relative;
+}
+.thCon_box1{
+    background: url(../images/148/p1.png) right 40px no-repeat;
+    background-size: 220px;
+}
+.thCon_box2{
+    background: url(../images/148/p2.png) 0 40px no-repeat;
+    background-size: 220px;
+}
+
+.thCon .char1{
+    display:inline-block;
+    background: url(../images/148/char1.png) 0 0 no-repeat;
+    background-size: 80px;
+    width:70px;
+    height:100%;
+    position:absolute;
+    top: 50px;
+left":;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;left: 85px;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+}
+
+.thCon .char2{
+    display:inline-block;
+    background: url(../images/148/char2.png) 0 0 no-repeat;
+    background-size: 78px;
+    width: 100px;
+    height:100%;
+    position:absolute;
+    top: 55px;
+    right: 60px;
+}
+
+.thCon .mal1{
+    background: url(../images/148/mal1.png) no-repeat;
+    top: 5px;
+    left: -25px;
+    width: 155px;
+    height: 170px;
+    padding: 10px 20px 0px 3px;
+    font-size:14px;
+    background-size: 100% auto;
+}
+.thCon .mal2{
+    background: url(../images/148/mal2.png) no-repeat;
+    top: -2px;
+    right: -30px;
+    width: 170px;
+    height: 100px;
+    padding: 15px 11px 0px 11px;
+    font-size:13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#P148 .thinkOpenBox .thinkContent .blankQuiz.q2 {
+    margin-bottom: 0;
+}
+
+#P148 .thinkOpenBox .thinkContent .blankQuiz .num {
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    background-image: url('../images/common/think_num.png');
+    background-size: 100% 100%;
+    margin-right: 2px;
+}
+
+#P148 .thinkOpenBox .thinkContent .blankQuiz .text {
+    color: #3c4552;
+    vertical-align: middle;
+    letter-spacing: -0.4px;
+    font-size: 14px;
+}
+
+#P148 .thinkOpenBox .thinkContent .blankQuiz .quizInputBox {
+    display: block;
+    width: 613px;
+    height: 22px;
+    padding-left: 27px;
+    margin-top: 8px;
+}
+
+#P148 .thinkOpenBox .thinkContent .blankQuiz .quizInputBox input {
+    width: 614px;
+    height: 100%;
+    box-shadow: inset 0 0 2px rgba(0,0,0,.21);
+    padding: 0 5px;
+}
+
+#P148 .thinkOpenBox .thinkContent {
+    position: relative;
+}
+
+
+#P148 .content_bottom .mal {
+    letter-spacing: -0.5px;
+    font-size: 14px;
+}
+
+#P148 .content_bottom .bgCon {
+    position: relative;
+    width: 518px;
+    height: 195px;
+    background: url('../images/common/bottom_bg.png') no-repeat;
+    background-size: 100%;
+}
+
+
+.content_text p .hword2 {
+    display: inline-block;
+    font-size: 18px;
+    color: #ee8032;
+    margin-right: 23px;
+}
+
+#P148 #layerPop1{top:150px; right:5px; width: 100%; }
+#P148 #layerPop1:before{left:509px; }
+
+#P148 #layerPop2{
+    top:150px; right:5px; 
+    width:87%;
+}
+#P148 #layerPop2:before{left:546px; }
+
+#P148 #layerPop1 ul li{margin-top:15px; padding-left:20px; position:relative;}
+#P148 #layerPop1 ul li:first-child{margin-top:0; }
+#P148 #layerPop1 ul li:before{content:''; display:block; width:26px; height:27px; background:url('../images/common/icon05.png') 0 0 no-repeat; background-size:100%; position:absolute; top:-6px; left:-15px; }
+#P148 #layerPop2 ul{position:relative; margin-left:20px; }
+
+#P148 #layerPop2 ul li{padding-left:52px; position:relative; float:left;}
+#P148 #layerPop2 ul:before{content:''; display:block; width:22px; height:26px; background:url('../images/common/icon07.png') 0 0 no-repeat; background-size:100%; position:absolute; top:-6px; left:-15px; }
+#P148 #layerPop2 ul li:before{content:'|'; display:block; width:22px; height:26px; background-size:100%; position:absolute; top:0px; left:25px; }
+#P148 #layerPop2 ul li:first-child:before,#P148 #layerPop2 ul li:nth-child(3):before{content:''; }
+#P148 #layerPop2 ul li button{font-size: 15.5px}
+
+/*
+#P148 .widget.study2 {
+    width: 128px;
+    left: 44px;
+}*/
+
+#P148 .widget.study2 .content {
+    width: 100%;
+    text-align: justify;
+}
+
+#P148 .widget.study2 .content .hword {
+    display: inline-block;
+    font-size:12px;
+    color: #428313;
+}
+
+#P148 .blankQuiz{
+    position: relative;
+    margin-left: 30px;
+}
+
+.blankQuiz .quizInputBox.check .quizInputAnswer{
+    padding-left: 27px;
+    top: 20px;
+}
+
+/**/
+span.text_bold {
+    font-weight: bold;
+    font-family: "NanumBarunGothic";
+    font-size: 16px;
+}
+
+
+.anscheckBtn{
+    top:20px; 
+    right:10px; 
+}
+.anscheckBtn:hover{
+    background: url(../images/common/ans_check_on.png) 0 0 no-repeat;
+    background-size: 100%;
+}
+
+/*toastPop*/
+
+
+/* 08-29 수정 */
+.quizBox{margin-left:-30px;margin-top:-2px;}
+
+.quizBox:last-child{margin-top:-13px;}
+
+
+ .hword.toast.none{
+    position: absolute;
+    right: 144px;
+    bottom: 83px;
+    font-size: 10px;
+ }
+
+.thinkbox .title .icon {
+    display: inline-block;
+    width: 23px;
+    height: 28px;
+    background-image: url(../images/common/thinkicon.png);
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.thinkbox {
+    width: 138px;
+    position: absolute;
+    top: 561px;
+}
+.thinkbox .title .ctext {
+    color: #f75b31;
+    font-size: 15.5px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+.thinkbox .title .roundNum {
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    background-image: url(../images/common/think_num.png);
+    background-size: 100% 100%;
+    letter-spacing: 0;
+}
+
+
+
+
+.thinkbox .title span:nth-child(4){
+    font-size: 15px;
+}
+
+.thinkbox .textbox textarea{
+    resize: none;
+    background: #fff;
+    height: 36px;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+
+
+/**/
+
+
+.contents .ico1{
+    vertical-align: middle;
+}
+
+.videoContainer {
+    box-shadow: 0px 1px 3px #ccc;
+    margin-top: 20px;
+}
+
+#w_videoContainer .playCover {
+    background-position: center center;
+}
+.big_view{position:absolute;}
+.studyPop{z-index:11;}

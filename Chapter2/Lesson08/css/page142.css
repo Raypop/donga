@@ -476,3 +476,5 @@ span.text_bold {
 .imgbox{display:block;width:58px;height:58px;background:url(../images/142/p142_img5.png) 0 0 no-repeat;
     background-size:100%;margin-bottom:3px;
 }
+
+.studyPop .popContents img{width:300px;}

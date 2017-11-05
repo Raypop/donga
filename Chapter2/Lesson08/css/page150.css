@@ -1,0 +1,447 @@
+/*Page153*/
+.body-bottom{
+    position: relative;
+    margin-top: 30px;
+    padding:0px;
+    padding-top: 65px;
+}
+
+/*박스 위 소제목*/
+
+.box-title{
+    font-size: 15px;
+    margin-left: 40px;
+    display: inline-block;
+    width: 425px;
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.box-title:before{
+    content: '';
+    position: absolute;
+    left: -16px;
+    top: 5px;
+    width: 7px;
+    height: 7px;
+    border: 2px solid #199788;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+
+.databox{
+    width:260px;
+    position: relative;
+    height: 200px;
+    margin-top:5px;
+    z-index: 1;
+    float:left;
+}
+
+.databox .box{
+    width: 275px;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    padding-left:15px;
+}
+.databox .box .box-num{
+    width: 54px;
+    height: 57px;
+    color: #144d00;
+    font-size: 14px;
+    background: url('../images/common/databox_num.png') 0 0 no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -14px;
+    left: 15px;
+    text-align: center;
+    text-indent: -4px;
+    padding-top: 14px;
+}
+
+.databox .box .con img{
+    width: 100%;
+}
+
+.databox .box .num{
+    background-color:#529e1c;
+    border-radius: 50%;
+    color:#fff;
+    border: 2px solid #fff;
+    box-shadow: 1px 1px 1px #999;
+    text-align: center;
+    padding-top: 5px;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 13px;
+}
+
+.databox .box .con img{
+    width: 222px;
+    margin-left: 12px;
+    margin-top: 21px;
+}
+
+
+.checkPop{
+    left: auto;
+    bottom: auto;
+    top: 150px;
+}
+
+.rightBox{
+    width:420px;
+    float:right;;
+}
+
+.quizBox{
+    margin-top: 20px;
+}
+
+.quizBox textarea{
+    resize: none;
+    background: #fff;
+    padding: 5px;
+    margin-left: 26px;
+    margin-top: 6px;
+    width: 95%;
+    height: 100px;
+    font-size: 13px;
+}
+
+.anscheckBtn{
+    top:-5px;
+}
+span.text_bold{
+    font-weight: bold;
+    font-family: "NanumBarunGothic";
+}
+
+
+.quizBox .quizText .text{
+    font-weight: 500;
+    width:88%;
+}
+
+
+/* content_bottom*/
+.content_bottom{
+    position: relative;
+    height: 250px;
+    width: 600px;
+    margin-top: 20px;
+}
+
+
+.content_bottom .con_img1 {
+    position: absolute;
+    width: 205px;
+    height: 168px;
+    background: url('../images/111/p111_img1.png') no-repeat;
+    background-size:100%;
+}
+.content_bottom .con_img2 {
+    position: absolute;
+    width: 312px;
+    height: 170px;
+    background: url('../images/111/p111_img2.png') no-repeat;
+    background-size:100%;
+    left: 217px;
+}
+
+#P153 #body .content_bottom .textbox {
+    margin-top: 180px;
+    margin-left: 20px;
+}
+
+#P153 #body .content_bottom .con_img1 .textbox {
+    width: 191px;
+}
+#P153 #body .content_bottom .con_img2 .textbox {
+    width: 290px;
+}
+
+
+#P153 #body .content_bottom .textbox .text {
+    position: relative;
+}
+
+#P153 #body .content_bottom .textbox .text span {
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+#P153 #body .content_bottom .textbox .text .icon {
+    position: absolute;
+    top: 5px;
+    left: -20px;
+    width: 13px;
+    height: 13px;
+    background-image: url('../images/common/subtexticon.png');
+    background-size: 100% 100%;
+}
+
+
+
+/* 퐁당 사례 */
+
+.case {
+    position: absolute;
+    right:35px;
+    width: 687px;
+    height: 553px;
+    background-image: url('../images/common/case_bg2.png');
+    background-size: 100%;
+    padding: 37px 15px 0 41px;
+    margin: 70px 0 0 -22px;
+}
+
+.case:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.case .title {
+    position: absolute;
+    top: -15px;
+    left: 35px;
+    width: 263px;
+    height: 34px;
+    background-image: url('../images/common/case_title.png');
+    background-size: 100% 100%;
+    padding: 5px 0 0 27px;
+    letter-spacing:0.1px;
+}
+
+.case .title .icon {
+    position: absolute;
+    top: -36px;
+    left: -42px;
+    width: 74px;
+    height: 68px;
+    font-size: 17px;
+    line-height: 81px;
+    text-indent: 11px;
+    font-weight: bold;
+    color: #604302;
+    background-image: url('../images/common/case_icon.png');
+    background-size: 100% 100%;
+}
+
+.case .title .titleText {
+    font-size: 14px;
+    color: #fff;
+}
+
+.case .title .titleText .hlt {
+    font-size: 15px;
+    color: #e3db07;
+}
+
+.case .caseLeft,
+.case .caseRight {
+    float: none;
+    margin-top: -3px;
+}
+
+.case .caseRight{position:relative;float:right;margin: 0 0 0 15px;/* height: 160px; */}
+
+.case .caseLeft{
+    
+    margin-right: 20px;
+}
+
+.case .caseText {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.7;
+    letter-spacing:-0.4px;
+    text-indent: 15px;
+    /* font-size: 13px; */
+}
+.case .caseText .btm {
+    width: 232px;
+    padding-left: 28px;
+}
+
+.case .caseText.btm{
+    font-size: 13.5px;
+    text-align: right;
+    font-weight: normal;
+}
+
+.case .contents{
+    margin-top:7px;
+}
+
+.case .contents .icon{
+    width:13px;
+    height:13px;
+    display:inline-block;
+    background:url(../images/common/subtexticon.png) 0 0 no-repeat;
+    background-size:100%;
+    vertical-align:top;
+}
+.case .wrap{height:212px;}
+.case .contents .txt{
+    font-size:11px;
+    display:inline-block;
+    width:177px;
+    line-height:15px;
+}
+
+/*생각플러스*/
+ .thinkplus{
+    position: absolute;
+    top: 860px;
+    left:100px;
+    width: 600px;
+    background: transparent;
+    padding: 0px;
+ }
+
+ .thinkplus input{
+    width: 85px;
+ }
+
+ .thinkplus .txt{
+    margin-top: 10px;
+ }
+ 
+ .thinkplus textarea{
+    resize: none;
+    border-bottom: 1px solid #b7b7b7;
+    width: 590px;
+    font-size: 14px;
+    background: #fff;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 0px;
+
+ }
+
+
+/***/
+
+.selfcheckbox .content div.chk_wrap div.ans-input > ul:before{
+    content:'';
+    width:1px;
+    height:238px;
+    border-left:1px dotted #7d7d7d;
+    position:absolute;
+    top:37px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input > ul li:nth-child(1) > ul:before{
+    content:'';
+    width:1px;
+    height:149px;
+    border-left:1px dotted #ccc;
+    position:absolute;
+    top:12px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li{
+    background-size:12px 1px;
+    padding-left:29px;
+}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input li{
+    background:url(../images/common/chk_anng.png) no-repeat 0 10px ;
+    background-size:7px 1px;
+    padding-left:17px;
+    font-size:15px;
+    color:#2f2f2f;
+    position:relative;
+    margin-bottom:79px;
+    letter-spacing:-0.6px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input > ul > li:before{
+    content:'';
+    width:6px;
+    height:6px;
+    background-color:#7d7d7d;
+    border-radius:50%;
+    position:absolute;
+    top:7px;
+    left:12px;    
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li:before{
+    content:'';
+    width:6px;
+    height:6px;
+    background-color:#7d7d7d;
+    border-radius:50%;
+    position:absolute;
+    top:7px;
+    left:7px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li:nth-child(1) > ul{
+    position:absolute;
+    left:171px;
+    top:3px;
+    width:415px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input li > ul > li{
+    margin-bottom:54px;
+}
+
+
+.selfcheckbox .content div.chk_wrap div.ans-input{
+    position:relative;
+    height:333px;
+}
+
+.quizInputAnswer{
+    line-height:22px;font-size:15px;
+}
+
+.selfcheckbox .content div.chk_wrap div.ans-input input{
+    font-family: 'NanumBarunGothic';
+}
+
+.imgbox{position:absolute;width:160px;transform:rotate(-3deg);}
+.imgbox img{width:100%;border:3px solid #fff;box-shadow:0 1px 3px rgba(0,0,0,0.5);}
+.imgbox1 img{}
+.imgbox1{width:170px;top: 110px;left:-10px;z-index:2;}
+.imgbox2{top: 225px;transform:rotate(2deg);}
+
+.studytit {
+    font-family: "NanumBarunGothic";
+    font-weight: 900;
+    color: #f75b31;
+    font-size:13px;
+    margin:10px 0 0 15px;
+    cursor:pointer;
+}
+
+.studytit .icon {
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    background: url(../images/common/icon08.png) 0 0 no-repeat;
+    background-size: 100%;
+    vertical-align: top;
+    margin-top: -1px;
+    margin-right: 1px;
+    
+}
+.studytit .stit{padding-left: 23px;
+    font-family: "NanumBarunGothic";
+    font-size: 12px;
+    line-height: 1.6;color:#444;
+    font-weight:normal;
+}
+
+.studyPop .popHeader .title{background:none;width:initial;height:initial;position:static;}
+.studyPop .popHeader:after{display:block;content:'';clear:both;}

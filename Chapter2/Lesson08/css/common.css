@@ -16,21 +16,23 @@
 
 input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder { /* WebKit browsers */ color:transparent; } input:focus:-moz-placeholder, textarea:focus:-moz-placeholder { /* Mozilla Firefox 4 to 18 */ color:transparent; } input:focus::-moz-placeholder, textarea:focus::-moz-placeholder { /* Mozilla Firefox 19+ */ color:transparent; } input:focus:-ms-input-placeholder, textarea:focus:-ms-input-placeholder { /* Internet Explorer 10+ */ color:transparent; }
 /* ------------------------------------------------------------------------------------------------------------- */
-body	{margin:0; padding:0;}
+body    {margin:0; padding:0;}
 
 .Page{width:768px; height:1024px; margin:0; overflow:hidden; background:#fff; position:relative; padding:58px 35px 0px 35px;} /* 기본 여백 지정 */
 
-/* 학습 영역 지정 본학습 크기 530px */
-.Page.leftPage .content_box			{padding-left:168px;}
-.Page.rightPage .content_box		{padding-right:168px;}
-/* .Page.leftPage			{padding:58px 35px 0px 203px;}
-/* .Page.rightPage			{padding:58px 203px 0px 35px;} 본학습 크기 530px */
+#body:after{content:'';display:block;clear:both;}
 
-.body-bottom				{position:absolute; display:inline-block; margin-left:-35px; width:768px; margin-top:90px; padding:0 41px; background:#fafafa; bottom:0px;} /* body-bottom 영역 지정 */
+/* 학습 영역 지정 본학습 크기 530px */
+.Page.leftPage .content_box         {padding-left:168px;}
+.Page.rightPage .content_box        {padding-right:168px;}
+/* .Page.leftPage           {padding:58px 35px 0px 203px;}
+/* .Page.rightPage          {padding:58px 203px 0px 35px;} 본학습 크기 530px */
+
+.body-bottom                {position:absolute; display:inline-block; margin-left:-35px; width:768px; margin-top:90px; padding:0 41px; background:#fafafa; bottom:0px;} /* body-bottom 영역 지정 */
 
 /* 중 주제 폰트 - 초록 텍스트 */
-.Page .pageTitle		{margin-bottom:10px;}
-.Page .pageTitle .icon	{
+.Page .pageTitle        {margin-bottom:10px;}
+.Page .pageTitle .icon  {
     display:inline-block;
     width:25px;
     height:18px;
@@ -43,7 +45,7 @@ body	{margin:0; padding:0;}
 .Page .content_text .sub_txt        {
     text-indent:0 !important;
 }
-.Page .pageTitle .text	{
+.Page .pageTitle .text  {
     font-family:"NanumBarunGothic";
     font-weight:bold;
     color:#428313; font-size:16.5px; letter-spacing:-0.5px;}
@@ -51,9 +53,9 @@ body	{margin:0; padding:0;}
 
 /* 기본 폰트 키그 16px; 장평, 자간 0, */
 
-.Page .content_text					{position:relative; display:inline-block; letter-spacing:-0.5px;}
+.Page .content_text                 {position:relative; display:inline-block; letter-spacing:-0.5px;}
 
-.Page .content_text p				{
+.Page .content_text p               {
     font-size:16px;
     font-weight:700;
     line-height:27px;
@@ -69,12 +71,12 @@ body	{margin:0; padding:0;}
     line-height:25px;
     margin-right:31px;
 }
-.Page .content_text .point_txt		{font-family:"NanumBarunGothic"; font-size:17px; font-weight:900; color:#333333;} /* 교과서에는 나눔고딕이지만 행간이 무너지기 때문에 우선 나눔명조로 하며 - 추후 고객사 요청시 고통css으로 수정함 */
+.Page .content_text .point_txt      {font-family:"NanumBarunGothic"; font-size:17px; font-weight:900; color:#333333;} /* 교과서에는 나눔고딕이지만 행간이 무너지기 때문에 우선 나눔명조로 하며 - 추후 고객사 요청시 고통css으로 수정함 */
 /* 본문 시작 위치 정렬 */
 
 
 /* 주요 용어 */
-.hword					{
+.hword                  {
     font-weight:900;
     font-family:"NanumBarunGothic";
     font-size:15.5px;
@@ -83,10 +85,10 @@ body	{margin:0; padding:0;}
     position:relative;
     text-indent:0;
      }
-.hword:before			{
+.hword:before           {
     content:'*'; color:#428313; position:absolute; top:-12px; left:2px; text-indent:0; }
 
-.pointPop				{font-family:"NanumSquare"; font-size:14px; color:#2b271c;} /* 핵심 질문 팝업 폰트 */
+.pointPop               {font-family:"NanumSquare"; font-size:14px; color:#2b271c;} /* 핵심 질문 팝업 폰트 */
 /* 핵심 질문 팝업 폰트 */
 
 
@@ -102,7 +104,14 @@ body	{margin:0; padding:0;}
     margin-left:5px;
     margin-top:1px;
 }
-
+.quizBox .textarea {
+    width: 647px;
+    height: 50px;
+    padding: 0 5px;
+    background: #fff;
+    border: solid 1px #cacaca;
+    margin: 5px 0 0 20px;
+}
 
 /* 보기 */
 .blankQuiz{
@@ -155,59 +164,59 @@ body	{margin:0; padding:0;}
 
 
 /* 본학습 - 이미지 양쪽 배치 - 530px */
-.imageColums2							{position:relative; display:inline-block; margin-bottom:25px}
-.imageColums2 .imagebox					{float:left; width:250px; margin-left:30px;}
-.imageColums2 .imagebox:first-child		{margin-left:0; }
-.imageColums2 .imagebox .imageline		{}
-.imageColums2 .imagebox img				{width:100%; }
-.imageColums2 .imagebox .textbox		{font-family:"NanumBarunGothic"; font-weight:700; color:#555555; margin-top:5px;}
-.imageColums2 .imagebox .textbox > span	{font-size:12px; display:inline-block; vertical-align:top; line-height:1.5; }
+.imageColums2                           {position:relative; display:inline-block; margin-bottom:25px}
+.imageColums2 .imagebox                 {float:left; width:250px; margin-left:30px;}
+.imageColums2 .imagebox:first-child     {margin-left:0; }
+.imageColums2 .imagebox .imageline      {}
+.imageColums2 .imagebox img             {width:100%; }
+.imageColums2 .imagebox .textbox        {font-family:"NanumBarunGothic"; font-weight:700; color:#555555; margin-top:5px;}
+.imageColums2 .imagebox .textbox > span {font-size:12px; display:inline-block; vertical-align:top; line-height:1.5; }
 .imageColums2 .imagebox .textbox span.bt{font-family:"NanumBarunGothic"; font-weight:900; color:#444444; margin-right:16px; }
-.imageColums2 .imagebox .textbox .icon	{width:13px; height:13px; background:url(../images/common/subtexticon.png) 0 0 no-repeat; background-size:100%; margin-right:3px; margin-top:1px; }
-.imageColums2 .imagebox .textbox .text	{width:225px; text-align: justify;}
-.imageColums2:after						{content:''; display:block; clear:both; }
+.imageColums2 .imagebox .textbox .icon  {width:13px; height:13px; background:url(../images/common/subtexticon.png) 0 0 no-repeat; background-size:100%; margin-right:3px; margin-top:1px; }
+.imageColums2 .imagebox .textbox .text  {width:225px; text-align: justify;}
+.imageColums2:after                     {content:''; display:block; clear:both; }
 
 
 /* 위젯 */
-.Page.leftPage .widget			{left:-168px;}
-.Page.rightPage .widget			{top:0px; left:560px;}
-.widget							{position:absolute; width:138px; font-size:13px; color:#444444;}
-.widget .title					{font-family:"NanumBarunGothic"; font-weight:900; color:#f75b31;}
-.widget.study .title .icon		{display:inline-block; width:18px; height:22px; background:url('../images/common/icon08.png') 0 0 no-repeat; background-size:100%;
-								vertical-align:top; margin-top:-1px; margin-right:1px; }
-.widget .content				{
+.Page.leftPage .widget          {left:-168px;}
+.Page.rightPage .widget         {top:0px; left:560px;}
+.widget                         {position:absolute; width:138px; font-size:13px; color:#444444;}
+.widget .title                  {font-family:"NanumBarunGothic"; font-weight:900; color:#f75b31;}
+.widget.study .title .icon      {display:inline-block; width:18px; height:22px; background:url('../images/common/icon08.png') 0 0 no-repeat; background-size:100%;
+                                vertical-align:top; margin-top:-1px; margin-right:1px; }
+.widget .content                {
     font-family:"NanumBarunGothic";
     padding-left:23px;
     /*padding-top:4px; */
     font-size:12px;
     line-height: 1.6;
 }
-.widget.findmap .title .icon	{display:inline-block; width:24px; height:22px; background:url('../images/common/icon09.png') 0 0 no-repeat; background-size:100%;
-								vertical-align:top; margin-top:-3px; margin-right:0; margin-left:-4px; }
-.widget.check div				{width:126px; height:25px; font-size:13px; color:#fff; background:url(../images/common/widget_check.png) 0 0 no-repeat; background-size:100%;
-								padding-left:6px; letter-spacing:6.7px; padding-top:3px; cursor:pointer; }
+.widget.findmap .title .icon    {display:inline-block; width:24px; height:22px; background:url('../images/common/icon09.png') 0 0 no-repeat; background-size:100%;
+                                vertical-align:top; margin-top:-3px; margin-right:0; margin-left:-4px; }
+.widget.check div               {width:126px; height:25px; font-size:13px; color:#fff; background:url(../images/common/widget_check.png) 0 0 no-repeat; background-size:100%;
+                                padding-left:6px; letter-spacing:6.7px; padding-top:3px; cursor:pointer; }
 
-.widget.study2 .icon			{
+.widget.study2 .icon            {
     position:absolute; top:2px; left:-4px; 
     width:13px; height:13px; 
     background:url(../images/common/subtexticon2-.png) 0 0 no-repeat; 
     background-size:100%; 
 }
-.widget.study2 .content			{width:162px; font-size:11px; line-height:1.6; padding-left:15px; padding-top:0;}
+.widget.study2 .content         {width:162px; font-size:11px; line-height:1.6; padding-left:15px; padding-top:0;}
 
 
 
 /* 단어 팝업 */
-.toast							{
+.toast                          {
     display:inline-block; position:relative; }
-.toastPop						{
+.toastPop                       {
     display:none;
     position:absolute; top:0; left:0; margin-top:20px;
     -webkit-box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
     box-shadow: 2px 2px 0px rgba(0,0,0,0.1);
     border-radius:10px;
     }
-.toastPop .outbox				{
+.toastPop .outbox               {
     position:relative;
     background-color:#199788;
     border-radius:10px;
@@ -216,7 +225,7 @@ body	{margin:0; padding:0;}
     min-width:350px;
 }
 
-.toastPop .innerbox				{
+.toastPop .innerbox             {
     background-color: #fff;
     width:100%;
     height:100%;
@@ -241,25 +250,29 @@ body	{margin:0; padding:0;}
     background-size:25px 30px;
 }
 
-.innerbox span.inner_color{color:#ff6600;font-family:'NanumBarunGothic';}
-.toastPop .angle				{position:absolute; top:-11px; left:25px; }
-.toastPop .angle:before			{
+.innerbox .inner_color{color:#ff6600;font-family:'NanumBarunGothic';}
+.inner_color td{color:#ff6600 !important;font-family:'NanumBarunGothic' !important;}
+.toastPop .angle                {position:absolute; top:100%; left:25px; margin-top:19px;}
+
+.toastPop.under .angle{top:-30px;}
+
+.toastPop .angle:before         {
     content:''; display:block;
     position:absolute;
     top:-15px;
     border:15px solid transparent; border-bottom:16px solid #199788; }
-.toastPop .angle:after			{
+.toastPop .angle:after          {
     content:'';
     display:block;
     position:absolute;
     top:-10px;
     border:15px solid transparent; border-bottom:15px solid #fff; }
-.toastPop .closeBtn				{width:15px; height:15px; position:absolute; right:5px; bottom:5px; background:url('../images/common/toast_pop_close.png') 0 0 no-repeat; background-size:cover; }
+.toastPop .closeBtn             {width:15px; height:15px; position:absolute; right:5px; bottom:5px; background:url('../images/common/toast_pop_close.png') 0 0 no-repeat; background-size:cover; }
 
 
 
 /* 체크 팝업 */
-.checkPop			{
+.checkPop           {
     width:530px;
     min-height:350px;
     border:3px solid #199788;
@@ -277,7 +290,7 @@ body	{margin:0; padding:0;}
      display: none;
 
  }
-.checkPop .title	{
+.checkPop .title    {
     background: url(../images/common/widget_check-.png) 0 0 no-repeat;
     background-size: 100%;
     width:125px;
@@ -294,7 +307,7 @@ body	{margin:0; padding:0;}
     white-space: nowrap;
 }
 
-.checkPop .quizbox	{
+.checkPop .quizbox  {
     margin:35px 40px;
     font-family:"NanumBarunGothic";
     font-size:16px;
@@ -303,33 +316,33 @@ body	{margin:0; padding:0;}
     color:#444444;
     margin-bottom:60px;
 }
-.checkPop .quizbox .quiztext span		{display:inline-block; width:100%; vertical-align:top; font-weight: 500;}
-.checkPop .quizbox .quiztext span > span		{display:inline-block; width:auto; vertical-align:top; font-weight: 500;position: relative;}
+.checkPop .quizbox .quiztext span       {display:inline-block; width:100%; vertical-align:top; font-weight: 500;}
+.checkPop .quizbox .quiztext span > span        {display:inline-block; width:auto; vertical-align:top; font-weight: 500;position: relative;}
 .checkPop .quizbox .quiztext span.ans{
     position: absolute;width: 100%;text-align: center;color:red;font-family: 'NanumBarunGothic';display: block;font-size:14px
     ;}
-.checkPop .quizbox .quiztext span.num	{position:absolute; display:inline-block; margin-left:-20px; width: 20px;font-weight:700;}
-.checkPop .quizbox .checkbox			{
+.checkPop .quizbox .quiztext span.num   {position:absolute; display:inline-block; margin-left:-20px; width: 20px;font-weight:700;}
+.checkPop .quizbox .checkbox            {
     margin-top:15px;
     margin-bottom:60px;
 }
-.checkPop .quizbox .checkbox > div				{float:left; margin-left:40px; }
-.checkPop .quizbox .checkbox > div:first-child	{margin-left:130px; }
+.checkPop .quizbox .checkbox > div              {float:left; margin-left:40px; }
+.checkPop .quizbox .checkbox > div:first-child  {margin-left:130px; }
 
-.checkPop .quizbox .checkbox > div input		{display:none; }
-.checkPop .quizbox .checkbox div label			{cursor:pointer; }
-.checkPop .quizbox .checkbox div span			{display:inline-block; vertical-align:middle; }
-.checkPop .quizbox .checkbox div .box			{display:inline-block; width:25px; height:25px; border-radius:5px; border:2px solid #888; margin-left:10px; }
-.checkPop .quizbox .checkbox .checko .icon		{width:27px; height:27px; display:inline-block; background:url('../images/common/quiz_o_icon.png') 0 0 no-repeat; background-size:100%; }
-.checkPop .quizbox .checkbox .checkx .icon		{width:25px; height:25px; display:inline-block; background:url('../images/common/quiz_x_icon.png') 0 0 no-repeat; background-size:100%; }
-.checkPop .quizbox .checkbox:after				{content:""; display:block; clear:both; }
-.checkPop .quizbox .checkbox .box				{position:relative; }
+.checkPop .quizbox .checkbox > div input        {display:none; }
+.checkPop .quizbox .checkbox div label          {cursor:pointer; }
+.checkPop .quizbox .checkbox div span           {display:inline-block; vertical-align:middle; }
+.checkPop .quizbox .checkbox div .box           {display:inline-block; width:25px; height:25px; border-radius:5px; border:2px solid #888; margin-left:10px; }
+.checkPop .quizbox .checkbox .checko .icon      {width:27px; height:27px; display:inline-block; background:url('../images/common/quiz_o_icon.png') 0 0 no-repeat; background-size:100%; }
+.checkPop .quizbox .checkbox .checkx .icon      {width:25px; height:25px; display:inline-block; background:url('../images/common/quiz_x_icon.png') 0 0 no-repeat; background-size:100%; }
+.checkPop .quizbox .checkbox:after              {content:""; display:block; clear:both; }
+.checkPop .quizbox .checkbox .box               {position:relative; }
 .checkPop .quizbox .checkbox input[type="radio"]:checked+label .box:after
-	{content:''; display:block; position:absolute; width:40px; height:35px; background:url('../images/common/quiz_ox_check.png') 0 0 no-repeat; background-size:100%; top:-18px; }
+    {content:''; display:block; position:absolute; width:40px; height:35px; background:url('../images/common/quiz_ox_check.png') 0 0 no-repeat; background-size:100%; top:-18px; }
 
 .checkPop .quizbox.quizinput input{display:inline-block; border:1px solid #888; text-align:center; width:140px; height:24px; font-size:16px; vertical-align:middle;font-family:"NanumBarunGothic"; margin-top:-2px;}
 
-.checkPop .closeBtn			{
+.checkPop .closeBtn         {
     position:absolute;
     width:30px;
     height:32px;
@@ -339,7 +352,7 @@ body	{margin:0; padding:0;}
     top:25px;
     right:10px;
 }
-.checkPop .checkBtn			{
+.checkPop .checkBtn         {
     width: 32px;
     height: 37px;
     background: url(../images/common/ans_check-.png) 0 0 no-repeat;
@@ -405,29 +418,29 @@ body	{margin:0; padding:0;}
     line-height:22px;
     color:#444444
 }
-.layerPop .close		{position:absolute; top:5px; right:5px; width:20px; height:20px; }
-.layerPop.style1		{border:3px solid #199788; min-height:60px; }
-.layerPop.style1 .close	{background:url('../images/common/pop_close.png') 0 0 no-repeat; background-size:100% 100%; }
-.layerPop:before		{border-top:3px solid #199788; border-left:3px solid #199788; content:'';
-						display:block; width:15px; height:15px; position:absolute; top:-11px; left:500px; background:#fff;
-						-webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg); }
+.layerPop .close        {position:absolute; top:5px; right:5px; width:20px; height:20px; }
+.layerPop.style1        {border:3px solid #199788; min-height:60px; }
+.layerPop.style1 .close {background:url('../images/common/pop_close.png') 0 0 no-repeat; background-size:100% 100%; }
+.layerPop:before        {border-top:3px solid #199788; border-left:3px solid #199788; content:'';
+                        display:block; width:15px; height:15px; position:absolute; top:-11px; left:500px; background:#fff;
+                        -webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); transform:rotate(45deg); }
 
 /* ------------------------------------------------------------------------------------------------------------- */
 
 /* 쪽번호 */
-.Page #bottom						{position:absolute; bottom:0; }
-.Page #bottom .pageNum				{height:40px; }
-.Page #bottom .pageNum span			{vertical-align:top; display:inline-block; }
-.Page #bottom .pageNum .bullet		{background:url('../images/common/pageBullet.png') 0 0 no-repeat; background-size:5px 100%; width:5px; height:100%; margin-left:2px; }
+.Page #bottom                       {position:absolute; bottom:0; }
+.Page #bottom .pageNum              {height:40px; }
+.Page #bottom .pageNum span         {vertical-align:top; display:inline-block; }
+.Page #bottom .pageNum .bullet      {background:url('../images/common/pageBullet.png') 0 0 no-repeat; background-size:5px 100%; width:5px; height:100%; margin-left:2px; }
 .Page #bottom .pageNum span.num,
-.Page #bottom .pageNum span.title	{
+.Page #bottom .pageNum span.title   {
     margin-top:8px;
     /*font-weight:bold; */
     font-size:13px; color:#242424;
 }
-.Page #bottom .pageNum span.title	{font-size:11px; }
-.Page.leftPage #bottom				{left:36px; }
-.Page.rightPage #bottom				{right:36px;}
+.Page #bottom .pageNum span.title   {font-size:11px; }
+.Page.leftPage #bottom              {left:36px; }
+.Page.rightPage #bottom             {right:36px;}
 
 /*슬라이드 버튼*/
 .pagenav{
@@ -590,26 +603,26 @@ body	{margin:0; padding:0;}
 /*핵심질문*/
 
 /* 핵심 질문 */
-.Cover2 #bottom					{position:absolute; bottom:0; }
-.Cover2 #bottom .pointPop		{width:652px; background:url('../images/common/point_bg.png') 0 0 no-repeat; background-size:100%;
-								position:absolute; bottom:60px; left:24px; overflow:hidden; padding:52px 0 0 68px;
-								transition:all 0.5s ease-in; -webkit-transition:all 0.5s ease-in-out; }
+.Cover2 #bottom                 {position:absolute; bottom:0; }
+.Cover2 #bottom .pointPop       {width:652px; background:url('../images/common/point_bg.png') 0 0 no-repeat; background-size:100%;
+                                position:absolute; bottom:60px; left:24px; overflow:hidden; padding:52px 0 0 68px;
+                                transition:all 0.5s ease-in; -webkit-transition:all 0.5s ease-in-out; }
 
-.Cover2 #bottom .pointPop.up	{height:196px; }
-.Cover2 #bottom .pointPop.down	{height:70px; }
+.Cover2 #bottom .pointPop.up    {height:196px; }
+.Cover2 #bottom .pointPop.down  {height:70px; }
 
-.pointPop .title				{position:absolute; left:245px; top:0px;width:175px;
+.pointPop .title                {position:absolute; left:245px; top:0px;width:175px;
     height:34px;padding-top:6px;padding-left:40px;cursor:pointer; }
-.pointPop .title span			{display:inline-block; }
-.pointPop .title .icon			{width:14px; height:10px; background:url(../images/common/icon04.png) 0 0 no-repeat; background-size:100% 100%;
-								margin-top:6px; vertical-align:top; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; }
-.pointPop.up .title .icon		{transform:rotate(0); }
-.pointPop.down .title .icon		{transform:rotate(180deg); }
-.pointPop .title .text			{font-weight:bold; color:#50790e;  margin-left:6px;}
+.pointPop .title span           {display:inline-block; }
+.pointPop .title .icon          {width:14px; height:10px; background:url(../images/common/icon04.png) 0 0 no-repeat; background-size:100% 100%;
+                                margin-top:6px; vertical-align:top; transition:all 0.5s ease-in-out; -webkit-transition:all 0.5s ease-in-out; }
+.pointPop.up .title .icon       {transform:rotate(0); }
+.pointPop.down .title .icon     {transform:rotate(180deg); }
+.pointPop .title .text          {font-weight:bold; color:#50790e;  margin-left:6px;}
 
-.pointPop.down ul				{display:none;}
-.pointPop ul li					{position:relative; margin-bottom:26px;font-size:15.5px;letter-spacing: -0.7px;}
-.pointPop ul li:first-child		{margin-top:10px; }
+.pointPop.down ul               {display:none;}
+.pointPop ul li                 {position:relative; margin-bottom:26px;font-size:15.5px;letter-spacing: -0.7px;}
+.pointPop ul li:first-child     {margin-top:10px; }
 .pointPop ul li span.num{display:inline-block;font-size:16px;color:#ea5f01;position:relative;left:-16px;}
 
 
@@ -852,11 +865,11 @@ body	{margin:0; padding:0;}
 
 .selfcheckbox .content div.chk_wrap .chk-ans_wrap > div{
     width:600px;
-    height:68px;
+    /* height:68px; */
     border-radius:50px;
     background:#ebebeb;
     position:relative;
-    padding:14px 10px 0 32px;
+    padding: 14px 10px 14px 32px;
     margin-bottom:12px;
     letter-spacing:-0.5px;
     margin-left: 15px;
@@ -949,12 +962,14 @@ transform: scale(1.2);
 .toast{cursor:pointer;}
 
 .toastPop.top .angle:before{
-    top:-19px;
+    top:-100%;
+    margin-top:-20px;
     border-top:15px solid #199788;
     border-bottom:15px solid transparent;
 }
 .toastPop.top .angle:after{
-    top:-25px;
+    top:-100%;
+    margin-top:-26px;
     border-top:15px solid #fff;
     border-bottom:15px solid transparent;
 }
@@ -1073,7 +1088,7 @@ span.text_bold {
 }
 .actBox .actTitleBox .icons div{
     font-size: 8px;
-    width: 45px;
+    width: 50px;
     height: 100%;
     margin-left: 3px;
     padding-top: 20px;
@@ -1216,7 +1231,7 @@ button{overflow:visible;}
     margin-left:-30px;
     margin-top:-30px;
 }
-
+.toastPop.left .angle{left:-25px;}
 .toastPop.left .angle:before{
     border-right:15px solid #199788;
     border-bottom:15px solid transparent;
@@ -1224,8 +1239,9 @@ button{overflow:visible;}
 }
 .toastPop.left .angle:after{
     border-right:15px solid #fff;border-bottom:15px solid transparent;
-    left:5px;top:-15px;}
+    left:7px;top:-15px;}
 
+.toastPop.right .angle{left:initial;right:5px;}
 .toastPop.right .angle:before{
     border-left: 15px solid #199788;
     border-bottom: 15px solid transparent;
@@ -1234,7 +1250,7 @@ button{overflow:visible;}
 .toastPop.right .angle:after{
     border-left: 15px solid #fff;
     border-bottom: 15px solid transparent;
-    left: -5px;
+    left: -7px;
     top: -15px;
 }
 
@@ -1465,3 +1481,200 @@ span.lsp{
 .tit_inbox{text-align:center;font-weight:bold;margin-bottom:5px;}
 
 .anibtn{display:inline-block;width:83px;height:20px;background:#fff url(../images/common/aniBtn.png) 0 0 no-repeat;background-size:84px auto;color:#fff;line-height:20px;padding-left:18px;font-size:11px;box-sizing:border-box;}
+
+.tcenter{text-align:center !important;}
+.layer_photoframe{position:absolute;display:inline-block;}
+.layer_photoframe img{border:4px solid #fff;width:200px;transform: rotate(3deg);box-shadow:1px 1px 5px rgba(0,0,0,0.5)}
+.layer_photoframe .tit{margin:10px 0 0 10px;color:#fff;font-size:11px;font-family: "NanumBarunGothic" !important;}
+
+/*data-box*/
+
+.databox .box .box-contents .num{
+    background:url(../images/common/databox-num.png) 0 0 no-repeat;
+    background-size:100%;
+    color:#fff;
+    width: 28px;
+    height: 27px;
+    font-size:12px;
+    padding:6px 2px 0;
+    font-weight:500;
+    display:inline-block;
+}
+
+.databox .box-num{
+    display:inline-block;
+    width:63px;
+    height:23px;
+    color:#199788;
+    font-size:14px;
+    background:url(../images/common/databox_num.png) 0 0 no-repeat;
+    background-size:100%;
+    text-align:left;
+    padding-top:4px;
+    font-weight:bold;
+    padding-left:15px;
+    float:left;
+}
+
+
+/*자료제목*/
+.databox .box-title{
+    font-size:15px;
+    margin-left:20px;
+    padding-top:3px;
+}
+
+.videowrap{position:relative;}
+.videowrap:before{display:block;content:'';position:absolute;left:-10px;width:170px;height:150px;background:url(../images/common/playbar.png) no-repeat 0 bottom;background-size:170px auto;border:1px solid #959595;}
+
+.playbtn{display:block;content:'';position:absolute;left:85px;top:85px;width:40px;height:40px;background:url(../images/common/playbtn.png) no-repeat;background-size:100% auto;}
+
+.pop_imgtit{font-family: "NanumBarunGothic" !important;text-align:center;font-size:12px;font-weight:bold;}
+.databox_d3:after{clear:both;display:block;content:'';}
+.databox_d3 li{width:33.3%;float:left;box-sizing:border-box;position:relative;}
+.databox_d3 li img{width:100%;}
+
+.icotext{display:block;font-family:"NanumBarunGothic" !important;
+margin-top:10px;font-size:12px;}
+
+.imgpop{position:absolute;display:inline-block;left:400px;top:200px;}
+
+.paperbox{width:700px;padding-bottom:2%;background:url(../images/common/paper.png) no-repeat;background-size:100% 100%;}
+
+.list_disc{padding:10px 13px;}
+.list_disc li{padding-left:14px;line-height:24px;position:relative;font-size:14px;color:#000;font-family:"NanumBarunGothic" !important;}
+.toastPop .list_disc li{line-height: 20px;}
+.list_disc li:before{content:'';display:inline-block;position:absolute;top:8px;left:0;width:4px;height:4px;border-radius:50%;background:#959595;}
+.list_disc li + li{margin-top:2px;}
+.toastPop .list_disc li+li{margin-top:5px;}
+.list_disc strong{font-family:"NanumBarunGothic" !important;}
+.icotxt{font-family: "NanumBarunGothic" !important;font-size:12px;position:relative;padding-left:17px;}
+.icotxt>span[class^="ico"]{position:absolute;left:0;}
+
+.list_num{padding-left:7px;}
+.list_num li{position:relative;padding-left:23px;text-indent:0;}
+.list_num .num{position:absolute;left:0;top:0;}
+.input_wrap .ansText{    position: absolute;
+    width: 100%;
+    color: #ff6600;
+    left: 5px;
+    top: 23px;
+    word-break: keep-all;
+    font-family: "NanumBarunGothic" !important;
+}
+
+#w_videoContainer.videoContainer .playCover {
+    background-position: center center;
+}
+
+/*생각플러스*/
+.thinkplus{
+    width:100%;
+    background:#ebebeb;
+    border-radius:9px;
+    padding:18px 10px;
+    position:relative;
+}
+
+.thinkplus .title{
+    color:#4d90c8!important;
+    font-size:16px;
+}
+
+.thinkplus .title span{
+    display:inline-block;
+    background:url(../images/common/thinkplus.png) 0 0 no-repeat;
+    background-size:100%;
+    width:21px;
+    margin-top:2px;
+    height:22px;
+    position:relative;
+    top:5px;
+}
+
+.thinkplus .txt{
+    font-weight:500!important;
+    font-size:15px;
+}
+
+.thinkplus textarea{
+    margin-left:15px;
+    border-bottom:1px solid #b7b7b7;
+    width:464px;
+    font-size:14px;
+    background:#fff;
+    height:34px;
+    margin-top:20px;
+    resize: none;
+}
+.thinkplus textarea.small{
+    width:90%;
+    margin-left:0px;
+}
+
+/*위젯 생각열기*/
+
+.thinkbox{
+    width: 138px;
+    position: absolute;
+    top:0px;
+}
+
+.thinkbox .title{
+    padding-left:5px;
+}
+
+.thinkbox .title span{
+    color: #3c4552;
+    display: inline-block;
+    letter-spacing: -1px;
+}
+
+.thinkbox .title .icon{
+    display: inline-block;
+    width: 23px;
+    height: 28px;
+    background-image: url('../images/common/thinkicon.png');
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.thinkbox .title .ctext{
+    color: #f75b31;
+    font-size: 15.5px;
+    vertical-align: middle;
+    margin-right: 30px;
+}
+
+
+.thinkbox .title .roundNum{
+    display: inline-block;
+    width: 22px;
+    height: 23px;
+    color: #fff;
+    font-size: 13px;
+    line-height: 23px;
+    text-align: center;
+    background-image: url('../images/common/think_num.png');
+    background-size: 100% 100%;
+    letter-spacing:0;
+}
+
+.thinkbox .title span:nth-child(4){
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.thinkbox .textbox{
+    width: 100%;
+}
+
+.thinkbox .textbox textarea{
+    resize: none;
+    background:#fff;
+    height: 36px;
+    width: 100%;
+    margin-top:15px;
+    font-size: 13px;
+    border: 1px solid #cacaca;
+}

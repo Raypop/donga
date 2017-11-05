@@ -1,0 +1,515 @@
+/*Page075*/
+
+#P075.Page{
+    background:#fff url('../images/common/bg.png') 0 490px no-repeat;
+}
+
+
+.btext{
+    color: #199788;
+}
+
+/*탐구활동*/
+.actBox{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: -50px;
+}
+
+.pagenav{
+    height: 40px;
+}
+
+
+.Page .content_text p + p {
+    text-indent: 19px;
+    letter-spacing: -0.7px;
+}
+
+.hword{
+    font-weight: bold;
+    display: inline-block;
+    position: relative;
+    text-indent: 0;
+}
+
+.content_text p .hword2 {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 19px;
+    color: #ee8032;
+    margin-right: 10px;
+    letter-spacing: -1px;
+    vertical-align: middle;
+}
+
+
+.quizBox .quizText .text{
+    font-weight: 500;
+    width: 80%;
+}
+
+.databox{
+    position: relative;
+    height: 200px;
+    margin-bottom:20px;
+}
+
+
+.dataInbox{
+    position: relative;
+    /* float: left; */
+    /* width: 290px; */
+    /* margin-left: 50px; */
+}
+
+
+.databox .box .box-num span{
+    font-size: 18px;
+}
+
+
+/*박스 위 소제목*/
+
+.box-title{
+    display: inline-block;
+    letter-spacing: -0.5px;
+    position: relative;
+}
+
+.box .box-contents{
+    margin-top: 9px;
+}
+
+.box .box-contents:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+
+
+.box .btmImg{
+    width: 220px;
+    height: 185px;
+}
+
+
+.box .btm_img1{
+    background: url(../images/153/p075_img3.png) no-repeat;
+    background-size: 100%;
+}
+.box .btm_img2{
+    background: url(../images/153/p075_img4.png) no-repeat;
+    background-size: 100%;
+}
+
+
+
+/*
+.box .textbox{
+    width: 340px;
+    height: 160px;
+    background: url(../images/023/p23_img4.png) 0 0 no-repeat;
+    background-size: 100% 110px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box .textbox p{
+    padding-bottom: 11px;
+    text-align: center;
+    font-size:14px;
+}
+
+.box .textbox ul li{
+    width: auto;
+    font-size:14px;
+    margin-top: 0px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+*/
+
+/*팝업*/
+.checkPop.chk02{
+    left:auto;
+    bottom:510px;
+}
+
+
+.toast1 .innerbox{
+    overflow:hidden;
+}
+
+.innerbox > .img {
+    float:left;
+    width:40%;
+    margin-left:5%;
+    margin-bottom:10px;
+}
+
+.innerbox > .img:nth-child(2n){margin-left:10%;}
+
+.innerbox > .img img{width:100%;}
+
+.leftBox{
+    width:350px;
+    position: absolute;
+    left:0px;
+    padding-left:41px;
+    z-index: 2;
+    background: #fafafa;
+}
+
+.rightBox{
+    position:absolute;
+    height: 500px;
+    width: 100%;
+}
+
+
+.content_text > p:nth-child(4){
+    margin-bottom:-17px;
+}
+
+
+
+.img_wrap .slide-container{
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.img_wrap .slide-container .slide-list{width:600%;height:100%;margin-left:-130px;}
+
+.img_wrap .slide-container .slide-list li{width:16.6%;height:100%;float:left;}
+
+.quizText{
+    margin-bottom:6px;
+}
+
+.widget.study2 .icon.top{
+    background:url(../images/common/subtexticon.png) 0 0 no-repeat;
+    background-size:100%;
+}
+
+.toastPop.left .angle:before {
+    top: -20px;
+    left: 7px;
+    border-left: 15px solid #199788;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid transparent;
+}
+.toastPop.left .angle:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: -20px;
+    left: 2px;
+    border-left: 15px solid #fff;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-right: 15px solid transparent;
+}
+
+
+.databox_title{
+    position: relative;
+}
+
+.swiper-container{
+    width: 100%;
+    overflow:visible;
+}
+
+.swiperBox{
+    position: absolute;
+    width: 728px;
+    height: 300px;
+    top: 475px;
+    right: 0;
+}
+.actBox .actTitleBox .icons div.icon3{
+    margin-left: 9px;
+}
+.quizBox .quizText span.gtext{
+    color: #199788;
+}
+
+
+
+/*이미지 슬라이더*/
+.imageColums2{
+    width:445px;
+    height:225px;
+    border:1px solid #e5e5e5;
+    margin-left:45px;
+    position:relative;
+    overflow:hidden;
+    margin-top: 10px;
+}
+
+.imageColums2 > ul.imgslider{
+    width:300%;
+    height:100%;
+    margin-left:-443px;
+}
+
+
+
+.imageColums2 > ul.imgslider li{
+    width:33.333333%;
+    height:100%;
+    float:left;
+    margin-left:0px;
+    position:relative;
+}
+
+.imageColums2 > ul.imgslider li.img1 .mal{
+    background:url(../images/164/sl1_mal.png) 0 0 no-repeat;
+    background-size:100%;
+    width:156px;
+    height:66px;
+    position:absolute;
+    right:30px;
+    top:20px;
+    font-size:14px;
+    padding-top:9px;
+}
+
+.imageColums2 > ul.imgslider li.img2 .mal{
+    background:url(../images/164/sl2_mal.png) 0 0 no-repeat;
+    background-size:100%;
+    width:156px;
+    height:142px;
+    position:absolute;
+    left:60px;
+    top:40px;
+    font-size:14px;
+    padding-top:13px;
+}
+
+.imageColums2 > ul.imgslider li.img3 .mal{
+    background:url(../images/164/sl3_mal.png) 0 0 no-repeat;
+    background-size:100%;
+    width:136px;
+    height:142px;
+    position:absolute;
+    left:160px;
+    top:40px;
+    font-size:14px;
+    padding-top:18px;
+}
+
+.imageColums2 > ul.imgslider li .box{
+    width:350px;
+    margin:10px auto 0;
+    text-align:center;
+}
+
+.imageColums2 > ul.imgslider li img{
+    width: 280px;
+    height:145px;
+}
+
+.prev{
+    background:url(../images/common/prev.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:24px;
+    height:32px;
+    position:absolute;
+    top:50%;
+    left:0px;
+}
+
+.next{
+    background:url(../images/common/next.png) 0 0 no-repeat;
+    background-size:100% 100%;
+    width:24px;
+    height:32px;
+    position:absolute;
+    top:50%;
+    right:0px;
+}
+.navbtn{
+    position:absolute;
+    bottom:8px;
+    left:50%;
+    margin-left:-10px;
+}
+
+.navbtn li{
+    width:10px;height:10px;
+    border-radius:50%;
+    background:#dbdbdb;
+    margin-right:10px;
+    float:left;
+    cursor:pointer;
+}
+
+.navbtn li.on{
+    background:#9c9c9c;
+}
+
+.imageColums2 .imagebox .textbox{
+    /*margin-left:91px;*/
+    margin-top:9px;
+}
+.imageColums2 .imagebox .textbox .text{
+    width:320px;
+    text-indent:0;
+    text-align:left;
+}
+.quizInputAnswer{margin-top:0px;}
+
+.imageColums2{
+    margin-bottom:0px;
+}
+
+
+/*인풋    박스수정*/
+.input_table{
+    border-collapse:collapse;
+    table-layout:fixed;
+    width: 92%;
+}
+
+.input_table tr th{
+    font-family: "NanumBarunGothic";
+    background:#8c8c8c;
+    padding:3px 0;
+    font-size:12px;
+    color:#fff;
+}
+
+.input_table tr td{
+    text-align:center;
+    font-size:12px;
+    background:#fff;
+    border-right:1px solid #909090;
+    border-bottom:1px solid #909090;
+    padding:8px 0px;
+}
+
+.input_table tr td input{width:90%;}
+
+
+
+
+
+.topastPop2 table.input_table{
+    width: 100%;
+        margin-top: 10px;
+}
+
+
+
+.topastPop2 img{
+    width: 100%;
+    height: 360px;
+
+}
+.toastPop .innerbox.tip{
+    background: #fff url(../images/common/poptip.png) 12px 8px no-repeat;
+    background-size: 25px 30px;
+}
+
+.innerbox .tc{background:url(../images/153/woman.png) 0 0 no-repeat;
+background-size:100%;
+width:100px;
+height:100px;
+    display:inline-block;
+    float:right;
+}
+
+.ta_wrap textarea{
+    width: 89%;
+    height: 70px;
+    margin-left: 20px;
+}
+
+
+.thinkbox .textbox textarea{
+    margin-left: 10px;
+    width: 85%;
+}
+.body-bottom{padding-top:20px;height: 680px;background:url(../images/common/bg_gray.png) no-repeat;}
+
+.imgpop{position:absolute;display:none;left:400px;top:200px;box-shadow:initial}
+.imgpop .manillust{width:100px;height:150px;background: url(../images/153/woman.png) no-repeat;background-size:100px auto;}
+.imgpop .manillust .mal{display:inline-block;padding:10px 10px 5px 10px;background: url(../images/153/ballonLB.png) no-repeat;background-size:100% 100%;position:absolute;top:20px;left:100px;width:125px;height:95px;z-index:1;font-family:"Goyang" !important;font-size:12px;line-height:16px;text-align:center;}
+.databox_d3{overflow:hidden;background:#fff;}
+
+.list_disc li + li{margin-top:10px;}
+
+.quizText input {
+    padding: 5px;
+    width: 355px;
+    border: 1px solid #cacaca;
+    background: #fff;
+}
+
+.imgwrap{width:150px;position:relative;box-shadow:0 1px 3px rgba(0,0,0,.5)}
+.imgwrap+.imgwrap{margin-top:6px;}
+.imgwrap img{width:100%;border:3px solid #fff;}
+.imgwrap .arr{background:url(../images/153/arrow.png) no-repeat;width:20px;height:20px;position:absolute;bottom:-12px;left:50%;margin-left:-10px;background-size:100%;z-index:3;}
+
+.toastPop .imgwrap{width:300px;}
+
+.tag{color: #fff;
+    position: absolute;
+    right: -10px;
+    border: 5px solid #7cc466;
+    border-radius: 5px;
+    background-color: #7cc466;
+    font-weight: bold;
+    width: 50px;
+    height: 21px;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 91px;
+    top: -3px;
+    box-shadow: 1px 1px 3px grey;
+    transform:rotate(3deg);
+    font-family: "NanumBarunGothic" !important;
+
+}
+
+.imgwrap .tag{line-height:initial;}
+
+.dataInbox2{width:400px;}
+.databox_title{
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.dataInbox+.dataInbox{}
+.databox .box-title{margin: 0 0 0 10px;display: inline;}
+.databox_img img{width:100%;}
+.databox_img2 {position:relative;}
+.databox_img2 img{width:100%;}
+.databox_img2 +.databox_img2 {margin-top:10px;}
+.dataInbox2{width:330px;margin-left:0;}
+
+.box-title:before{display:none;}
+
+.toastPop .input_table th{text-align:center;}
+
+.studyPop .popContents img{width:400px;}
+
+.dataInbox .box_round{border:3px solid #ddd;margin:5px 0 30px;padding:10px 50px 10px 15px;width:560px;border-radius:15px;}
+
+.databox_img{position:absolute;left:510px;}
+.databox_img img{width:100%;}
+
+.dataInbox .icotxt{position:absolute;right:50px;top:195px;}
+.dataInbox .icotxt2{position:absolute;left:530px;top:175px;width:300px;}
+.im1{top:0px;width:100px;z-index:2}
+.im2{top:60px;width:170px;transform:rotate(2deg);border:4px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.5)}
+
+.im3{top:05px;width:110px;z-index:2}
+.im4{top:40px;left:530px;width:170px;transform:rotate(-2deg);border:4px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,0.5)}

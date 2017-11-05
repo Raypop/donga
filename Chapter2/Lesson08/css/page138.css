@@ -110,7 +110,7 @@ margin: 4px 0px 0px 7px;
 .thCon_box0{
     position: absolute;
     background: url(../images/138/p218_mal.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: 95% 95%;
     top: -3px;
     left: -34px;
     width: 103px;
@@ -120,7 +120,7 @@ z-index: 1;
 .thCon_box1{
     position: absolute;
     background: url(../images/138/p138_img3.png) no-repeat;
-    background-size: 100% 100%;
+    background-size: 78px auto;
     top: 12px;
     left: 44px;
     width: 95px;
@@ -489,6 +489,4 @@ span.text_bold {
 
 .checkPop div:nth-child(3) .ans{top:50px;}
 
-.imgbox{display:block;width:58px;height:58px;background:url(../images/138/p138_img5.png) 0 0 no-repeat;
-    background-size:100%;margin-bottom:3px;
-}
+.imgbox{display:block;width:58px;height:58px;background:url(../images/138/p138_img5.png) 0 0 no-repeat;background-size:100%;margin-bottom:3px;}

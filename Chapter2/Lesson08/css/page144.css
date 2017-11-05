@@ -1,0 +1,118 @@
+
+#P144 #body .content_text p:first-child {
+    margin-bottom: 6px;
+}
+
+/* 개념쏚쏚 */
+
+.conceptBox {
+    position: absolute;
+    right:35px;
+    width: 687px;
+    height: 304px;
+    background: url('../images/common/conbox.png') 0 0 no-repeat;
+    background-size: 100%;
+    padding: 70px 15px 0 31px;
+    margin: 6px 0 0 -22px;
+}
+
+.conceptBox .contitle{text-indent:-9999px;}
+
+
+.conceptBox .title {
+    position: absolute;
+    top: -10px;
+    left: 115px;
+    width: 442px;
+    height: 34px;
+    background-size: 100% 100%;
+    padding: 5px 0 0 27px;
+    letter-spacing:0.1px;
+}
+
+.conceptBox .title .titleText {
+    font-size: 18px;
+    color: #444;
+}
+
+.conceptBox .conText {
+    font-size: 14px;
+    text-align: justify;
+    line-height: 21.5px;
+    letter-spacing: -0.4px;
+    text-indent: 15px;
+}
+
+.conceptBox .leftImg{
+    position:relative;
+    width: 170px;
+    height: 110px;
+    background:#fff;
+    box-shadow:2px 2px 2px #ccc;
+    float:left;
+    margin:0 20px 25px 0;
+    background: url(../images/144/dea.png) no-repeat;
+    background-size: 100%;
+}
+
+.conceptBox .leftImg img{
+    width:100%;
+}
+
+.conceptBox .conRight{
+    width: 500px;
+    float: none;
+}
+
+.cl{
+    clear: both;
+}
+
+/**/
+
+.imgbox{
+    width:100%;
+    height:279px;
+    margin-top:10px;
+    position:relative;
+}
+
+.imgbox img{
+    width:100%;
+    height:240px;
+}
+
+.imgbox input{position:absolute;width:88px;border:1px solid #cacaca;text-align:center;}
+.imgbox span{position:absolute;}
+.imgbox .imgInput1{top:60px;left:11px;}
+.imgbox .imgInput2{top:113px;left:123px;}
+.imgbox .imgInput3{top:72px;left:401px;}
+.imgbox .imgInput4{top:163px;left:346px;}
+
+.imgbox span.imgans{color:#ff6600;display:inline-block;width:88px;text-align:center;font-size:13px;line-height:18px;background:#fff;display:none;}
+.imgbox span.imgans.chk{display:block;}
+
+.imgbox .contents{
+    margin-top:5px;
+}
+
+.checkPop .quizbox:nth-child(3) .quiztext span.ans{
+    margin-top:20px;
+}
+
+.studyPop .popContents img{width:350px;}
+.videoContainer{box-shadow: 0px 1px 3px #ccc;margin-top:20px;}
+#w_videoContainer .playCover{background-position:center center;}
+
+.rightImg{position: absolute;
+    top: 90px;
+    right: 0;
+    width: 145px;
+}
+.rightImg2{position: absolute;
+    top: 60px;
+    right: 0;
+    width: 50px;
+}
+.rightImg img,.rightImg2 img{width:100%;}
+.leftImg .icotxt{position:absolute;top:110px;}

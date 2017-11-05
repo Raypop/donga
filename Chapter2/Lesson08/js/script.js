@@ -61,7 +61,7 @@ $(function(){
         e.preventDefault();
     });
 
-    $('.widget.study').on('click',function(e){
+    $('.widget.study, .studytit').on('click',function(e){
         var pop =  $(this).next('.studyPop');
         $('.studyPop').fadeOut();
 
@@ -406,5 +406,13 @@ $(function(){
 
     });
 
-
+    $('.tabs .tabmenu a').on('click',function(e){
+        e.preventDefault();
+        var $this = $(this);
+        var $parent = $this.parents('.tabs');
+        var $target = $($this.attr('href'));
+        $parent.find('.on').removeClass('on');
+        $this.parent('li').addClass('on');
+        $target.addClass('on');
+    });
 });
