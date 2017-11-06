@@ -406,6 +406,7 @@ $(function(){
 
     });
 
+
     $('.tabs .tabmenu a').on('click',function(e){
         e.preventDefault();
         var $this = $(this);
@@ -414,5 +415,15 @@ $(function(){
         $parent.find('.on').removeClass('on');
         $this.parent('li').addClass('on');
         $target.addClass('on');
+    });
+
+     $(".conceptPop .ansBtn").on('click',function(){
+        
+        var quiz = $(this).parents(".conceptPop").find(".quizBox");
+        $(this).toggleClass("chk");
+        quiz.toggleClass("chk");
+        $(this).parents(".conceptPop").find(".quizInputAnswer").toggleClass("chk");
+        
+        
     });
 });

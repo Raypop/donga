@@ -1,0 +1,403 @@
+.full{
+    position:absolute;
+    top:0;left:0;
+    width:768px;
+    height:1024px;
+    overflow:hidden;
+    background:#fff url('../images/common/conceptfull_bg.png') no-repeat 0 0;
+    padding:43px 19px 0 19px;
+    z-index:9999;
+    display:none;
+}
+
+.conceptPop .conBox {
+    width: 733px;
+    height: 963px;
+    margin:0 auto;
+    background: url('../images/common/concept_conbox.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    padding: 51px 24px 0 24px;
+}
+
+.conceptPop .tabArea {
+    position: absolute;
+    top: 34px;
+    right: 37px;
+}
+
+.conceptPop .tabArea:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .tabArea .tab {
+    float: left;
+    display: block;
+    width: 140px;
+    height: 38px;
+    font-size: 18px;
+    line-height: 39px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    background: url('../images/common/conceptbtn_off.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    margin-left: 4px;
+}
+
+.conceptPop .tabArea .tab.on {
+    background: url('../images/common/conceptbtn_on.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+.conceptPop .conBox .conceptHeader {
+    position: relative;
+    height: 46px;
+    background-color: #ebebeb;
+    border-radius: 16px;
+    padding: 9px 19px;
+    margin-bottom: 15px;
+}
+
+.conceptPop .conBox .conceptHeader .num{
+    display: inline-block;
+    width: 27px;
+    height: 28px;
+    background: url(../images/common/numbullet.png) no-repeat 0 0 ;
+    background-size:100% 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle;
+    padding-top: 6px;
+    margin-top: -4px;
+    margin-right: 7px;
+    margin-left: 5px;
+}
+
+.conceptPop .conBox .buttonArea {
+    margin-right: 5px;
+    width:685px;
+    position:absolute;
+}
+
+.conceptPop .conBox .buttonArea button {
+    float: right;
+}
+
+.conceptPop .conBox .buttonArea:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .conBox .buttonArea button {
+    width: 37px;
+    height: 43px;
+    background-size: 100% 100%;
+}
+
+.conceptPop .conBox .buttonArea button.ansBtn {
+    background-image: url('../images/common/ans_check-.png');
+    margin-left: -5px;
+}
+
+.conceptPop .conBox .buttonArea button.ansBtn.chk {
+    background-image: url('../images/common/rebtn.png');
+}
+
+.conceptPop .conBox .pagenav{margin-right:60px;}
+/* 개념 확인 */
+
+.conceptPop .conBox .conceptHeader .title {
+    font-size: 30px;
+    color: #005297;
+    letter-spacing: -0.2px;
+}
+
+.conceptPop .conBox .conceptHeader .close {
+    position: absolute;
+    right: 16px;
+    top: 11px;
+    width: 26px;
+    height: 26px;
+    background: url('../images/common/conceptpop_close.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+
+/* 실력 향상 */
+
+.conceptHeader span.unit_title{
+    width:150px;
+    height:26px;
+    border-radius:16px;
+    background:#fff;
+    color:#525252;
+    line-height:27px;
+    display:inline-block;
+    position:relative;
+    top:-4px;
+    left:14px;
+    font-weight:bold;
+    font-size:15px;
+    padding-left:7px;
+    letter-spacing:0.8px;
+    font-family:"BmHanna" !important;
+}
+
+.conceptHeader span.unit_title span{
+    width:19px;
+    height:19px;
+    background:#00a0ea;
+    border-radius:50%;
+    border:2px solid #fff;
+    box-shadow: 1px 1px 1px rgba(0,0,0,0.7);
+    text-align:center;
+    color:#fff;
+    display:inline-block;
+    font-size:10px;
+    position:relative;top:-2px;
+    line-height:17px;
+    margin-right:4px;
+}
+
+
+/**/
+.quizBox .quizTextBox li{list-style:none;}
+
+.conceptPop .conBox .quizText .num{
+    display:inline-block;
+    font-size:30px;
+    font-weight:bold;
+    color:#00a0ea;
+    text-indent:-2px;
+    margin-right:2px;
+}
+.conceptPop .conBox .quizText .text{
+    font-size:16px;
+    color:#002d41;
+    letter-spacing:-0.7px;
+}
+
+.quizBox{padding-left:10px;}
+
+/*개념확인 문제*/
+
+
+.final1 textarea{width:593px;height:43px;}
+
+/*ox퀴즈*/
+
+
+.conceptPop .conBox .oxQuiz .quizTextBox li:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li:first-child {
+    margin-top: 17px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li:nth-child(2) {
+    margin: 15px 0;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .number{vertical-align:top;}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .text {
+    display: inline-block;
+    color: #2e2e2e;
+    font-size: 15px;
+    letter-spacing: -0.8px;
+    width:408px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton {
+    float: right;
+    margin-right: 10px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton input[type="radio"] {
+    display: none;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label {
+    cursor: pointer;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label span {
+    display: inline-block;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label .otxt {
+    width: 22px;
+    height: 21px;
+    background: url('../images/common/quiz_o_icon.png') no-repeat 0 0 ;
+    background-size:100% 100%;}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label .xtxt {
+    width: 20px;
+    height: 18px;
+    background: url('../images/common/quiz_x_icon.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+    margin-left: 33px;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton label .chkbox {
+    position: relative;
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    border-radius: 4px;
+    border: 1px solid #b4b4b4;
+}
+
+.conceptPop .conBox .oxQuiz .quizTextBox li .oxButton input[type="radio"]:checked + label .chkbox:after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    left: -2px;
+    width: 35px;
+    height: 30px;
+    background: url('../images/common/quiz_ox_check.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+
+.conceptPop .conBox .quizBox.oxQuiz.chk .quizTextBox li .oxButton input[type="radio"][data-answer="true"] + label .chkbox:after{  
+    content: '';
+    position: absolute;
+    top: -17px;
+    left: -2px;
+    width: 35px;
+    height: 30px;
+    background: url('../images/common/quiz_ox_check_ans.png') no-repeat 0 0 ;
+    background-size:100% 100%;
+}
+.quizInputAnswer{margin-bottom:20px;font-size:12px;line-height:17px;margin-bottom:5px;}
+.quizInputAnswer.chk{visibility:visible;}
+
+/*실력향상 문제*/
+.quiz_wrap input[type="radio"]{display:none;}
+
+.quiz_wrap{
+    padding:14px 0px 0px 3px;
+    height:800px;
+}
+.quiz_wrap > div{width:50%;float:left;height:100%;padding-top:10px;}
+.quiz_wrap > div.leftQuiz{border-right:1px dotted #909090;}
+
+.quiz_wrap > div .quizBox .quizText{margin-bottom:8px;}
+.quiz_wrap > div .quizBox .quizText span.num{
+    font-size:21px;
+}
+
+.quiz_wrap > div .quizBox .quizText span.text{
+    font-size:14px;
+    letter-spacing:-0.3px;
+    width:87%;
+}
+
+.quiz_wrap > div .quizBox .ansInput{
+    padding-left:30px;
+    margin-top:12px;
+}
+
+.quiz_wrap > div .quizBox .ansInput ul{}
+
+
+
+.quiz_wrap > div .quizBox .ansInput ul.choice li{
+    font-size:14px;
+    letter-spacing:-0.3px;
+    line-height:1;
+    position:relative;
+    margin-bottom:10px;
+}
+.quiz_wrap > div .quizBox .ansInput ul.choice li span.l_num{
+    vertical-align:top;
+    margin-right:4px;
+}
+.quiz_wrap > div .quizBox .ansInput ul.choice li span.l_txt{
+    display:inline-block;
+    width:250px;
+    display:inline-block;
+    line-height:1.3;
+}
+
+/*실력향상 보기 박스*/
+
+.quiz_wrap > div .quizBox .viewbox{
+    width:295px;
+    padding:7px;
+    margin-left:16px;
+    background:#f8f8f8;
+    border:1px solid #acacac;
+}
+
+.quiz_wrap > div .quizBox .viewbox .title{
+    width:41px;
+    height:16px;
+    border:2px solid #fff;
+    border-radius:10px;
+    box-shadow:1px 1px 1px #ccc;
+    line-height:13px;
+    color:#fff;
+    font-size:9px;
+    background:#707070;
+    text-align:center;
+}
+
+.quiz_wrap > div .quizBox .viewbox .viewtxt{text-indent:12px;font-size:12px;line-height:20px;}
+
+.quiz_wrap > div .quizBox .viewbox .view-list li{margin-top:7px;padding-left:7px;}
+
+.quiz_wrap > div .quizBox .viewbox .view-list li span.num{font-size:11px;color:#2e2e2e;vertical-align:top;}
+.quiz_wrap > div .quizBox .viewbox .view-list li span.txt{font-size:11px;letter-spacing:-0.3px;line-height:1;display:inline-block;width:250px;position:relative;top:-4px;padding-left:5px;}
+
+/*실력향상 이미지박스*/
+
+.quiz_wrap > div .quizBox .imgbox{
+     width:295px;
+    text-align:center;
+    margin-left:16px;
+}
+
+.quiz_wrap > div .quizBox .imgbox img{display:block;margin:0 auto;}
+
+/*서술형평가 박스*/
+.quiz_wrap > div .quizBox .qtitleBox{width:321px;height:20px;line-height:20px;text-align:center;color:#fff;background:#898989;font-size:13px;margin-bottom:10px;}
+
+
+
+/*실력향상 체크*/
+ul.choice li input[type="radio"] + label{cursor:pointer;}
+
+ul.choice li input[type="radio"]:checked + label:before{
+    content:'';
+    display:inline-block;
+    width:20px;
+    height:17px;
+    position:absolute;
+    left:0;
+    top:-6px;
+    background:url(../images/common/quiz_ox_check.png) 0 0 no-repeat;
+    background-size:100%;
+}
+
+.quizBox.chk ul.choice li[data-answer="true"] input[type="radio"] + label:before{
+    content:'';
+    display:inline-block;
+    width:20px;
+    height:17px;
+    position:absolute;
+    left:0;
+    top:-6px;
+    background:url(../images/common/quiz_ox_check_ans.png) 0 0 no-repeat;
+    background-size:100%;
+}
+.quizBox.chk ul.choice li[data-answer="true"] span.l_txt{color:#f75b32;}

@@ -104,14 +104,7 @@ body    {margin:0; padding:0;}
     margin-left:5px;
     margin-top:1px;
 }
-.quizBox .textarea {
-    width: 647px;
-    height: 50px;
-    padding: 0 5px;
-    background: #fff;
-    border: solid 1px #cacaca;
-    margin: 5px 0 0 20px;
-}
+
 
 /* 보기 */
 .blankQuiz{
@@ -124,14 +117,14 @@ body    {margin:0; padding:0;}
     font-size:15px;
     vertical-align:middle; }
 .blankQuiz input{
-    font-family:'NanumBarunGothic'; 
-    border:1px solid #eaeaea; 
-    height:25px; 
-    margin-left:2px; 
-    margin-top:-2px; 
-    font-size:13px; 
-    vertical-align:top; 
-    padding:0 5px; 
+    font-family:'NanumBarunGothic';
+    border:1px solid #eaeaea;
+    height:25px;
+    margin-left:2px;
+    margin-top:-2px;
+    font-size:13px;
+    vertical-align:top;
+    padding:0 5px;
 }
 .blankQuiz input.check{color:#f75b32; }
 
@@ -160,6 +153,7 @@ body    {margin:0; padding:0;}
     font-size: 15px;
 }
 .quizBox .quizTextBox li:first-child{margin-top:0; }
+
 
 
 
@@ -1677,4 +1671,12 @@ margin-top:10px;font-size:12px;}
     margin-top:15px;
     font-size: 13px;
     border: 1px solid #cacaca;
+}
+
+textarea {
+    padding: 4px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    resize: none;
+    background: #fff;
 }
