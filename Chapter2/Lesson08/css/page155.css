@@ -551,3 +551,7 @@ table input{
     border: 1px solid #cacaca;
     background: #fff;
 }
+
+.pagenav {
+    margin: -20px 30px 0 0;
+}

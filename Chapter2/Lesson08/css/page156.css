@@ -213,11 +213,12 @@ button{
 
 .ev_wrap span.que{
     width:150px;
-    text-align:left;
+    text-align:justify;
     font-size:14px;
     line-height:20px;
     padding:0 15px 0 30px;
     position:relative;
+
 }
 
 .ev_wrap span.que .num{
@@ -402,13 +403,13 @@ button{
 /*마인드맵위치맞추기*/
 
 .mindmap .word .main{
-    font-size:20px;
+    font-size: 17px;
     text-align:center;
     line-height:1.1;
 }
 
 .mindmap .word .sub_main{
-    font-size:18px;
+    font-size: 15px;
     text-align:center;
     line-height:1.1;
 }
@@ -430,17 +431,17 @@ button{
     line-height:1;
 }
 
-.box1{left: 305px;top: 208px;}
+.box1{left: 310px;top: 208px;}
 
-.box2{left: 280px;top: 120px;}
+.box2{left: 280px;top: 127px;}
 .box2-1{top: 35px;left: 162px;}
 .box2-11{top: 35px;left: 30px;}
 .box2-2{left: 162px;top:134px;}
 .box2-21{left: 36px;top: 130px;}
 .box2-3{top: 250px;left: 195px;}
-.box2-31{top: 240px;left:40px;}
+.box2-31{top: 240px;left:40px;text-align:left !important;padding-left:5px;}
 
-.box3{top: 120px;left: 352px;}
+.box3{top: 125px;left: 357px;}
 .box3-1{top: 58px;left: 405px;}
 .box3-11{top: 27px;left: 480px;}
 .box3-2{top: 100px;left: 475px;}
@@ -448,7 +449,7 @@ button{
 
 .box4{top: 295px;left: 270px;}
 .box4-1{top: 170px;left: 530px;}
-.box4-11{top: 345px;left: 35px;}
+.box4-11{top: 345px;left: 35px;text-align:left !important;padding-left:5px;}
 
 .box5{top: 215px;left: 440px;}
 .box5-1{top: 230px;left: 520px;}
@@ -468,3 +469,4 @@ button{
 
 /**/
 .btn_wrap{right:460px;top:52px;}
+.box-title:before{display:none;}

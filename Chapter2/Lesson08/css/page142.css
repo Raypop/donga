@@ -8,8 +8,8 @@
 #P142{background:url('../images/142/bottom.png') no-repeat 0 bottom;background-size:768px auto;}
 
 /* 단원 시작 */
-.Page #top .titleBox		{margin-top:15px; padding:15px 0 11px 29px; position:relative; border:2px solid #c7cacb; border-radius:20px; float:right; width:630px; height:66px; }
-.Page #top .titleBox .num	{
+.Page #top .titleBox        {margin-top:15px; padding:15px 0 11px 29px; position:relative; border:2px solid #c7cacb; border-radius:20px; float:right; width:630px; height:66px; }
+.Page #top .titleBox .num   {
     width:94px; height:115px;
     background:url('../images/common/titleNumbg.png') 0 0 no-repeat;
     background-size:100% 100%; text-align:center; color :#d9620c;
@@ -21,7 +21,7 @@
     padding-left: 7px;
     letter-spacing:5px;
 }
-.Page #top .titleBox .text	{font-size:30px; color:#242424; letter-spacing:-1.1px; margin-left:20px; font-weight:bold; }
+.Page #top .titleBox .text  {font-size:30px; color:#242424; letter-spacing:-1.1px; margin-left:20px; font-weight:bold; }
 
 .Page #top .buttons{text-align:right;position: relative;z-index: 2;margin:25px 5px 26px 0;}
 
@@ -251,8 +251,9 @@ z-index: 1;
 #P142 #layerPop1:before{left:460px; }
 
 #P142 #layerPop2{
-    top:150px; right:5px;
-    width:92%;
+    top:150px;
+    right:5px;
+    width: 98%;
 }
 #P142 #layerPop2:before{left:580px; }
 

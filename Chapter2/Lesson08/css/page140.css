@@ -508,5 +508,9 @@ span.text_bold {
 .card-deepgreen .card-tit{color:#3c847b;}
 .imgmap{text-align:center;}
 .imgbox img{border-radius:3px;width:100%;}
-.cardtext{font-size:12px;line-height:20px;text-indent:20px;padding:0 0 0 15px;}
+.cardtext{font-size:12px;line-height:20px;text-indent:1em;padding:0 0 0 15px;}
+
+.Page .content_text .sub_txt{text-indent:1em !important;}
+
+.toastPop .outbox{max-width: 440px}
 

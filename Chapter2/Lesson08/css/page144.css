@@ -116,3 +116,9 @@
 }
 .rightImg img,.rightImg2 img{width:100%;}
 .leftImg .icotxt{position:absolute;top:110px;}
+
+.checkPop .quizbox .quiztext span.ans{width:110%;margin-left:-10px;}
+
+
+
+.widget.study .content{width:180px;}

@@ -130,7 +130,7 @@
     margin-left: 15px;
     position: relative;
     top: 5px;
-    left: -8px;
+    left: 0;
     letter-spacing: -0.6px;
 }
 
@@ -319,8 +319,9 @@
 .exBox.ex1{
     background:url(../images/157/ex_bg.png) 0 0 no-repeat;
     height: 280px;
-    width: 509px;
+    width: 470px;
     font-size:16px;
+    position: relative;
 }
 
 
@@ -350,8 +351,9 @@
     background-color:#974b01;
     border-radius:5px;
     margin-right:3px;
-    position:relative;
-    top:-2px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
 }
 
 .exBox ul{
@@ -373,7 +375,7 @@
 }
 
 .exBox ul li{
-    font-size:14px;
+    font-size: 12px;
     margin-bottom:5px;
 }
 
@@ -411,7 +413,7 @@
 .exBox {
     margin-top: 20px;
     width: 511px;
-    padding: 20px 23px;
+    padding: 20px 14px;
     line-height: 1.5;
     word-break: keep-all;
 }
@@ -443,11 +445,22 @@
     height: 100%;
 }
 .exBox .boxex{list-style: none;margin:0;width:100%;}
-.boxex li{width:50%;box-sizing: border-box;padding:10px;float:left;list-style: none;font-family:"NanumBarunGothic";
-    font-weight: normal;list-style:none;}
-.boxex .lft{border-right:1px solid #ccc;}
+.boxex li{
+    width: 53%;
+    box-sizing: border-box;
+    /* padding:10px; */
+    float: right;
+    list-style: none;
+    font-family:"NanumBarunGothic";
+    font-weight: normal;
+    list-style:none;
+    }
+.boxex .lft{/* border-right:1px solid #ccc; */width: 40%;/* margin-right: 10px; */float: left;}
 
-.boxex .tit{display:block;text-align:center;font-weight:bold;color:#984e05;font-family:"NanumBarunGothic";}
+
+.boxex .tit{display:block;text-align:center;font-weight:bold;color:#984e05;font-family:"NanumBarunGothic";margin-top: 10px;font-size:14px;}
+.boxex .lft .tit{color:#137845}
+.boxex .rft .tit{padding-right:20px;}
 
 .anscheckBtn{z-index:2;}
 
@@ -460,4 +473,15 @@
     height: 25px;
     box-shadow: inset 0 0 3px rgba(0, 0, 0, .15);
     display: inline-block;
+}
+.t_left{text-align:left;}
+
+.exBox.bg2{background:url(../images/157/bg3.png) no-repeat;background-size:100% 80%;padding-right: 0;margin-top: 0;margin-left: 30px;}
+
+.ditit{display:inline-block;margin-top:10px;width: 47%;font-size:14px;}
+.exBox.bg2 .boxex{}
+.ditit+.ditit{width:30%}
+.ditit1{margin-left: 35px;}
+.quizBox .quizText span.gtext {
+    color: #199788;
 }

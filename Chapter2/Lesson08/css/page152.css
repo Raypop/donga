@@ -360,3 +360,5 @@ span.text_bold {
     background-position: center center;
 }
 .big_view{position:absolute;}
+
+#P152 #layerPop2 ul li:first-child:before{display:none;}

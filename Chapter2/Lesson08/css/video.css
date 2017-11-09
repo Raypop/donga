@@ -1,9 +1,10 @@
 video {position:absolute; width:100%; height:100%; }
 
+
+
 .big_view   {background:url(../images/common/widget_videobtn.png) no-repeat 0 0;background-size:100% 100%; width:76px; height:26px; font-size:11px; font-weight:bold; color:#00adff;  cursor:pointer; position:absolute; bottom:8px; right:27px; text-align:right; line-height:34px; padding-right:5px; letter-spacing:-0.6px;text-decoration:none;}
 
-
-/* 위젯 비디오 */
+/* ìœ„ì ¯ ë¹„ë””ì˜¤ */
 
 .widget video {background-color:#fff; }
 
@@ -17,7 +18,7 @@ video {position:absolute; width:100%; height:100%; }
 
 #w_videoContainer .w_close:active {background-image:url('../images/common/pop_closebtn_o.png'); background-size: 100% 100%;}
 
-#w_videoContainer .playCover {position:absolute; top:0; left:0; right:0; bottom:0; background:url('../images/common/playbtn.png') 117px 142px no-repeat;background-size:60px 61px; cursor:pointer; z-index:1;}
+#w_videoContainer .playCover {position:absolute; top:0; left:0; right:0; bottom:0; background:url('../images/common/playbtn.png') center center no-repeat;background-size:60px 61px; cursor:pointer; z-index:1;}
 #w_videoContainer:hover .playCover,
 #w_videoContainer:active .playCover,
 #w_videoContainer:focus .playCover,
@@ -72,9 +73,9 @@ video {position:absolute; width:100%; height:100%; }
 #w_videoContainer .playCover {position:absolute; top:0; left:0; right:0; bottom:0; background:url('../images/common/video/play_cover.png') 50% 50% / 52px no-repeat; cursor:pointer; }
 */
 
-/* 풀 팝업 비디오 */
+/* í’€ íŒì—… ë¹„ë””ì˜¤ */
 
-.full {position:relative; top:0; left:0; width:768px; height:1024px; padding:43px 23px 0 24px; margin:0 auto;display:none;z-index: 999;}
+.full {position:relative; top:0; left:0; width:768px; height:1024px; padding:193px 23px 0 24px; margin:0 auto;display:none;z-index: 999;}
 
 .full.videoPop {background:url('../images/common/full_bg.png') 0 0 no-repeat; }
 
@@ -148,7 +149,7 @@ video {position:absolute; width:100%; height:100%; }
 
 
 
-/* 레이어팝업 */
+/* ë ˆì´ì–´íŒì—… */
 
 body > div {
     position:absolute!important;
@@ -236,7 +237,7 @@ body > div {
     line-height: 1.6;
 }
 
-/*팝업*/
+/*íŒì—…*/
 
 .checkPop.chk04{
     bottom:375px;

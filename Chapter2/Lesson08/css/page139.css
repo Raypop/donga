@@ -114,7 +114,7 @@
 }
 
 .box_lt_list{float:none}
-.box_lt{float:left;width:550px;}
+.box_lt{float:left;width:550px;text-indent: 1em;}
 .imglt{float:left;margin:0 20px 0 0;width:220px;height:150px;background:url('../images/139/kiruna2.png') no-repeat;background-size:100% auto;}
 .box_rt{position:relative;float:right;width:100px;height:220px;}
 .imgrt{display:block;width:100px;height:200px;background:url('../images/139/kiruna.png') no-repeat;background-size:100% auto;}
@@ -139,3 +139,5 @@
     line-height: 80px;
 }
 itemBody{float:left;width:550px;}
+
+.checkPop .quizbox .quiztext span.ans{top: 42px;}

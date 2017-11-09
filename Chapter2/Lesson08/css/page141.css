@@ -18,7 +18,7 @@
 #P141.Page{background:url('../images/141/bg.png') 0 0 no-repeat; background-size:100% 100%; position:relative;padding:140px 0 0 0;}
 
 .swiper-container{overflow:visible;z-index:20;}
-.swiper-slide{padding-right:35px;}
+
 /*탐구활동*/
 .actBox{
     position: absolute;
@@ -433,3 +433,36 @@ button{z-index:1;}
 .selfcheckbox .content div.chk_wrap .chk-ans_wrap > div{height:90px;}
 
 .selfcheckbox .content div.chk_wrap .chk-ans_wrap > .ans2 .star_wrap{margin-top:10px;}
+
+.innerbox .tc {
+    background: url(../images/141/man.png) 0 0 no-repeat;
+    background-size: 100%;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: right;
+}
+
+.quizBox .textarea {
+    width: 647px;
+    height: 50px;
+    padding: 0px 5px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(202, 202, 202);
+    border-image: initial;
+    margin: 5px 0px 0px 20px;
+}
+
+.quizBox .textarea {
+    width: 647px;
+    height: 50px;
+    padding: 0px 5px;
+    background: rgb(255, 255, 255);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(202, 202, 202);
+    border-image: initial;
+    margin: 5px 0px 0px 20px;
+}

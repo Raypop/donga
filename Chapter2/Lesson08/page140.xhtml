@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ko">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=768,height=1024"/>
+    <meta name="viewport" content="width=768,height=1024" />
     <title>Page140</title>
     <link rel="stylesheet" type="text/css" href="css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="css/common.css" />
@@ -26,9 +25,9 @@
                     <p class="sub_txt">매력적인 도시는 거주하는 시민이 살고 싶은 도시, 행복을 느끼는 도시일 것이다. 많은 사람들은 자신들이 살고 있는 도시를 매력적인 도시로 만들기 위해 노력하고 있다.
                     </p>
                 </div>
-			</div>
+            </div>
 
-            <p class="btn_rt"><button class="anibtn nbg" data-pop="video1">에니메이션</button></p>
+            <p class="btn_rt"><div class="big_view nbg" data-pop="video1" style="right:50px;top:267px;z-index:1;">크게 보기</div></p>
 
             <div class="cards">
                 <div class="card card-left card-green">
@@ -47,7 +46,19 @@
                   <div class="cardtext nbg">1970년 미국 플로리다주의 올랜도에 디즈니월드가 개장하다. 디즈니월드 의 개장과 함께 올랜도는 급속하게 성장 하다.</div>
                 </div>
             </div>
-            <div class="imgmap"><img src="images/140/map.jpg" alt="지도" /></div>
+            <div class="imgmap"><img width="217" src="images/140/map.jpg" alt="지도" /></div>
+<div class="plusBtn toast " style="top:590px;left:485px;" data-pop="toast03">
+                        
+                    <div class="toastPop right" style="top: -100px; right: 45px; left: initial; z-index: 2; display: none;" data-pop="toast03">
+                            <div class="outbox">
+                                <div class="angle" style="top:70px;"></div>
+                                <div class="innerbox nbg" style=" text-indent: 0px;">
+                                   <img style="width:400px" src="images/140/map.jpg" />
+                                    
+                                </div>
+                                <button class="closeBtn"></button>
+                            </div>
+                        </div></div>
             <div class="cards">
                 <div class="card card-left card-blue">
                   <div class="imgbox"><img src="images/140/cape.jpg" alt="케이프타운" /></div> 
@@ -77,15 +88,15 @@
         </div>
     </div>
 
-    <div class="full videoPop Pop_page" data-pop="video1">
+    <div xmlns="http://www.w3.org/1999/xhtml" id="videoPop1" class=" full videoPop Pop_page" data-pop="video1" style="display: none;">
         <button class="pop-close"></button>
         <div class="videoHeader">
             <span class="title ns">영상 보기</span>
-            <span class="titleText ns fwb">유명하고 매력적인 도시의 특징</span>
+            <span class="titleText ns fwb">유명하거나 매력적인 도시는 어떤 특징</span>
         </div>
         <div id="videoContainer" class="videoContainer">
             <div class="videoWrap">
-                <video id="video" src="media/video/sample.mp4"></video>
+                <video id="video" src="media/video/sample.mp4" data-dtext_index="dtext_cls_video"></video>
             </div>
             <div class="videoController">
                 <div class="btn bwdBtn">
@@ -96,7 +107,7 @@
                 </div>
                 <div class="btn playPauseBtn">
                     <button title="재생" class="play"></button>
-                    <button title="멈춤" class="pause"></button>
+                    <button title="멈춤" class="pause" style="display: none;"></button>
                 </div>
 
                 <div class="btn fwdBtn">
@@ -104,7 +115,7 @@
                 </div>
                 <div class="progressGroup">
                     <div class="progress">
-                        <div class="progress-bar">
+                        <div class="progress-bar" style="width: 0px;">
                             <div class="jog"></div>
                         </div>
                     </div>
@@ -115,14 +126,6 @@
                 <div class="btn noteBtn">
                     <button title="자막" class="note"></button>
                 </div>
-            </div>
-        </div>
-        <div class="expBox">
-            <div class="exp_content">
-                <div class="ns fwb talker">해설자</div>
-                <div class="nbg title">유명하고 매력적인 도시의 특징</div>
-                <p class="fwb"></p>
-                    
             </div>
         </div>
     </div>

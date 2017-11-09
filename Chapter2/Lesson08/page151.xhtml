@@ -30,6 +30,17 @@
                         </div>
                     </div>
                 </div>
+
+            </div>
+
+            <div class="pagenav">
+                <span class="pageicon nbg fwb">
+                    페이지 이동
+                </span>
+                <ul>
+                    <li class="nbg fwb on">1</li>
+                    <li class="nbg fwb">2</li>
+                </ul>
             </div>
         </div>
 
@@ -45,21 +56,24 @@
                     <div class="chbox chr1">
                         <img src="images/151/ch1.png" />
                         <span class="mal">
-하랑아, 선진국<br /> 도시의 도심 부근에는 역사가<br /> 오래된 건축물들이 남아 있는데,<br /> 주변에 들어선 새로운 건물과<br /> 조 화를 이루지 못해. 왜냐하면<br />__________<br />때문이야.
+하랑아, 선진국<br /> 도시의 도심 부근에는 역사가<br /> 오래된 건축물들이 남아 있는데,<br /> 주변에 들어선 새로운 건물과<br /> 조 화를 이루지 못해. 왜냐하면 <span class="line_bottom"></span><br />때문이야.
 </span>
                     </div>
                     <div class="chbox chr2">
                         <img src="images/151/ch2.png" />
-                        <span class="mal">재준아, 개발 도상국<br /> 도시에는 식민지 시대에 건설된<br />  건축물이 남아 있거나, 불량<br /> 주거 지역이 나타나기도 해.<br /> 왜냐하면<br />__________<br />때문이야.</span>
+                        <span class="mal">재준아, 개발 도상국<br /> 도시에는 식민지 시대에 건설된<br />  건축물이 남아 있거나, 불량<br /> 주거 지역이 나타나기도 해.<br /> 왜냐하면 <span class="line_bottom"></span><br />때문이야.</span>
                     </div>
                 </div>
                 
             </div>
 
-            <div style="height: 740px;margin-right:60px;clear: both;">
-                <assessmentItem data-qid="page15_quiz1" data-response-type="etc">
-                        <itemBody>
-                            <div id="quizBox01" class="quizBox">
+             <div class="swiper-container swiper-container-horizontal" style="height: 740px;">
+                <div class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                    <div class="swiper-slide swiper-slide-active" style="width: 727px;">
+                            <assessmentItem data-qid="page15_quiz1" data-response-type="etc">
+                                <itemBody>
+                                    <div id="quizBox01-1" class="quizBox">
+
                                 <div class="quizText">
                                     <span class="num nbg fwb">1</span>
                                     <span class="text fwb">그림의 말풍선 안에 들어갈 말을 도시화 과정과 연관 지어 써 보자. </span>
@@ -83,6 +97,19 @@
                                     
                                 </div>
                             </div>
+
+                            </itemBody>
+                                <modalFeedback>
+                                </modalFeedback>
+                                <correctResponse style="display: none;"></correctResponse>
+                        </assessmentItem>
+                    </div>
+
+
+                    <div class="swiper-slide swiper-slide-next" style="width: 727px;">
+                        <assessmentItem data-qid="page35_quiz2-1" data-response-type="etc">
+                            <itemBody>
+
 
                             <div id="quizBox02" class="quizBox">
                                 <div class="quizText">
@@ -176,12 +203,15 @@
                                     
                             </div>
 
-                        </itemBody>
-                        <modalFeedback>
-                        </modalFeedback>
-                        <correctResponse style="display: none;"></correctResponse>
-                </assessmentItem>
+                         </itemBody>
+                            <modalFeedback>
+                            </modalFeedback>
+                            <correctResponse style="display: none;"></correctResponse>
+                        </assessmentItem>
+                    </div>
+                </div>
             </div>
+
             
             <div class="selfCheck">
                 <div class="bgef"></div>
@@ -327,6 +357,44 @@
     <script type="text/javascript" src="js/jquery.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/swiper.jquery.min.js" charset="UTF-8"></script>
     <script type="text/javascript" src="js/script.js" charset="UTF-8"></script>
+
+    <script>
+    $(window).load(function(){
+
+        var swiper = new Swiper('.swiper-container', {
+            paginationClickable: true,
+            touchAngle : 30
+        });
+
+        swiper.on('slideChangeStart', function () {
+            $('.pagenav ul li').removeClass('on');
+            $('.pagenav ul li:eq('+swiper.activeIndex+')').addClass('on');
+        });
+
+        $('.pagenav ul li').on('click',function(){
+            var i= $(this).text();
+            i = Number(i)-1;
+            swiper.slideTo(i);
+        });
+
+
+        // $('.anscheckBtn').on('click',function(){
+        //
+        //     $(this).toggleClass("chk");
+        //
+        //     var input = $(this).parents(".quizBox").find('textarea');
+        //     var ans = input.attr("data-answer");
+        //     var spanAns = "<span>"+ans+"</span>";
+        //     console.log(spanAns);
+        //     input.parent().append(spanAns);
+        //
+        // });
+
+
+
+    });
+    </script>
+
 
 </body>
 </html>

@@ -34,7 +34,7 @@
 }
 .databox:after{display:block;clear:both;content:'';}
 .pagenav{
-    margin-top: -20px;
+    margin: -20px 30px 0 0;
 }
 
 
@@ -530,3 +530,4 @@ table input{
 
 .txtbox{border:1px solid #999;padding:2px 4px;position:absolute;top:-6px;left:190px;}
 .txtbox2{left:390px;}
+.line_bottom{display:inline-block;width:90px;height:1.3em;border-bottom:2px solid #ddd;margin-bottom:-3px;}

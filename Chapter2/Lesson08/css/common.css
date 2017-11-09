@@ -447,7 +447,7 @@ body    {margin:0; padding:0;}
     display:inline-block;
     font-size:10px;
     width:138px;
-    background:url('../images/013/pagenav_icon.png') 101px 5px no-repeat;
+    background:url('../images/common/pagenav_icon.png') 101px 5px no-repeat;
     background-size:35px 20px;
     padding-top:14px;
     margin-right: 0px;
@@ -469,7 +469,7 @@ body    {margin:0; padding:0;}
     float:left;
     width:25px;
     height:24px;
-    background:url('../images/013/pagenav_numbg.png') 0 0 no-repeat;
+    background:url('../images/common/pagenav_numbg.png') 0 0 no-repeat;
     background-size:100%;
     margin-left:5px;
     position:relative;
@@ -486,7 +486,7 @@ body    {margin:0; padding:0;}
 .pagenav ul li.on{
     width:30px;
     height:30px;
-    background:url(../images/013/pagenav_numbg_on.png) 0 0 no-repeat;
+    background:url(../images/common/pagenav_numbg_on.png) 0 0 no-repeat;
     font-size:13px;
     color:#fff;
     padding: 7px 0 0 0;
@@ -501,7 +501,7 @@ body    {margin:0; padding:0;}
     position:absolute;
     left:3px;
     bottom:-6px;
-    background:url('../images/018/pagenav_numbg_ef.png') 0 0 no-repeat;
+    background:url('../images/common/pagenav_numbg_ef.png') 0 0 no-repeat;
     background-size:100% 100%;
     width:20px; height:5px;
 }
@@ -706,7 +706,7 @@ body    {margin:0; padding:0;}
 }
 
 .think_bt{
-    background:url(../images/027/think_bt.png) 0 0 no-repeat;
+    background:url(../images/common/think_bt.png) 0 0 no-repeat;
     background-size:100% 100%;
     width:737px;
     height:49px;
@@ -727,7 +727,7 @@ body    {margin:0; padding:0;}
 .selfCheck .bgef{
     width: 737px;
     height: 49px;
-    background: url('../images/015/bg_ef.png') 0 0 no-repeat;
+    background: url('../images/common/bg_ef.png') 0 0 no-repeat;
     background-size:100%;
     position: absolute;
     bottom: -78px;
@@ -739,7 +739,7 @@ body    {margin:0; padding:0;}
     position: absolute;
     bottom: -41px;
     left: 41px;
-    background: url('../images/015/slef_check_title_arrow.png') 0 0 no-repeat;
+    background: url('../images/common/slef_check_title_arrow.png') 0 0 no-repeat;
     background-size:100%;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
@@ -775,7 +775,7 @@ body    {margin:0; padding:0;}
 .selfCheck .selfcheckbox .titlebox .arrow{
     width: 15px;
     height: 10px;
-    background: url('../images/015/selfcheck_title_arrow.png') 0 0 no-repeat;
+    background: url('../images/common/selfcheck_title_arrow.png') 0 0 no-repeat;
     background-size:100% 100%;
     margin-top: 30px;
     margin-left: 19px;
@@ -1089,9 +1089,9 @@ span.text_bold {
     color: #000;
     text-align: center;
 }
-.actBox .actTitleBox .icons div.icon1{background:url('../images/012/icon01-.png') 0 0 no-repeat; background-size:22px; background-position:center 2px; } /*의사결정*/
-.actBox .actTitleBox .icons div.icon2{background:url('../images/012/icon02-.png') 0 0 no-repeat; background-size:23px; background-position:center top; white-space:nowrap; }
-.actBox .actTitleBox .icons div.icon3{background:url('../images/012/icon03-.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정보활용*/
+.actBox .actTitleBox .icons div.icon1{background:url('../images/common/act_icon01.png') 0 0 no-repeat; background-size:22px; background-position:center 2px; } /*의사결정 , 문제해결*/
+.actBox .actTitleBox .icons div.icon2{background:url('../images/common/act_icon02.png') 0 0 no-repeat; background-size:23px; background-position:center top; white-space:nowrap; } /*소통협업*/
+.actBox .actTitleBox .icons div.icon3{background:url('../images/common/act_icon03.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정보활용*/
 
 .actBox .actTitleBox .icons div.icon4{background:url('../images/common/act_icon04.png') 0 0 no-repeat; background-size:21px; background-position:center top; } /*정의*/
 
@@ -1668,7 +1668,7 @@ margin-top:10px;font-size:12px;}
     background:#fff;
     height: 36px;
     width: 100%;
-    margin-top:15px;
+    margin-top:15px; 
     font-size: 13px;
     border: 1px solid #cacaca;
 }
@@ -1680,3 +1680,6 @@ textarea {
     resize: none;
     background: #fff;
 }
+
+.t_indent{text-indent:1em;}
+.t_indent2{width:1em;heigh:1em;display:inline-block}

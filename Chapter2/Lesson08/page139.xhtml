@@ -51,7 +51,7 @@
                         <img src="images/139/kito.png" alt="키토" style="width:141px;" />
                         <div class="icotxt" style="margin-top:7px;">
                             <span class="ico1"></span>
-                            <span class="txt nbg fwb ">에콰도르의 키토</span>
+                            <span class="txt nbg ">에콰도르의 키토</span>
                         </div>
                     </div>
 
@@ -59,7 +59,7 @@
                         <div class="nbg fwb">개념체크</div>
                     </div>
 
-                    <div class="checkPop" style="z-index: 11">
+                    <div class="checkPop" style="z-index: 11; display: none;">
                         <div class="title nbg fwb">개념체크</div>
 
                         <div class="quizbox quizinput">
@@ -68,8 +68,8 @@
                                 <span class="nbg">
                                     <span class="ans-ps">
                                         <input id="checkinput" type="text" style="width: 109px;" data-answer="팀북투" />
-                                        <span class="ans"></span> 
-                                    </span> 은/는 도시의 건축물이 흙으로 지어져 있어 독특하고<br /><span style="margin-left:110px"></span>매력적인 경관이 나타난다.
+                                         
+                                    </span> 은/는 도시의 건축물이 흙으로 지어져 있어 독특하고<br />매력적인 경관이 나타난다.
                                 </span>
                             </div>
                         </div>
@@ -78,11 +78,9 @@
                         <div class="quiztext">
                             <span class="num nbg">2.</span>
                             <span class="nbg">
-                                <span class="ans-ps">
-                                    <input id="checkinput" type="text" style="width: 109px;" data-answer="키토" />
-                                    <span class="ans"></span> 
-                                </span> 에콰도르의 수도
- ( )은/는 온화한 날씨,<br /><span style="margin-left:110px"></span>저렴한 물가 등 살기 좋은 도시로 유명하다.
+                                 에콰도르의 수도 <span class="ans-ps"><input id="checkinput" type="text" style="width: 109px;" data-answer="키토" /></span>
+
+                                     은/는 온화한 날씨, 저렴한 물가<br /> 등 살기 좋은 도시로 유명하다.
                              </span>
 
                         </div>
@@ -178,13 +176,13 @@
                         <div class="quizText">
                             <span class="num nbg fwb">3</span>
                             <span class="text fwb"><span class="data-color nbg">도시의 위치적 특징</span> : 
-                                <input type="text" id="input-1" class="nbg" placeholder="예) 위도에 따른 기후적 특징, 인접한 도시와의 관계적 특징 등 " />
+                                <input type="text" id="input-1" class="nbg" placeholder="내용을 입력하세요." />
                             </span>
                         </div>
                         <div class="quizText">
                             <span class="num nbg fwb">4</span>
                             <span class="text fwb"><span class="data-color nbg">도시의 특징</span> : 
-                                <input type="text" id="input-1" class="nbg" placeholder="예) 도시의 대표적인 랜드마크, 주요 관광지, 주요 산업 등" style="width:397px" />
+                                <input type="text" id="input-1" class="nbg" placeholder="내용을 입력하세요." style="width:397px" />
                             </span>
                         </div>
                         
@@ -198,8 +196,11 @@
                     </div>
                     <div class="btn_wrap" style="right:210px;">
                         <button class="anscheckBtn toast" data-pop="toast05">
-                            <div class="toastPop top" style="top: -418px; left: -473px;" data-pop="toast05">
-                                <div class="outbox" style="max-width:530px;min-width:510px;">
+                            
+
+                        <div class="toastPop top" style="top: -610px; left: -420px; display: none;" data-pop="toast05">
+                                
+                                <div class="outbox" style="max-width:530px;min-width:510px;"><div class="angle" style="left:415px"></div>
                                     <!-- <div cl"ass="angle"" style="top:398px; left:470px;"></div> -->
                                     <div class="innerbox nbg in0" style="text-align: justify;">
                                         <span class="inner_color">예시 답안 | <br />
@@ -213,9 +214,7 @@
                                     </div>
                                     <button class="closeBtn"></button>
                                 </div>
-                            </div>
-
-                        </button>
+                            </div></button>
                     </div>
                     <modalFeedback>
                     </modalFeedback>
