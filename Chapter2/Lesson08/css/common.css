@@ -432,7 +432,7 @@ body    {margin:0; padding:0;}
     /*font-weight:bold; */
     font-size:13px; color:#242424;
 }
-.Page #bottom .pageNum span.title   {font-size:11px; }
+.Page #bottom .pageNum span.title   {font-size:11px;background: rgba(256,256,256,0.5);}
 .Page.leftPage #bottom              {left:36px; }
 .Page.rightPage #bottom             {right:36px;}
 

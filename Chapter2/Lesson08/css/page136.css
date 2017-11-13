@@ -145,6 +145,11 @@
     left: -14px;
     color: #373737;
 }
+.Cover #bottom .contentsBox ul li:nth-child(7){margin-left:0;}
+
+.Cover #bottom .contentsBox ul li:nth-child(7):before{
+    display:none;
+}
 
 
 .Cover #bottom .contentsBox ul li:first-child:before,.Cover #bottom .contentsBox ul li:nth-child(10):before{
